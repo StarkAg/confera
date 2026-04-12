@@ -1,6 +1,80 @@
 
 const DATA_URL = "./full.md";
 const TODAY = new Date();
+const DAY_MS = 1000 * 60 * 60 * 24;
+const SRM_DEFAULT_FIELDS = [
+  "Computing and Processing",
+  "Communication, Networking and Broadcast Technologies",
+  "Signal Processing and Analysis",
+  "Robotics and Control Systems",
+  "Components, Circuits, Devices and Systems",
+  "Power, Energy and Industry Applications",
+];
+const LOCAL_KEYWORDS = [
+  "chennai",
+  "chengalpattu",
+  "kattankulathur",
+  "tambaram",
+  "kanchipuram",
+  "kancheepuram",
+  "vellore",
+  "trichy",
+  "tiruch",
+  "coimbatore",
+  "erode",
+  "salem",
+  "namakkal",
+  "tirunelveli",
+  "madurai",
+  "thanjavur",
+  "melmaruvathur",
+  "sriperumbudur",
+  "thiruvallur",
+  "puducherry",
+  "pondicherry",
+  "tamil nadu",
+];
+const SOUTH_INDIA_KEYWORDS = [
+  "kerala",
+  "karnataka",
+  "andhra pradesh",
+  "telangana",
+  "hyderabad",
+  "bengaluru",
+  "bangalore",
+  "mysuru",
+  "kochi",
+  "ernakulam",
+  "thiruvananthapuram",
+  "kollam",
+  "palakkad",
+  "mangalore",
+  "mangaluru",
+  "vijayawada",
+  "guntur",
+  "tirupati",
+  "warangal",
+  "kozhikode",
+  "trivandrum",
+];
+const STUDENT_PRESETS = {
+  balanced: {
+    label: "Balanced",
+    description: "Best overall shortlist for SRM KTR students: practical travel from Chennai, open CFPs, and solid research fit.",
+  },
+  nearby: {
+    label: "Near Chennai",
+    description: "Push Tamil Nadu and nearby South India conferences to the top so students can shortlist with lower travel friction.",
+  },
+  lowTravel: {
+    label: "Low Travel",
+    description: "Prioritise hybrid conferences and practical locations when students want lower time and cost overhead.",
+  },
+  deadline: {
+    label: "Deadline First",
+    description: "Bring the most urgent open CFPs up first so students know where they need to act now.",
+  },
+};
 
 const state = {
   conferences: [],
@@ -9,6 +83,7 @@ const state = {
   search: "",
   cfp: "all",
   year: "all",
+  preset: "balanced",
 };
 
 const refs = {
@@ -22,6 +97,9 @@ const refs = {
   fieldChips: document.getElementById("fieldChips"),
   clearFilters: document.getElementById("clearFilters"),
   heroCanvas: document.getElementById("sceneCanvas"),
+  studentPicks: document.getElementById("studentPicks"),
+  studentPresets: document.getElementById("studentPresets"),
+  studentPresetSummary: document.getElementById("studentPresetSummary"),
 };
 
 function parseCSV(text) {
@@ -74,6 +152,212 @@ function niceDate(value) {
   const d = new Date(value);
   if (Number.isNaN(d.getTime())) return value;
   return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+}
+
+function daysUntil(date) {
+  if (!date || Number.isNaN(date.getTime())) return null;
+  return Math.ceil((date.getTime() - TODAY.getTime()) / DAY_MS);
+}
+
+function getPreferredFields() {
+  return state.selectedFields.size ? [...state.selectedFields] : SRM_DEFAULT_FIELDS;
+}
+
+function getFieldMatchCount(conf) {
+  const preferred = getPreferredFields();
+  return conf.fields.filter((field) => preferred.includes(field)).length;
+}
+
+function getLocationTier(conf) {
+  const location = conf.location.toLowerCase();
+  if (LOCAL_KEYWORDS.some((keyword) => location.includes(keyword))) {
+    return "local";
+  }
+  if (SOUTH_INDIA_KEYWORDS.some((keyword) => location.includes(keyword))) {
+    return "south";
+  }
+  return "national";
+}
+
+function isMadrasSectionConference(conf) {
+  return conf.sponsors.some((sponsor) => sponsor.toLowerCase().includes("madras section"));
+}
+
+function buildStudentRecommendation(conf) {
+  const status = getDeadlineStatus(conf);
+  const daysLeft = daysUntil(conf.cfpDate);
+  const locationTier = getLocationTier(conf);
+  const fieldMatchCount = getFieldMatchCount(conf);
+  const preferredFieldCount = getPreferredFields().length;
+  const hybrid = conf.format.toLowerCase() === "hybrid";
+  const preset = state.preset;
+
+  let score = 0;
+  const reasons = [];
+
+  if (status === "open") {
+    score += 42;
+    reasons.push("CFP is still open");
+  } else if (status === "missing") {
+    score += 10;
+    reasons.push("CFP date is not listed yet");
+  } else {
+    score -= 28;
+    reasons.push("CFP has already closed");
+  }
+
+  if (daysLeft !== null && daysLeft >= 0) {
+    if (daysLeft <= 14) {
+      score += preset === "deadline" ? 30 : 18;
+      reasons.push(`Deadline is close: ${niceDate(conf.cfpDeadline)}`);
+    } else if (daysLeft <= 45) {
+      score += preset === "deadline" ? 24 : 14;
+      reasons.push(`Still actionable this cycle: ${niceDate(conf.cfpDeadline)}`);
+    } else if (daysLeft <= 90) {
+      score += preset === "deadline" ? 12 : 8;
+    } else {
+      score += 4;
+    }
+  }
+
+  if (locationTier === "local") {
+    score += preset === "nearby" ? 30 : 20;
+    reasons.push("Venue is in Chennai / Tamil Nadu range");
+  } else if (locationTier === "south") {
+    score += preset === "nearby" ? 18 : 10;
+    reasons.push("Travel is still manageable from Chennai");
+  } else {
+    score += preset === "nearby" ? 1 : 4;
+  }
+
+  if (hybrid) {
+    score += preset === "lowTravel" ? 28 : 15;
+    reasons.push("Hybrid format reduces travel pressure");
+  } else if (conf.format.toLowerCase() === "inperson") {
+    score += preset === "lowTravel" ? 4 : 8;
+  }
+
+  if (fieldMatchCount > 0) {
+    score += Math.min(fieldMatchCount * 7, 21);
+    if (state.selectedFields.size) {
+      reasons.push(`Matches ${fieldMatchCount} selected field${fieldMatchCount > 1 ? "s" : ""}`);
+    } else if (fieldMatchCount >= Math.ceil(preferredFieldCount / 2)) {
+      reasons.push("Strong fit for common SRM research tracks");
+    }
+  }
+
+  if (isMadrasSectionConference(conf)) {
+    score += 9;
+    reasons.push("Supported by IEEE Madras Section");
+  }
+
+  if (preset === "lowTravel" && locationTier === "local" && hybrid) {
+    score += 14;
+  }
+
+  const cappedScore = Math.max(18, Math.min(99, score));
+
+  return {
+    score: cappedScore,
+    reasons: reasons.slice(0, 4),
+    status,
+  };
+}
+
+function renderStudentPicks() {
+  if (!refs.studentPicks || !refs.studentPresetSummary) return;
+
+  const activePreset = STUDENT_PRESETS[state.preset] || STUDENT_PRESETS.balanced;
+  const fieldContext = state.selectedFields.size
+    ? `Using your selected fields: ${[...state.selectedFields].join(", ")}.`
+    : "Using common SRM KTR interests such as computing, communication, signal processing, robotics, electronics, and power.";
+
+  refs.studentPresetSummary.textContent = `${activePreset.description} ${fieldContext}`;
+  refs.studentPicks.innerHTML = "";
+
+  if (state.filtered.length === 0) {
+    refs.studentPicks.innerHTML = `
+      <article class="student-pick-card student-pick-empty">
+        <h3>No student picks available for these filters.</h3>
+        <p>Clear some filters or switch the preset to see better options.</p>
+      </article>
+    `;
+    return;
+  }
+
+  const ranked = state.filtered
+    .map((conf) => ({ conf, recommendation: buildStudentRecommendation(conf) }))
+    .sort((a, b) => {
+      if (b.recommendation.score !== a.recommendation.score) {
+        return b.recommendation.score - a.recommendation.score;
+      }
+      if (a.conf.cfpDate && b.conf.cfpDate) {
+        return a.conf.cfpDate - b.conf.cfpDate;
+      }
+      return a.conf.no - b.conf.no;
+    })
+    .slice(0, 3);
+
+  ranked.forEach(({ conf, recommendation }, index) => {
+    const card = document.createElement("article");
+    card.className = "student-pick-card";
+
+    const top = document.createElement("div");
+    top.className = "student-pick-top";
+
+    const headingWrap = document.createElement("div");
+    const kicker = document.createElement("p");
+    kicker.className = "student-pick-kicker";
+    kicker.textContent = `Student Pick ${index + 1}`;
+
+    const title = document.createElement("h3");
+    title.textContent = conf.conference;
+
+    headingWrap.append(kicker, title);
+
+    const score = document.createElement("div");
+    score.className = "student-score";
+    score.textContent = `${recommendation.score}/100 fit`;
+
+    top.append(headingWrap, score);
+
+    const meta = document.createElement("p");
+    meta.className = "student-pick-meta";
+    meta.textContent = `${conf.location || "Location not listed"} · ${conf.format || "Format not listed"} · CFP ${conf.cfpDeadline ? niceDate(conf.cfpDeadline) : "Not listed"}`;
+
+    const reasons = document.createElement("div");
+    reasons.className = "student-reasons";
+    recommendation.reasons.forEach((reason) => {
+      const tag = document.createElement("span");
+      tag.className = "student-reason";
+      tag.textContent = reason;
+      reasons.appendChild(tag);
+    });
+
+    const footer = document.createElement("div");
+    footer.className = "student-pick-footer";
+
+    const footerNote = document.createElement("p");
+    footerNote.className = "student-pick-note";
+    footerNote.textContent = state.selectedFields.size
+      ? "Ranking adapts to your selected fields."
+      : "Ranking is tuned for typical SRM KTR student shortlisting.";
+
+    const link = document.createElement("a");
+    link.className = "student-pick-link";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.href = conf.ieeeLink || "#";
+    link.textContent = conf.ieeeLink ? "Open IEEE Page ↗" : "IEEE page unavailable";
+    if (!conf.ieeeLink) {
+      link.classList.add("disabled");
+      link.setAttribute("aria-disabled", "true");
+    }
+
+    footer.append(footerNote, link);
+    card.append(top, meta, reasons, footer);
+    refs.studentPicks.appendChild(card);
+  });
 }
 
 function renderStats() {
@@ -145,6 +429,7 @@ function syncURL() {
   if (state.cfp !== "all") params.set("cfp", state.cfp);
   if (state.year !== "all") params.set("year", state.year);
   if (state.selectedFields.size) params.set("fields", [...state.selectedFields].join(","));
+  if (state.preset !== "balanced") params.set("preset", state.preset);
   const newUrl = params.toString()
     ? `${location.pathname}?${params}`
     : location.pathname;
@@ -156,6 +441,9 @@ function loadFromURL() {
   if (params.get("q")) state.search = params.get("q");
   state.cfp = params.get("cfp") || "open";
   if (params.get("year")) state.year = params.get("year");
+  if (params.get("preset") && STUDENT_PRESETS[params.get("preset")]) {
+    state.preset = params.get("preset");
+  }
   if (params.get("fields")) {
     params.get("fields").split(",").forEach(f => state.selectedFields.add(f));
   }
@@ -201,6 +489,7 @@ function applyFilters() {
   });
 
   renderGrid();
+  renderStudentPicks();
   renderStats();
 }
 
@@ -307,14 +596,28 @@ function wireEvents() {
     state.search = "";
     state.cfp = "all";
     state.year = "all";
+    state.preset = "balanced";
     state.selectedFields.clear();
 
     refs.searchInput.value = "";
     refs.cfpFilter.value = "all";
     refs.yearFilter.value = "all";
     refs.fieldChips.querySelectorAll(".chip").forEach((chip) => chip.classList.remove("active"));
+    refs.studentPresets.querySelectorAll(".student-preset-btn").forEach((button) => {
+      button.classList.toggle("active", button.dataset.preset === "balanced");
+    });
 
     applyFiltersAndSync();
+  });
+
+  refs.studentPresets.querySelectorAll(".student-preset-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.preset = button.dataset.preset;
+      refs.studentPresets.querySelectorAll(".student-preset-btn").forEach((item) => {
+        item.classList.toggle("active", item === button);
+      });
+      applyFiltersAndSync();
+    });
   });
 }
 
@@ -477,6 +780,9 @@ async function init() {
         if (state.selectedFields.has(chip.dataset.field)) chip.classList.add("active");
       });
     }
+    refs.studentPresets.querySelectorAll(".student-preset-btn").forEach((button) => {
+      button.classList.toggle("active", button.dataset.preset === state.preset);
+    });
 
     applyFilters();
     mountThreeScene();
