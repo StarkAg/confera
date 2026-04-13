@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useMutation } from "convex/react";
 import {
   ArrowUpRight,
   CalendarDays,
@@ -9,10 +10,14 @@ import {
   Telescope,
 } from "lucide-react";
 import conferenceMarkdown from "../full.md?raw";
+import { api } from "../convex/_generated/api";
+import { UsageOverview } from "@/components/usage-overview";
 import { Component as EtherealShadow } from "@/components/ui/etheral-shadow";
+import { getBrowserContext, getOrCreateSessionId, makeClientEventId, shouldTrackPageView } from "@/lib/usage";
 
 type ConferenceStatus = "open" | "closed" | "missing";
 type StudentPreset = "balanced" | "nearby" | "lowTravel" | "deadline";
+type UsageEventType = "page_view" | "search" | "filters_changed" | "clear_filters" | "conference_link_click";
 
 interface Conference {
   no: number;
@@ -264,6 +269,122 @@ export default function App() {
   const [selectedFields, setSelectedFields] = useState<string[]>([]);
   const [fieldsExpanded, setFieldsExpanded] = useState(false);
   const preset: StudentPreset = "balanced";
+  const trackUsage = useMutation(api.analytics.track);
+  const sessionIdRef = useRef<string | null>(null);
+  const lastTrackedSearchRef = useRef("");
+  const skipInitialFilterTrackingRef = useRef(true);
+  const suppressNextFilterTrackingRef = useRef(false);
+
+  function sendUsageEvent({
+    eventType,
+    clientEventId,
+    searchQuery,
+    cfpFilter,
+    yearFilter,
+    selectedFields: trackedFields,
+    conferenceNo,
+    conferenceName,
+    targetUrl,
+  }: {
+    eventType: UsageEventType;
+    clientEventId?: string;
+    searchQuery?: string;
+    cfpFilter?: string;
+    yearFilter?: string;
+    selectedFields?: string[];
+    conferenceNo?: number;
+    conferenceName?: string;
+    targetUrl?: string;
+  }) {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const sessionId = sessionIdRef.current ?? getOrCreateSessionId();
+    sessionIdRef.current = sessionId;
+
+    const browserContext = getBrowserContext();
+
+    void trackUsage({
+      clientEventId: clientEventId ?? makeClientEventId(eventType, sessionId),
+      sessionId,
+      eventType,
+      path: browserContext.path,
+      referrer: browserContext.referrer,
+      userAgent: browserContext.userAgent,
+      ...(searchQuery ? { searchQuery } : {}),
+      ...(cfpFilter ? { cfpFilter } : {}),
+      ...(yearFilter ? { yearFilter } : {}),
+      ...(trackedFields ? { selectedFields: trackedFields } : {}),
+      ...(typeof conferenceNo === "number" ? { conferenceNo } : {}),
+      ...(conferenceName ? { conferenceName } : {}),
+      ...(targetUrl ? { targetUrl } : {}),
+    }).catch(() => {});
+  }
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const path = window.location.pathname;
+    if (!shouldTrackPageView(path)) {
+      return;
+    }
+
+    const sessionId = sessionIdRef.current ?? getOrCreateSessionId();
+    sessionIdRef.current = sessionId;
+
+    sendUsageEvent({
+      eventType: "page_view",
+      clientEventId: `page_view:${sessionId}:${path}`,
+    });
+  }, []);
+
+  useEffect(() => {
+    const trimmed = search.trim();
+    if (!trimmed) {
+      lastTrackedSearchRef.current = "";
+      return;
+    }
+
+    const normalizedQuery = trimmed.toLowerCase();
+    const timeoutId = window.setTimeout(() => {
+      if (lastTrackedSearchRef.current === normalizedQuery) {
+        return;
+      }
+
+      lastTrackedSearchRef.current = normalizedQuery;
+      sendUsageEvent({
+        eventType: "search",
+        searchQuery: trimmed,
+        cfpFilter: cfp,
+        yearFilter: year,
+        selectedFields,
+      });
+    }, 500);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [search]);
+
+  useEffect(() => {
+    if (skipInitialFilterTrackingRef.current) {
+      skipInitialFilterTrackingRef.current = false;
+      return;
+    }
+
+    if (suppressNextFilterTrackingRef.current) {
+      suppressNextFilterTrackingRef.current = false;
+      return;
+    }
+
+    sendUsageEvent({
+      eventType: "filters_changed",
+      cfpFilter: cfp,
+      yearFilter: year,
+      selectedFields,
+    });
+  }, [cfp, year, selectedFields]);
 
   const years = [...new Set(CONFERENCES.map((conference) => conference.year).filter(Boolean))].sort((a, b) => Number(a) - Number(b));
 
@@ -425,6 +546,8 @@ export default function App() {
         ))}
       </section>
 
+      <UsageOverview />
+
       <section className="rounded-[24px] border border-white/10 bg-white/5 p-3 sm:p-4 md:p-5">
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-3 md:flex-row md:flex-wrap">
@@ -481,6 +604,13 @@ export default function App() {
               <button
                 type="button"
                 onClick={() => {
+                  suppressNextFilterTrackingRef.current = true;
+                  sendUsageEvent({
+                    eventType: "clear_filters",
+                    cfpFilter: "open",
+                    yearFilter: "all",
+                    selectedFields: [],
+                  });
                   setSearch("");
                   setCfp("open");
                   setYear("all");
@@ -640,6 +770,14 @@ export default function App() {
                       href={conference.ieeeLink}
                       target="_blank"
                       rel="noreferrer"
+                      onClick={() =>
+                        sendUsageEvent({
+                          eventType: "conference_link_click",
+                          conferenceNo: conference.no,
+                          conferenceName: conference.conference,
+                          targetUrl: conference.ieeeLink ?? undefined,
+                        })
+                      }
                       className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10 sm:w-auto"
                     >
                       IEEE Page
