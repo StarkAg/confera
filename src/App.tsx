@@ -3,7 +3,9 @@ import { useMutation } from "convex/react";
 import {
   ArrowUpRight,
   CalendarDays,
+  Check,
   ChevronDown,
+  Copy,
   GraduationCap,
   MapPin,
   Search,
@@ -244,6 +246,48 @@ function getSrmTags(conference: Conference, selectedFields: string[]) {
   return tags.slice(0, 3);
 }
 
+function buildChatGptExport(conferences: Conference[]) {
+  const intro = [
+    "Confera conference dataset export",
+    "",
+    "Prompt template for ChatGPT:",
+    'My research topic is: [replace with your topic]. Use the dataset below to shortlist the best conferences for me. Rank the top options, explain why they fit the topic, prioritize open CFPs, and mention any deadline or format constraints.',
+    "",
+    `Total conferences: ${conferences.length}`,
+    "",
+    "Dataset:",
+  ];
+
+  const entries = conferences.map((conference, index) =>
+    [
+      `${index + 1}. ${conference.conference}`,
+      `Year: ${conference.year ?? "Not listed"}`,
+      `Dates: ${conference.dates || "Not listed"}`,
+      `CFP Deadline: ${conference.cfpDeadline ?? "Not listed"}`,
+      `Location: ${conference.location || "Not listed"}`,
+      `Format: ${conference.format || "Not listed"}`,
+      `Fields: ${conference.fields.length > 0 ? conference.fields.join("; ") : "Not listed"}`,
+      `Sponsors: ${conference.sponsors.length > 0 ? conference.sponsors.join("; ") : "Not listed"}`,
+      `IEEE Link: ${conference.ieeeLink ?? "Not listed"}`,
+    ].join("\n"),
+  );
+
+  return [...intro, ...entries].join("\n\n");
+}
+
+function fallbackCopyText(value: string) {
+  const textarea = document.createElement("textarea");
+  textarea.value = value;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+}
+
 function GitHubMark() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 fill-current">
@@ -268,6 +312,7 @@ export default function App() {
   const [year, setYear] = useState("all");
   const [selectedFields, setSelectedFields] = useState<string[]>([]);
   const [fieldsExpanded, setFieldsExpanded] = useState(false);
+  const [copyState, setCopyState] = useState<"idle" | "copied" | "error">("idle");
   const preset: StudentPreset = "balanced";
   const trackUsage = useMutation(api.analytics.track);
   const sessionIdRef = useRef<string | null>(null);
@@ -435,6 +480,25 @@ export default function App() {
     ["SRM Easy", CONFERENCES.filter((conference) => getSrmTags(conference, []).includes("SRM Easy")).length],
     ["Matching Results", filtered.length],
   ] as const;
+  const isAdminRoute =
+    typeof window !== "undefined" && (window.location.pathname === "/admin" || window.location.pathname === "/admin/");
+
+  async function handleCopyConferenceData() {
+    const exportPayload = buildChatGptExport(CONFERENCES);
+
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(exportPayload);
+      } else {
+        fallbackCopyText(exportPayload);
+      }
+      setCopyState("copied");
+    } catch {
+      setCopyState("error");
+    }
+
+    window.setTimeout(() => setCopyState("idle"), 2500);
+  }
 
   return (
     <>
@@ -451,6 +515,12 @@ export default function App() {
           </div>
 
           <div className="flex min-w-[180px] items-center justify-end gap-2">
+            <a
+              href={isAdminRoute ? "/" : "/admin"}
+              className="inline-flex h-8 items-center justify-center rounded-md border border-white/10 px-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white/85"
+            >
+              {isAdminRoute ? "Explorer" : "Admin"}
+            </a>
             <div className="hidden items-end text-right sm:flex sm:flex-col">
               <span className="text-[9px] font-bold uppercase tracking-[0.08em] text-white/45">By</span>
               <span className="text-[9px] font-bold uppercase tracking-[0.08em] text-white/45">Stark</span>
@@ -490,6 +560,52 @@ export default function App() {
       </div>
 
       <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-4 px-3 pb-5 pt-18 sm:gap-6 sm:px-4 sm:pb-6 sm:pt-20 md:px-6 lg:px-8">
+        {isAdminRoute ? (
+          <>
+            <section className="relative overflow-hidden rounded-[22px] border border-white/10 bg-black/35 backdrop-blur-sm sm:rounded-[28px]">
+              <div className="relative z-10 p-5 sm:p-7 md:p-10">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200/80">Live Usage</p>
+                    <h1 className="mt-2 text-4xl font-semibold text-white sm:text-5xl">Convex Analytics</h1>
+                    <p className="mt-3 max-w-2xl text-sm leading-7 text-white/72 sm:text-base">
+                      Internal dashboard for Confera usage. This route is excluded from public page-view tracking so the
+                      metrics stay focused on the user-facing explorer.
+                    </p>
+                  </div>
+
+                  <a
+                    href="/"
+                    className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-4 text-sm font-semibold text-white transition hover:bg-white/10"
+                  >
+                    Back to explorer
+                  </a>
+                </div>
+
+                <div className="mt-5 grid gap-3 md:grid-cols-3">
+                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Data Source</p>
+                    <p className="mt-2 text-lg font-semibold text-white">Convex live query</p>
+                    <p className="mt-2 text-sm leading-6 text-white/60">Totals, active sessions, top searches, and recent events refresh from the backend.</p>
+                  </article>
+                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Tracking Scope</p>
+                    <p className="mt-2 text-lg font-semibold text-white">Public usage only</p>
+                    <p className="mt-2 text-sm leading-6 text-white/60">The `/admin` page does not emit page-view analytics, which avoids inflating the dashboard while reviewing it.</p>
+                  </article>
+                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Path</p>
+                    <p className="mt-2 text-lg font-semibold text-white">/admin</p>
+                    <p className="mt-2 text-sm leading-6 text-white/60">Use this route for internal monitoring while keeping the conference explorer on the root path.</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <UsageOverview />
+          </>
+        ) : (
+          <>
         <section className="relative overflow-hidden rounded-[22px] border border-white/10 bg-black/35 backdrop-blur-sm sm:rounded-[28px]">
           <div className="relative z-10 min-h-[520px] p-4 sm:p-6 md:min-h-[420px] md:p-10">
             <div className="flex flex-wrap items-center justify-center gap-2 text-[9px] font-semibold uppercase tracking-[0.2em] text-white/60 sm:justify-start sm:text-[10px]">
@@ -546,7 +662,30 @@ export default function App() {
         ))}
       </section>
 
-      <UsageOverview />
+      <section className="rounded-[24px] border border-white/10 bg-white/5 p-4 sm:p-5">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200/80">AI Shortlisting</p>
+            <h2 className="mt-1 text-2xl font-semibold text-white">Copy whole conference data for ChatGPT</h2>
+          </div>
+
+          <div className="flex flex-col items-start gap-2 md:items-end">
+            <button
+              type="button"
+              onClick={handleCopyConferenceData}
+              className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl border border-emerald-300/25 bg-emerald-300/12 px-4 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-300/18"
+            >
+              {copyState === "copied" ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
+              {copyState === "copied" ? "Copied for ChatGPT" : "Copy All Data"}
+            </button>
+            <p className="text-xs text-white/45">
+              {copyState === "error"
+                ? "Copy failed. Try again in a secure browser tab."
+                : "Includes deadlines, fields, format, sponsors, and IEEE links."}
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="rounded-[24px] border border-white/10 bg-white/5 p-3 sm:p-4 md:p-5">
         <div className="flex flex-col gap-4">
@@ -790,6 +929,8 @@ export default function App() {
           })}
         </div>
       </section>
+          </>
+        )}
       </main>
     </>
   );

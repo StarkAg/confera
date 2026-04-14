@@ -21,6 +21,10 @@ export function makeClientEventId(prefix: string, sessionId: string) {
 }
 
 export function shouldTrackPageView(pathname: string) {
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    return false;
+  }
+
   const existing = window.sessionStorage.getItem(PAGE_VIEW_STORAGE_KEY);
   if (existing === pathname) {
     return false;
