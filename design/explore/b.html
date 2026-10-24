@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confera: stamp your next IEEE conference</title>
+<style>
+@font-face { font-family: "Big Shoulders Display"; src: url("https://cdn.jsdelivr.net/fontsource/fonts/big-shoulders-display:vf@latest/latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+@font-face { font-family: "Public Sans"; src: url("https://cdn.jsdelivr.net/fontsource/fonts/public-sans:vf@latest/latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+:root {
+  color-scheme: light;
+  --ground: oklch(88% 0.065 62);        /* a passport visa page, apricot security print */
+  --guilloche: oklch(80% 0.07 55);
+  --ink: oklch(24% 0.035 300);          /* violet-black printing ink */
+  --ink-2: oklch(38% 0.04 300);
+  --rule: oklch(70% 0.06 55);
+  --stamp: oklch(44% 0.17 302);         /* Indian rubber-stamp violet: the one accent */
+  --stamp-ink: oklch(98% 0.01 300);
+  --cond: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --text: "Public Sans", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; color: var(--ink); font-family: var(--text); background: var(--ground); }
+body { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40'%3E%3Cpath d='M0 20 Q15 2 30 20 T60 20 T90 20 T120 20' fill='none' stroke='%23d9a979' stroke-opacity='.35' stroke-width='1'/%3E%3Cpath d='M0 28 Q15 10 30 28 T60 28 T90 28 T120 28' fill='none' stroke='%23d9a979' stroke-opacity='.22' stroke-width='1'/%3E%3C/svg%3E"); }
+a { color: inherit; }
+.page { min-height: 100svh; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(16px, 3vw, 48px); padding: 24px clamp(16px, 4vw, 56px) 40px; }
+header { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid var(--ink); padding-bottom: 10px; }
+.mark { font-family: var(--cond); font-weight: 800; font-size: 30px; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; }
+.pageno { font-size: 14px; font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.copy { align-self: center; }
+h1 { font-family: var(--cond); font-weight: 800; font-size: clamp(3.2rem, 1.6rem + 6vw, 7.5rem); line-height: 0.9; letter-spacing: -0.01em; margin: 0 0 20px; text-transform: uppercase; text-wrap: balance; }
+h1 span { color: var(--stamp); }
+.copy p { font-size: 18px; line-height: 1.55; max-width: 40ch; color: var(--ink-2); margin: 0 0 26px; }
+fieldset { border: 0; padding: 0; margin: 0 0 18px; }
+legend { font-weight: 700; font-size: 15px; margin-bottom: 10px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips label { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border: 2px solid var(--ink); border-radius: 3px; font-weight: 650; font-size: 15px; cursor: pointer; background: color-mix(in oklch, var(--ground) 80%, white); }
+.chips input { position: absolute; opacity: 0; }
+.chips input:checked + span { color: var(--stamp-ink); }
+.chips label:has(input:checked) { background: var(--stamp); border-color: var(--stamp); color: var(--stamp-ink); }
+.chips label:has(input:focus-visible) { outline: 3px solid var(--ink); outline-offset: 2px; }
+.cta { display: inline-flex; align-items: center; min-height: 52px; padding: 0 22px; background: var(--ink); color: var(--ground); font-weight: 750; font-size: 17px; text-decoration: none; border-radius: 3px; margin-top: 8px; }
+.cta:focus-visible { outline: 3px solid var(--stamp); outline-offset: 3px; }
+.desk { position: relative; min-height: 560px; }
+.stamp { position: absolute; color: var(--stamp); text-decoration: none; transform-origin: 50% 50%; opacity: 0.9; mix-blend-mode: multiply; }
+.stamp svg { display: block; overflow: visible; filter: url(#rough); }
+.stamp.land { animation: press 520ms cubic-bezier(.2,.9,.25,1.25) both; }
+@keyframes press { 0% { transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(1.35); opacity: 0; } 60% { opacity: .95; } 100% { transform: translate(var(--x), var(--y)) rotate(var(--r)) scale(1); opacity: .9; } }
+.stamp { transform: translate(var(--x), var(--y)) rotate(var(--r)); }
+.stamp:hover, .stamp:focus-visible { opacity: 1; outline: none; }
+.stamp:focus-visible svg { filter: none; }
+.next { grid-column: 1 / -1; border-top: 2px solid var(--ink); padding-top: 14px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-weight: 650; }
+.next span { color: var(--ink-2); font-weight: 500; }
+@media (max-width: 860px) {
+  .page { grid-template-columns: 1fr; }
+  .desk { min-height: 470px; }
+}
+@media (prefers-reduced-motion: reduce) { .stamp.land { animation: none; } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="1.6"/></filter>
+</svg>
+<main class="page">
+  <header>
+    <a class="mark" href="#">Confera</a>
+    <span class="pageno">IEEE India · 297 conferences · updated 24 Oct 2026</span>
+  </header>
+  <div class="copy">
+    <h1><span id="openCount">88</span> IEEE conferences in India still take papers</h1>
+    <p>Each stamp is one of them: where it happens, and the day its call for papers closes. Pick your field and we stamp the ones you can still make.</p>
+    <fieldset>
+      <legend>Your field</legend>
+      <div class="chips" id="chips"></div>
+    </fieldset>
+    <a class="cta" href="#all">Show my <b id="mine">&nbsp;</b>&nbsp;conferences</a>
+  </div>
+  <div class="desk" id="desk" aria-label="Soonest deadlines, as stamps"></div>
+  <p class="next"><a href="#all">All open calls, by deadline</a><span>6 close before 31 October · 51 are hybrid</span></p>
+</main>
+<script src="data.js"></script>
+<script>
+const TODAY = new Date(CONFERA_TODAY + "T00:00:00");
+const day = 864e5;
+const confs = CONFERA.map((c) => ({ ...c, cfpDate: c.cfp ? new Date(c.cfp + "T00:00:00") : null }))
+  .map((c) => ({ ...c, left: c.cfpDate ? Math.round((c.cfpDate - TODAY) / day) : null }));
+const open = confs.filter((c) => c.left !== null && c.left >= 0).sort((a, b) => a.left - b.left);
+document.getElementById("openCount").textContent = open.length;
+const short = { "Computing and Processing": "Computing", "Communication, Networking and Broadcast Technologies": "Communication", "Signal Processing and Analysis": "Signal processing", "Components, Circuits, Devices and Systems": "Circuits & devices", "Power, Energy and Industry Applications": "Power & energy", "Robotics and Control Systems": "Robotics & control" };
+const chips = document.getElementById("chips");
+let field = "Computing and Processing";
+Object.entries(short).forEach(([full, s]) => {
+  const l = document.createElement("label");
+  l.innerHTML = `<input type="radio" name="f" value="${full}" ${full === field ? "checked" : ""}><span>${s}</span>`;
+  chips.appendChild(l);
+});
+const up = (s) => s.toUpperCase();
+const mon = (d) => d.toLocaleDateString("en-IN", { day: "numeric", month: "short" }).toUpperCase();
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+// A round stamp: acronym in the middle, city around the top, the deadline around the bottom.
+function roundStamp(c, i) {
+  const acr = esc(c.acr || "IEEE").slice(0, 9), size = acr.length > 6 ? 24 : 32;
+  return `<svg width="190" height="190" viewBox="0 0 190 190" role="img" aria-label="${esc(c.name)}, papers due ${c.cfpDate.toDateString()}">
+    <defs><path id="top${i}" d="M30 95 A65 65 0 0 1 160 95"/><path id="bot${i}" d="M22 95 A73 73 0 0 0 168 95"/></defs>
+    <circle cx="95" cy="95" r="88" fill="none" stroke="currentColor" stroke-width="4"/>
+    <circle cx="95" cy="95" r="80" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text font-family="Public Sans" font-weight="800" font-size="13" letter-spacing="2" fill="currentColor"><textPath href="#top${i}" startOffset="50%" text-anchor="middle">${esc(up(c.loc)).slice(0, 22)}</textPath></text>
+    <text x="95" y="${100 + size / 3}" text-anchor="middle" font-family="Big Shoulders Display" font-weight="900" font-size="${size}" fill="currentColor">${acr}</text>
+    <line x1="40" x2="150" y1="126" y2="126" stroke="currentColor" stroke-width="1.5"/>
+    <text font-family="Public Sans" font-weight="800" font-size="12" letter-spacing="2" fill="currentColor"><textPath href="#bot${i}" startOffset="50%" text-anchor="middle" dominant-baseline="hanging">PAPERS BY ${mon(c.cfpDate)}</textPath></text>
+  </svg>`;
+}
+// A rectangular entry stamp: the conference dates and format.
+function rectStamp(c) {
+  const [s] = c.dates.split(" to ");
+  const d = new Date(s + "T00:00:00").toLocaleDateString("en-IN", { day: "2-digit", month: "short", year: "numeric" }).toUpperCase();
+  return `<svg width="230" height="120" viewBox="0 0 230 120" role="img" aria-label="${esc(c.name)}, held ${c.dates} in ${esc(c.loc)}">
+    <rect x="3" y="3" width="224" height="114" rx="6" fill="none" stroke="currentColor" stroke-width="4"/>
+    <text x="16" y="34" font-family="Public Sans" font-weight="800" font-size="12" letter-spacing="2" fill="currentColor">ENTRY · ${c.fmt === "inperson" ? "IN PERSON" : up(c.fmt)}</text>
+    <text x="16" y="74" font-family="Big Shoulders Display" font-weight="900" font-size="36" fill="currentColor">${esc((c.acr || "IEEE").slice(0, 12))}</text>
+    <text x="16" y="102" font-family="Public Sans" font-weight="700" font-size="13" letter-spacing="1" fill="currentColor">${d} · ${esc(up(c.loc)).slice(0, 14)}</text>
+  </svg>`;
+}
+const spots = [[4, 6, -8], [44, 2, 6], [70, 30, -4], [10, 44, 9], [46, 40, -12], [24, 72, 4], [62, 70, -6]];
+const desk = document.getElementById("desk");
+function render() {
+  const mine = open.filter((c) => c.fields.includes(field));
+  document.getElementById("mine").textContent = mine.length;
+  desk.innerHTML = "";
+  mine.slice(0, spots.length).forEach((c, i) => {
+    const a = document.createElement("a");
+    a.className = "stamp land"; a.href = c.url;
+    const [x, y, r] = spots[i];
+    a.style.left = x + "%"; a.style.top = y + "%";
+    a.style.setProperty("--x", "0px"); a.style.setProperty("--y", "0px"); a.style.setProperty("--r", r + "deg");
+    a.style.animationDelay = i * 140 + "ms";
+    a.innerHTML = i % 3 === 1 ? rectStamp(c) : roundStamp(c, i);
+    desk.appendChild(a);
+  });
+}
+chips.addEventListener("change", (e) => { field = e.target.value; render(); });
+render();
+// Every few seconds one stamp is pressed again, as if someone is still working the page.
+if (!matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(() => {
+  const s = desk.querySelectorAll(".stamp"); if (!s.length) return;
+  const el = s[Math.floor(Math.random() * s.length)];
+  el.classList.remove("land"); void el.offsetWidth; el.style.animationDelay = "0ms"; el.classList.add("land");
+}, 3200);
+</script>
+</body>
+</html>

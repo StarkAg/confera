@@ -1,20 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useMutation } from "convex/react";
-import {
-  ArrowUpRight,
-  CalendarDays,
-  Check,
-  ChevronDown,
-  Copy,
-  GraduationCap,
-  MapPin,
-  Search,
-  Telescope,
-} from "lucide-react";
 import conferenceMarkdown from "../full.md?raw";
 import { api } from "../convex/_generated/api";
 import { UsageOverview } from "@/components/usage-overview";
-import { Component as EtherealShadow } from "@/components/ui/etheral-shadow";
+import { EntryStamp, RoundStamp, StampFilters } from "@/components/stamps";
 import { getBrowserContext, getOrCreateSessionId, makeClientEventId, shouldTrackPageView } from "@/lib/usage";
 
 type ConferenceStatus = "open" | "closed" | "missing";
@@ -35,7 +24,8 @@ interface Conference {
   year: number | null;
 }
 
-const TODAY = new Date();
+const NOW = new Date();
+const TODAY = new Date(NOW.getFullYear(), NOW.getMonth(), NOW.getDate());
 const DAY_MS = 1000 * 60 * 60 * 24;
 const DEFAULT_FIELDS = [
   "Computing and Processing",
@@ -305,6 +295,63 @@ function LinkedInMark() {
 }
 
 const CONFERENCES = parseConferenceTable(conferenceMarkdown);
+const GENERATED_ON = (conferenceMarkdown.match(/Generated on: (\d{4}-\d{2}-\d{2})/) || [])[1] || null;
+
+// Short names for the six fields most students pick; the rest use IEEE's own wording.
+const FIELD_SHORT: Record<string, string> = {
+  "Computing and Processing": "Computing",
+  "Communication, Networking and Broadcast Technologies": "Communication",
+  "Signal Processing and Analysis": "Signal processing",
+  "Components, Circuits, Devices and Systems": "Circuits and devices",
+  "Power, Energy and Industry Applications": "Power and energy",
+  "Robotics and Control Systems": "Robotics and control",
+};
+
+function acronymOf(conference: Conference) {
+  return (conference.conference.match(/\(([^()]+)\)\s*$/) || [])[1] || "";
+}
+
+function startDateOf(conference: Conference) {
+  const start = conference.dates.split(" to ")[0];
+  const date = start ? new Date(`${start}T00:00:00`) : null;
+  return date && !Number.isNaN(date.getTime()) ? date : null;
+}
+
+// A small, stable tilt per conference so a page of stamps never looks machine-set.
+const tilt = (no: number) => ((no * 37) % 9) - 4;
+
+// The desk layout: where each of the first seven stamps lands, and its tilt.
+const DESK_SPOTS: Array<[number, number, number]> = [
+  [4, 4, -8], [44, 0, 6], [70, 28, -4], [8, 42, 9], [44, 38, -12], [22, 70, 4], [62, 68, -6],
+];
+
+function tagWords(tag: string, conference: Conference) {
+  if (tag === "SRM Easy") return { text: "Present from KTR", tone: "easy" };
+  if (tag === "Deadline Soon") {
+    const left = daysUntil(conference.cfpDate) ?? 0;
+    return { text: left === 0 ? "Closes today" : `Closes in ${left} day${left === 1 ? "" : "s"}`, tone: "soon" };
+  }
+  if (tag === "Your Field") return { text: "Your field", tone: "" };
+  return { text: tag, tone: "" };
+}
+
+// "26–27 Feb 2027", "30 Jan – 2 Feb 2027", "29 Dec 2026 – 2 Jan 2027".
+function humanDates(range: string) {
+  const [a, b] = range.split(" to ").map((part) => (part ? new Date(`${part}T00:00:00`) : null));
+  if (!a || Number.isNaN(a.getTime())) return range || "Dates not listed";
+  const full = (d: Date) => d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  if (!b || Number.isNaN(b.getTime()) || b.getTime() === a.getTime()) return full(a);
+  if (a.getFullYear() !== b.getFullYear()) return `${full(a)} – ${full(b)}`;
+  if (a.getMonth() !== b.getMonth()) {
+    return `${a.toLocaleDateString("en-GB", { day: "numeric", month: "short" })} – ${full(b)}`;
+  }
+  return `${a.getDate()}–${full(b)}`;
+}
+
+function isUrgent(conference: Conference) {
+  const left = daysUntil(conference.cfpDate);
+  return left !== null && left >= 0 && left <= 7;
+}
 
 export default function App() {
   const [search, setSearch] = useState("");
@@ -500,438 +547,300 @@ export default function App() {
     window.setTimeout(() => setCopyState("idle"), 2500);
   }
 
+  const openConferences = CONFERENCES.filter((conference) => getDeadlineStatus(conference) === "open");
+  const closingThisWeek = openConferences.filter(isUrgent).length;
+  const openHybrid = openConferences.filter((conference) => getSrmTags(conference, []).includes("SRM Easy")).length;
+  const deskStamps = filtered.filter((conference) => getDeadlineStatus(conference) === "open").slice(0, DESK_SPOTS.length);
+  const deskKey = `${selectedFields.join("|")}#${search}#${year}`;
+  const deskRef = useRef<HTMLDivElement>(null);
+
+  // Signature: every 4.5s one stamp on the desk is pressed again.
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const timer = window.setInterval(() => {
+      const stamps = deskRef.current?.querySelectorAll<HTMLElement>(".stamp");
+      if (!stamps?.length) return;
+      const el = stamps[Math.floor(Math.random() * stamps.length)];
+      el.classList.remove("land");
+      void el.offsetWidth;
+      el.style.animationDelay = "0ms";
+      el.classList.add("land");
+    }, 4500);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  function toggleField(field: string) {
+    setSelectedFields((current) => (current.includes(field) ? current.filter((item) => item !== field) : [...current, field]));
+  }
+
+  function clearFilters() {
+    suppressNextFilterTrackingRef.current = true;
+    sendUsageEvent({ eventType: "clear_filters", cfpFilter: "open", yearFilter: "all", selectedFields: [] });
+    setSearch("");
+    setCfp("open");
+    setYear("all");
+    setSelectedFields([]);
+    setFieldsExpanded(false);
+  }
+
+  function trackClick(conference: Conference) {
+    sendUsageEvent({
+      eventType: "conference_link_click",
+      conferenceNo: conference.no,
+      conferenceName: conference.conference,
+      targetUrl: conference.ieeeLink ?? undefined,
+    });
+  }
+
+  const updated = GENERATED_ON
+    ? new Date(`${GENERATED_ON}T00:00:00`).toLocaleDateString("en-GB", { day: "numeric", month: "short" })
+    : null;
+  const stampLabel = (conference: Conference) =>
+    `${conference.conference}, ${conference.location || "location not listed"}, papers ${
+      conference.cfpDeadline ? `due ${niceDate(conference.cfpDeadline)}` : "deadline not listed"
+    }`;
+  const statusOptions: Array<[ConferenceStatus | "all", string]> = [["open", "Open"], ["closed", "Closed"], ["missing", "No date"], ["all", "All"]];
+
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black/65 backdrop-blur-md">
-        <div className="relative flex h-13 w-full items-center justify-between px-4 sm:h-14 sm:px-5">
-          <div className="flex min-w-[140px] items-center justify-start sm:min-w-[180px]">
-            <span className="font-display text-xl uppercase tracking-[0.14em] text-white/85 sm:text-2xl">Confera</span>
-          </div>
-
-          <div className="absolute left-1/2 flex -translate-x-1/2">
-            <span className="text-[9px] font-semibold uppercase tracking-[0.12em] text-white/40 sm:text-[11px] sm:tracking-[0.16em]">
-              a gradex product
-            </span>
-          </div>
-
-          <div className="flex min-w-[180px] items-center justify-end gap-2">
-            <a
-              href={isAdminRoute ? "/" : "/admin"}
-              className="inline-flex h-8 items-center justify-center rounded-md border border-white/10 px-3 text-[10px] font-semibold uppercase tracking-[0.12em] text-white/55 transition hover:border-white/20 hover:bg-white/5 hover:text-white/85"
-            >
-              {isAdminRoute ? "Explorer" : "Admin"}
-            </a>
-            <div className="hidden items-end text-right sm:flex sm:flex-col">
-              <span className="text-[9px] font-bold uppercase tracking-[0.08em] text-white/45">By</span>
-              <span className="text-[9px] font-bold uppercase tracking-[0.08em] text-white/45">Stark</span>
-            </div>
-            <a
-              href="https://github.com/StarkAg"
-              target="_blank"
-              rel="noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-md border border-white/10 text-white/45 transition hover:border-white/20 hover:bg-white/5 hover:text-white/80"
-              aria-label="GitHub"
-            >
-              <GitHubMark />
-            </a>
-            <a
-              href="https://in.linkedin.com/in/harshxagarwal"
-              target="_blank"
-              rel="noreferrer"
-              className="flex h-8 w-8 items-center justify-center rounded-md border border-white/10 text-white/45 transition hover:border-white/20 hover:bg-white/5 hover:text-white/80"
-              aria-label="LinkedIn"
-            >
-              <LinkedInMark />
-            </a>
-          </div>
-        </div>
+      <StampFilters />
+      <header className="pp-top">
+        <a className="pp-mark" href="/">CONFERA</a>
+        <span className="pp-meta">
+          IEEE India · {CONFERENCES.length} conferences{updated ? ` · updated ${updated}` : ""}
+        </span>
+        <nav className="pp-links" aria-label="Site">
+          <a className="pp-icon text" href={isAdminRoute ? "/" : "/admin"}>{isAdminRoute ? "Explorer" : "Admin"}</a>
+          <a className="pp-icon" href="https://github.com/StarkAg" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <GitHubMark />
+          </a>
+          <a className="pp-icon" href="https://in.linkedin.com/in/harshxagarwal" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <LinkedInMark />
+          </a>
+        </nav>
       </header>
 
-      <div className="fixed inset-0 -z-10">
-        <EtherealShadow
-          className="h-full w-full"
-          color="rgba(94, 156, 255, 0.45)"
-          animation={{ scale: 90, speed: 78 }}
-          noise={{ opacity: 0.7, scale: 1.15 }}
-          sizing="fill"
-          showTitle={false}
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(7,10,16,0.26),transparent_30%),linear-gradient(180deg,rgba(5,7,12,0.48),rgba(4,6,10,0.88))]" />
-      </div>
-
-      <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-4 px-3 pb-5 pt-18 sm:gap-6 sm:px-4 sm:pb-6 sm:pt-20 md:px-6 lg:px-8">
-        {isAdminRoute ? (
-          <>
-            <section className="relative overflow-hidden rounded-[22px] border border-white/10 bg-black/35 backdrop-blur-sm sm:rounded-[28px]">
-              <div className="relative z-10 p-5 sm:p-7 md:p-10">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200/80">Live Usage</p>
-                    <h1 className="mt-2 text-4xl font-semibold text-white sm:text-5xl">Convex Analytics</h1>
-                    <p className="mt-3 max-w-2xl text-sm leading-7 text-white/72 sm:text-base">
-                      Internal dashboard for Confera usage. This route is excluded from public page-view tracking so the
-                      metrics stay focused on the user-facing explorer.
-                    </p>
-                  </div>
-
-                  <a
-                    href="/"
-                    className="inline-flex h-11 items-center justify-center rounded-2xl border border-white/12 bg-white/6 px-4 text-sm font-semibold text-white transition hover:bg-white/10"
+      {isAdminRoute ? (
+        <main className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-4 px-3 pb-5 pt-8 sm:gap-6 sm:px-4 md:px-6 lg:px-8">
+          <section className="rounded-[3px] border border-white/10 bg-black/20 p-5 sm:p-7 md:p-10">
+            <h1 className="text-4xl font-semibold text-white sm:text-5xl">Convex Analytics</h1>
+            <p className="mt-3 max-w-2xl text-sm leading-7 text-white/72 sm:text-base">
+              Internal dashboard for Confera usage. This route is excluded from public page-view tracking so the
+              metrics stay focused on the explorer.
+            </p>
+          </section>
+          <UsageOverview />
+        </main>
+      ) : (
+        <main>
+          <section className="pp-hero" aria-labelledby="pp-h1">
+            <div className="pp-copy">
+              <h1 id="pp-h1">
+                <span>{openConferences.length}</span> IEEE conferences in India still take papers
+              </h1>
+              <p className="pp-lede">
+                Each stamp is one of them: where it happens and the day its call for papers closes. Pick your field and
+                the page stamps the ones you can still make.
+              </p>
+              <fieldset className="pp-fields">
+                <legend className="pp-legend">Your field</legend>
+                <div className="chips">
+                  {DEFAULT_FIELDS.map((field) => (
+                    <button key={field} type="button" className="chip" aria-pressed={selectedFields.includes(field)} onClick={() => toggleField(field)}>
+                      {FIELD_SHORT[field] ?? field}
+                    </button>
+                  ))}
+                  <button
+                    type="button"
+                    className="chip more"
+                    aria-expanded={fieldsExpanded}
+                    aria-controls="all-fields"
+                    onClick={() => {
+                      setFieldsExpanded(true);
+                      document.getElementById("results")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
-                    Back to explorer
-                  </a>
+                    All {fields.length} fields
+                  </button>
                 </div>
-
-                <div className="mt-5 grid gap-3 md:grid-cols-3">
-                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Data Source</p>
-                    <p className="mt-2 text-lg font-semibold text-white">Convex live query</p>
-                    <p className="mt-2 text-sm leading-6 text-white/60">Totals, active sessions, top searches, and recent events refresh from the backend.</p>
-                  </article>
-                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Tracking Scope</p>
-                    <p className="mt-2 text-lg font-semibold text-white">Public usage only</p>
-                    <p className="mt-2 text-sm leading-6 text-white/60">The `/admin` page does not emit page-view analytics, which avoids inflating the dashboard while reviewing it.</p>
-                  </article>
-                  <article className="rounded-2xl border border-white/10 bg-white/5 p-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Path</p>
-                    <p className="mt-2 text-lg font-semibold text-white">/admin</p>
-                    <p className="mt-2 text-sm leading-6 text-white/60">Use this route for internal monitoring while keeping the conference explorer on the root path.</p>
-                  </article>
-                </div>
-              </div>
-            </section>
-
-            <UsageOverview />
-          </>
-        ) : (
-          <>
-        <section className="relative overflow-hidden rounded-[22px] border border-white/10 bg-black/35 backdrop-blur-sm sm:rounded-[28px]">
-          <div className="relative z-10 min-h-[520px] p-4 sm:p-6 md:min-h-[420px] md:p-10">
-            <div className="flex flex-wrap items-center justify-center gap-2 text-[9px] font-semibold uppercase tracking-[0.2em] text-white/60 sm:justify-start sm:text-[10px]">
-              <span className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-2.5 py-1 text-emerald-100">
-                IEEE India 2026
-              </span>
+              </fieldset>
+              <a className="pp-cta" href="#results">
+                Show my <b>{filtered.length}</b> conference{filtered.length === 1 ? "" : "s"}
+              </a>
             </div>
 
-            <div className="mt-10 flex justify-center md:absolute md:inset-x-10 md:top-1/2 md:mt-0 md:-translate-y-1/2">
-              <div className="flex max-w-3xl flex-col items-center gap-4 text-center sm:gap-5">
-                <div className="flex items-center justify-center gap-2 text-emerald-100 sm:gap-3">
-                  <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" />
-                  <span className="text-xs font-medium tracking-wide text-white/80 sm:text-sm">
-                    Made to help SRM KTR students choose faster
-                  </span>
-                </div>
-                <h1 className="font-display text-5xl uppercase leading-none tracking-[0.14em] text-white sm:text-6xl md:text-7xl">
-                  Confera
-                </h1>
-                <p className="max-w-2xl text-sm leading-7 text-white/78 sm:text-base md:text-lg">
-                  A smarter way for SRM KTR students to discover IEEE India conferences, compare formats,
-                  and shortlist the right submission opportunity before deadlines close.
+            <div className="desk" ref={deskRef} key={deskKey} aria-label="The soonest deadlines, as stamps">
+              {deskStamps.map((conference, index) => {
+                const [left, top, rotate] = DESK_SPOTS[index];
+                const isEntry = index % 3 === 1;
+                return (
+                  <a
+                    key={conference.no}
+                    href={conference.ieeeLink ?? "#results"}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => trackClick(conference)}
+                    className={`stamp land ${isEntry ? "entry" : "round"}`}
+                    style={{ left: `${left}%`, top: `${top}%`, ["--r" as string]: `${rotate}deg`, animationDelay: `${index * 140}ms` }}
+                  >
+                    {isUrgent(conference) && !isEntry && (
+                      <span className="days-left" aria-hidden="true">
+                        {daysUntil(conference.cfpDate) === 0 ? "LAST DAY" : `${daysUntil(conference.cfpDate)} DAYS LEFT`}
+                      </span>
+                    )}
+                    {isEntry ? (
+                      <EntryStamp
+                        acronym={acronymOf(conference)}
+                        city={conference.location.replace(/, India$/, "")}
+                        start={startDateOf(conference)}
+                        format={conference.format}
+                        label={`${conference.conference}, held ${conference.dates} in ${conference.location}`}
+                      />
+                    ) : (
+                      <RoundStamp
+                        id={`desk-${conference.no}`}
+                        acronym={acronymOf(conference)}
+                        city={conference.location.replace(/, India$/, "")}
+                        deadline={conference.cfpDate}
+                        label={stampLabel(conference)}
+                      />
+                    )}
+                  </a>
+                );
+              })}
+            </div>
+          </section>
+
+          <p className="pp-urgency">
+            <span className="soon">{closingThisWeek} close in the next 7 days.</span>
+            <span>{openHybrid} are hybrid, so you can present from KTR.</span>
+          </p>
+
+          <section className="pp-results" id="results" aria-labelledby="results-h">
+            <div className="pp-results-head">
+              <div>
+                <h2 id="results-h">Your stamps</h2>
+                <p className="pp-count" aria-live="polite">
+                  {filtered.length} conference{filtered.length === 1 ? "" : "s"}, soonest deadline first
                 </p>
               </div>
             </div>
 
-            <div className="mt-10 flex flex-wrap justify-center gap-2 sm:gap-3 md:absolute md:inset-x-10 md:bottom-10 md:mt-0">
-              <div className="inline-flex w-full items-center justify-center gap-2 rounded-[4px] border border-white/12 bg-black/25 px-3 py-1.5 text-xs text-white/80 sm:w-auto sm:px-4 sm:py-2 sm:text-sm">
-                <Telescope className="h-4 w-4" />
-                250 IEEE India conferences in one flow
-              </div>
-              <div className="inline-flex w-full items-center justify-center gap-2 rounded-[4px] border border-white/12 bg-black/25 px-3 py-1.5 text-xs text-white/80 sm:w-auto sm:px-4 sm:py-2 sm:text-sm">
-                <MapPin className="h-4 w-4" />
-                Nearby and hybrid-friendly shortlists
-              </div>
-              <div className="inline-flex w-full items-center justify-center gap-2 rounded-[4px] border border-white/12 bg-black/25 px-3 py-1.5 text-xs text-white/80 sm:w-auto sm:px-4 sm:py-2 sm:text-sm">
-                <CalendarDays className="h-4 w-4" />
-                Deadline-first ranking for quick decisions
-              </div>
-            </div>
-          </div>
-        </section>
-      
-
-      <section className="flex flex-wrap gap-3">
-        {stats.map(([label, value]) => (
-          <article
-            key={label}
-            className="min-w-[calc(50%-0.375rem)] flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-4 backdrop-blur-sm sm:min-w-[160px]"
-          >
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">{label}</p>
-            <p className="mt-2 text-3xl font-semibold text-white">{value}</p>
-          </article>
-        ))}
-      </section>
-
-      <section className="rounded-[24px] border border-white/10 bg-white/5 p-4 sm:p-5">
-        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div className="max-w-2xl">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200/80">AI Shortlisting</p>
-            <h2 className="mt-1 text-2xl font-semibold text-white">Copy whole conference data for ChatGPT</h2>
-          </div>
-
-          <div className="flex flex-col items-start gap-2 md:items-end">
-            <button
-              type="button"
-              onClick={handleCopyConferenceData}
-              className="inline-flex h-12 items-center justify-center gap-2 rounded-2xl border border-emerald-300/25 bg-emerald-300/12 px-4 text-sm font-semibold text-emerald-50 transition hover:bg-emerald-300/18"
-            >
-              {copyState === "copied" ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
-              {copyState === "copied" ? "Copied for ChatGPT" : "Copy All Data"}
-            </button>
-            <p className="text-xs text-white/45">
-              {copyState === "error"
-                ? "Copy failed. Try again in a secure browser tab."
-                : "Includes deadlines, fields, format, sponsors, and IEEE links."}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="rounded-[24px] border border-white/10 bg-white/5 p-3 sm:p-4 md:p-5">
-        <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-3 md:flex-row md:flex-wrap">
-            <label className="w-full flex-1 md:min-w-[250px]">
-              <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
-                Search Conference
-              </span>
-              <div className="flex items-center gap-2 rounded-2xl border border-white/10 bg-black/25 px-3">
-                <Search className="h-4 w-4 text-white/40" />
+            <div className="pp-filters">
+              <label className="search">
+                Search
                 <input
+                  className="pp-input"
                   value={search}
                   onChange={(event) => setSearch(event.target.value)}
-                  placeholder="Name, acronym, location, field, sponsor"
-                  className="h-12 w-full bg-transparent text-base text-white outline-none placeholder:text-white/30 md:text-sm"
+                  placeholder="Name, acronym, city, field or sponsor"
                 />
-              </div>
-            </label>
-
-            <label className="w-full flex-1 md:min-w-[170px]">
-              <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
-                CFP Status
-              </span>
-              <select
-                value={cfp}
-                onChange={(event) => setCfp(event.target.value as ConferenceStatus | "all")}
-                className="h-12 w-full rounded-2xl border border-white/10 bg-black/25 px-4 text-base text-white outline-none md:text-sm"
-              >
-                <option value="all">All</option>
-                <option value="open">Open</option>
-                <option value="closed">Closed</option>
-                <option value="missing">Missing</option>
-              </select>
-            </label>
-
-            <label className="w-full flex-1 md:min-w-[170px]">
-              <span className="mb-2 block text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
-                Conference Year
-              </span>
-              <select
-                value={year}
-                onChange={(event) => setYear(event.target.value)}
-                className="h-12 w-full rounded-2xl border border-white/10 bg-black/25 px-4 text-base text-white outline-none md:text-sm"
-              >
-                <option value="all">All</option>
-                {years.map((optionYear) => (
-                  <option key={optionYear} value={String(optionYear)}>
-                    {optionYear}
-                  </option>
+              </label>
+              <div className="seg" role="group" aria-label="Call for papers">
+                {statusOptions.map(([value, text]) => (
+                  <button key={value} type="button" aria-pressed={cfp === value} onClick={() => setCfp(value)}>
+                    {text}
+                  </button>
                 ))}
-              </select>
-            </label>
-
-            <div className="flex w-full flex-1 flex-col justify-end md:min-w-[180px]">
-              <button
-                type="button"
-                onClick={() => {
-                  suppressNextFilterTrackingRef.current = true;
-                  sendUsageEvent({
-                    eventType: "clear_filters",
-                    cfpFilter: "open",
-                    yearFilter: "all",
-                    selectedFields: [],
-                  });
-                  setSearch("");
-                  setCfp("open");
-                  setYear("all");
-                  setSelectedFields([]);
-                  setFieldsExpanded(false);
-                }}
-                className="h-12 rounded-2xl border border-white/12 bg-white/6 px-4 text-base font-semibold text-white transition hover:bg-white/10 md:text-sm"
-              >
-                Clear Filters
-              </button>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-black/20 p-4">
-            <div>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200/80">
-                SRM KTR Filters
-              </p>
-              <h2 className="mt-1 text-2xl font-semibold text-white">Shortlist by field and current deadlines</h2>
-            </div>
-          </div>
-
-          <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-            <button
-              type="button"
-              onClick={() => setFieldsExpanded((current) => !current)}
-              className="flex w-full items-center justify-between gap-3 text-left"
-            >
-              <div>
-                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">
-                  Field Filters
-                </p>
-                <p className="mt-1 text-sm text-white/65">
-                  {selectedFields.length > 0
-                    ? `${selectedFields.length} field${selectedFields.length > 1 ? "s" : ""} selected`
-                    : "Collapsed by default. Expand to filter by research area."}
-                </p>
               </div>
-              <span
-                className={`flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/65 transition ${
-                  fieldsExpanded ? "rotate-180" : ""
-                }`}
-              >
-                <ChevronDown className="h-4 w-4" />
-              </span>
-            </button>
+              <label>
+                Year
+                <select className="pp-select" value={year} onChange={(event) => setYear(event.target.value)}>
+                  <option value="all">All years</option>
+                  {years.map((optionYear) => (
+                    <option key={optionYear} value={String(optionYear)}>{optionYear}</option>
+                  ))}
+                </select>
+              </label>
+              <button type="button" className="pp-clear" onClick={clearFilters}>Clear</button>
+            </div>
 
             {fieldsExpanded && (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {fields.map((field) => {
-              const active = selectedFields.includes(field);
-              return (
-                <button
-                  key={field}
-                  type="button"
-                  onClick={() =>
-                    setSelectedFields((current) =>
-                      current.includes(field) ? current.filter((item) => item !== field) : [...current, field]
-                    )
-                  }
-                  className={`rounded-full border px-3 py-2 text-[11px] font-medium transition sm:text-xs ${
-                    active
-                      ? "border-sky-300/40 bg-sky-300/15 text-sky-100"
-                      : "border-white/10 bg-white/5 text-white/65 hover:bg-white/10"
-                  }`}
-                >
-                  {field}
-                </button>
-              );
-                })}
+              <div className="chips pp-allfields" id="all-fields" role="group" aria-label="All fields of interest">
+                {fields.map((field) => (
+                  <button key={field} type="button" className="chip" aria-pressed={selectedFields.includes(field)} onClick={() => toggleField(field)}>
+                    {field}
+                  </button>
+                ))}
               </div>
             )}
-          </div>
-        </div>
-      </section>
 
-      <section className="rounded-[24px] border border-white/10 bg-white/5 p-3 sm:p-4 md:p-5">
-        <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-end sm:justify-between">
-          <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-white/45">Results</p>
-            <h2 className="mt-1 text-2xl font-semibold text-white">Conference Results</h2>
-          </div>
-          <p className="text-sm text-white/60">{filtered.length} shown</p>
-        </div>
-
-        <div className="mt-5 flex flex-col gap-3">
-          {filtered.length === 0 && (
-            <article className="rounded-3xl border border-white/10 bg-black/20 p-5 text-white/70">
-              No conferences match these filters. Try broadening your search or clearing some field selections.
-            </article>
-          )}
-
-          {filtered.map((conference) => {
-            const status = getDeadlineStatus(conference);
-            const srmTags = getSrmTags(conference, selectedFields);
-            const visibleFields = conference.fields.slice(0, 4);
-            const hiddenFieldCount = Math.max(conference.fields.length - visibleFields.length, 0);
-            return (
-              <article
-                key={conference.no}
-                className="flex flex-col gap-3 rounded-3xl border border-white/10 bg-black/20 p-4 transition hover:border-white/20 sm:gap-4 sm:p-5"
-              >
-                <div className="max-w-4xl">
-                  <h3 className="text-base font-semibold leading-7 text-white sm:text-lg sm:leading-8">{conference.conference}</h3>
-                  <p className="mt-1 text-sm leading-5 text-white/65 sm:leading-6">
-                    {conference.location || "Location not listed"} · {conference.dates || "Dates not listed"}
-                  </p>
-                </div>
-
-                <div className="flex flex-wrap items-start gap-1.5 sm:gap-2">
-                  <span className={`rounded-md border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] sm:px-3 sm:py-2 sm:text-xs ${statusClass(status)}`}>
-                    {status}
-                  </span>
-                  <span className="rounded-md border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] font-semibold text-white/75 sm:px-3 sm:py-2 sm:text-xs">
-                    {formatLabel(conference.format)}
-                  </span>
-                  <span className="rounded-md border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] font-semibold text-white/75 sm:px-3 sm:py-2 sm:text-xs">
-                    Call for Papers {conference.cfpDeadline ? niceDate(conference.cfpDeadline) : "Not listed"}
-                  </span>
-                </div>
-
-                {srmTags.length > 0 && (
-                  <div className="flex flex-wrap items-start gap-1.5 sm:gap-2">
-                    {srmTags.map((tag) => (
-                      <span
-                        key={`${conference.no}-${tag}`}
-                        className="rounded-md border border-emerald-300/25 bg-emerald-300/10 px-2.5 py-1.5 text-[11px] font-semibold text-emerald-100 sm:px-3 sm:py-2 sm:text-xs"
-                      >
-                        {tag}
+            {filtered.length === 0 ? (
+              <p className="empty">
+                No conferences match {search.trim() ? `“${search.trim()}”` : "these filters"}
+                {year !== "all" ? ` in ${year}` : ""}. <button type="button" onClick={clearFilters}>Clear the filters</button>
+              </p>
+            ) : (
+              <ul className="entries">
+                {filtered.map((conference) => {
+                  const tags = getSrmTags(conference, selectedFields);
+                  const shownFields = conference.fields.slice(0, 3);
+                  const more = conference.fields.length - shownFields.length;
+                  return (
+                    <li key={conference.no} className="entry">
+                      <span className="stamp round" style={{ ["--r" as string]: `${tilt(conference.no)}deg` }}>
+                        <RoundStamp
+                          id={`e-${conference.no}`}
+                          acronym={acronymOf(conference)}
+                          city={conference.location.replace(/, India$/, "")}
+                          deadline={conference.cfpDate}
+                          label={stampLabel(conference)}
+                        />
                       </span>
-                    ))}
-                  </div>
-                )}
+                      <div>
+                        <h3>{conference.conference}</h3>
+                        <p className="where">
+                          {humanDates(conference.dates)} · {conference.location || "Location not listed"} ·{" "}
+                          {conference.format === "inperson" ? "in person" : conference.format || "format not listed"}
+                        </p>
+                        {tags.length > 0 && (
+                          <ul className="tags">
+                            {tags.map((tag) => {
+                              const word = tagWords(tag, conference);
+                              return <li key={tag} className={word.tone}>{word.text}</li>;
+                            })}
+                          </ul>
+                        )}
+                        <p className="fields-line">
+                          {shownFields.join(" · ")}
+                          {more > 0 ? ` · ${more} more` : ""}
+                        </p>
+                        <div className="entry-foot">
+                          <p className="sponsors">{conference.sponsors.join(", ") || "Sponsors not listed"}</p>
+                          {conference.ieeeLink && (
+                            <a className="ieee-link" href={conference.ieeeLink} target="_blank" rel="noreferrer" onClick={() => trackClick(conference)}>
+                              IEEE page
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
 
-                <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                  {visibleFields.map((field) => (
-                    <span
-                      key={`${conference.no}-${field}`}
-                      className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] text-white/70 sm:px-3 sm:py-2 sm:text-xs"
-                    >
-                      {field}
-                    </span>
-                  ))}
-                  {hiddenFieldCount > 0 && (
-                    <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1.5 text-[11px] text-white/55 sm:px-3 sm:py-2 sm:text-xs">
-                      +{hiddenFieldCount} more
-                    </span>
-                  )}
-                </div>
+            <div className="pp-gpt">
+              <div>
+                <h2>Let ChatGPT shortlist for you</h2>
+                <p>
+                  {copyState === "error"
+                    ? "Copy failed. Try again in a normal browser tab."
+                    : "Copies all conferences with deadlines, fields, formats, sponsors and IEEE links. Paste it with your research topic."}
+                </p>
+              </div>
+              <button type="button" onClick={handleCopyConferenceData}>
+                {copyState === "copied" ? "Copied" : `Copy all ${CONFERENCES.length} for ChatGPT`}
+              </button>
+            </div>
+          </section>
+        </main>
+      )}
 
-                <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
-                  <p className="max-w-4xl text-xs leading-5 text-white/45 sm:text-sm sm:leading-6">
-                    {conference.sponsors.length > 0 ? conference.sponsors.join(", ") : "Sponsors not listed"}
-                  </p>
-                  {conference.ieeeLink && (
-                    <a
-                      href={conference.ieeeLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={() =>
-                        sendUsageEvent({
-                          eventType: "conference_link_click",
-                          conferenceNo: conference.no,
-                          conferenceName: conference.conference,
-                          targetUrl: conference.ieeeLink ?? undefined,
-                        })
-                      }
-                      className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-white/12 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10 sm:w-auto"
-                    >
-                      IEEE Page
-                      <ArrowUpRight className="h-4 w-4" />
-                    </a>
-                  )}
-                </div>
-              </article>
-            );
-          })}
-        </div>
-      </section>
-          </>
-        )}
-      </main>
+      <footer className="pp-foot">
+        <span>From IEEE's public conference search, refreshed every morning.</span>
+        <span>Built by Stark, a GradeX product.</span>
+      </footer>
     </>
   );
 }

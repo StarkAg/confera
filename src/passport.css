@@ -1,0 +1,135 @@
+/* Confera: the Passport direction, dark. Tokens and reasons: design/DIRECTION.md. */
+
+:root {
+  color-scheme: dark;
+  --ground: oklch(17% 0.028 305);   /* violet stamp ink, dried black */
+  --raised: oklch(21% 0.034 305);
+  --guilloche: oklch(25% 0.04 305);
+  --ink: oklch(94% 0.025 70);       /* the apricot visa page, as text */
+  --ink-2: oklch(80% 0.03 70);
+  --rule: oklch(35% 0.04 305);
+  --stamp: oklch(76% 0.14 305);     /* the one accent */
+  --stamp-ink: oklch(17% 0.028 305);
+  --urgent: oklch(82% 0.12 62);     /* status only: closes within 7 days */
+  --cond: "Big Shoulders Display Variable", "Arial Narrow", "Roboto Condensed", "Liberation Sans Narrow", sans-serif;
+  --text: "Public Sans Variable", system-ui, "Segoe UI", Roboto, Arial, "Liberation Sans", sans-serif;
+  --t-display: clamp(3rem, 1.3rem + 4.9vw, 6.25rem);
+  --t-h2: clamp(1.9rem, 1.4rem + 1.6vw, 2.75rem);
+  --gutter: clamp(16px, 4vw, 56px);
+}
+
+html { background: var(--ground); }
+body.passport {
+  margin: 0;
+  background-color: var(--ground);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40'%3E%3Cpath d='M0 20 Q15 2 30 20 T60 20 T90 20 T120 20' fill='none' stroke='%23281e33' stroke-width='1'/%3E%3Cpath d='M0 28 Q15 10 30 28 T60 28 T90 28 T120 28' fill='none' stroke='%23241a2e' stroke-width='1'/%3E%3C/svg%3E");
+  color: var(--ink);
+  font-family: var(--text);
+  font-size: 17px;
+  line-height: 1.5;
+}
+:where(.passport) a { color: inherit; }
+.passport :focus-visible { outline: 3px solid var(--stamp); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Header */
+.pp-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px var(--gutter) 12px; border-bottom: 2px solid var(--ink); margin: 0 var(--gutter); padding-inline: 0; }
+.pp-mark { font-family: var(--cond); font-weight: 800; font-size: 30px; letter-spacing: 0.05em; text-decoration: none; line-height: 1; }
+.pp-meta { font-size: 14px; font-weight: 600; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.pp-links { display: flex; align-items: center; gap: 8px; }
+.pp-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 3px; color: var(--ink-2); text-decoration: none; font-size: 14px; font-weight: 650; }
+.pp-icon.text { width: auto; padding: 0 12px; }
+.pp-icon:hover { color: var(--ink); border-color: var(--ink-2); }
+
+/* First screen */
+.pp-hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(16px, 3vw, 48px); padding: clamp(28px, 4vw, 56px) var(--gutter) 24px; min-height: calc(100svh - 120px); }
+.pp-copy { align-self: center; }
+.pp-copy h1 { font-family: var(--cond); font-weight: 800; font-size: var(--t-display); line-height: 0.9; letter-spacing: -0.005em; margin: 0 0 22px; text-transform: uppercase; text-wrap: balance; }
+.pp-copy h1 span { color: var(--stamp); font-variant-numeric: tabular-nums; }
+.pp-lede { font-size: 18px; line-height: 1.55; max-width: 42ch; color: var(--ink-2); margin: 0 0 26px; text-wrap: pretty; }
+.pp-legend { font-weight: 700; font-size: 15px; margin: 0 0 10px; padding: 0; }
+.pp-fields { border: 0; margin: 0 0 20px; padding: 0; min-width: 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { display: inline-flex; align-items: center; min-height: 40px; padding: 0 14px; border: 2px solid var(--rule); border-radius: 3px; background: transparent; color: var(--ink); font: 650 15px var(--text); cursor: pointer; }
+.chip:hover { border-color: var(--ink-2); }
+.chip[aria-pressed="true"] { background: var(--stamp); border-color: var(--stamp); color: var(--stamp-ink); }
+.chip.more { border-style: dashed; color: var(--ink-2); }
+.pp-cta { display: inline-flex; align-items: center; gap: 10px; min-height: 54px; padding: 0 24px; background: var(--stamp); color: var(--stamp-ink); font: 800 18px var(--text); border: 0; border-radius: 3px; text-decoration: none; cursor: pointer; }
+.pp-cta b { font-variant-numeric: tabular-nums; }
+.pp-cta:hover { filter: brightness(1.06); }
+
+/* The desk of stamps */
+.desk { position: relative; min-height: 540px; overflow: clip; }
+.stamp { position: absolute; display: block; color: var(--stamp); text-decoration: none; opacity: 0.92; transform: rotate(var(--r)); transform-origin: 50% 50%; }
+/* Urgency is a second, smaller stamp pressed over the first, in the status colour. */
+.days-left { position: absolute; right: -6%; bottom: 4%; transform: rotate(-11deg); border: 3px solid var(--urgent); color: var(--urgent); padding: 2px 8px 1px; font: 900 15px/1.1 var(--cond); letter-spacing: 0.06em; white-space: nowrap; border-radius: 3px; background: color-mix(in oklch, var(--ground) 55%, transparent); filter: url(#stamp-rough); }
+.stamp .stamp-svg { display: block; width: 100%; height: auto; overflow: visible; filter: url(#stamp-rough); }
+.stamp.round { width: clamp(132px, 15vw, 190px); }
+.stamp.entry { width: clamp(168px, 18vw, 230px); }
+.stamp.land { animation: press 520ms cubic-bezier(.2, .9, .25, 1.25) both; }
+.stamp:hover, .stamp:focus-visible { opacity: 1; }
+@keyframes press {
+  0% { transform: rotate(var(--r)) scale(1.35); opacity: 0; }
+  60% { opacity: .95; }
+  100% { transform: rotate(var(--r)) scale(1); opacity: .92; }
+}
+.stamp-big { font-family: var(--cond); font-weight: 900; }
+.stamp-small { font-family: var(--text); font-weight: 800; }
+
+.pp-urgency { margin: 0 var(--gutter); padding: 14px 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 16px; font-weight: 650; }
+.pp-urgency .soon { color: var(--urgent); }
+.pp-urgency span:last-child { color: var(--ink-2); font-weight: 500; }
+
+/* Results */
+.pp-results { padding: 56px var(--gutter) 40px; }
+.pp-results-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px; margin-bottom: 22px; }
+.pp-results h2 { font-family: var(--cond); font-weight: 800; font-size: var(--t-h2); line-height: 1; margin: 0; text-transform: uppercase; letter-spacing: 0.01em; }
+.pp-count { margin: 6px 0 0; color: var(--ink-2); font-size: 16px; font-variant-numeric: tabular-nums; }
+.pp-filters { display: grid; grid-template-columns: minmax(220px, 1fr) auto auto auto; gap: 10px; align-items: end; margin-bottom: 28px; }
+.pp-filters label { display: grid; gap: 6px; font-size: 14px; font-weight: 700; }
+.pp-input, .pp-select { height: 46px; border: 2px solid var(--rule); border-radius: 3px; background: var(--raised); color: var(--ink); font: 500 16px var(--text); padding: 0 14px; }
+.pp-input::placeholder { color: var(--ink-2); opacity: .8; }
+.seg { display: inline-flex; border: 2px solid var(--rule); border-radius: 3px; overflow: hidden; height: 46px; }
+.seg button { border: 1px solid transparent; background: transparent; color: var(--ink-2); font: 650 15px var(--text); padding: 0 12px; cursor: pointer; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+.pp-clear { height: 46px; border: 2px solid var(--rule); border-radius: 3px; background: transparent; color: var(--ink); font: 650 15px var(--text); padding: 0 16px; cursor: pointer; }
+.pp-allfields { margin: -14px 0 26px; }
+
+.entries { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 0 40px; }
+.entry { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 18px; padding: 22px 0; border-top: 1px solid var(--rule); }
+.entry .stamp { position: static; transform: rotate(var(--r)); width: 112px; }
+.entry h3 { margin: 0 0 4px; font-size: 18px; line-height: 1.35; font-weight: 700; }
+.entry .where { margin: 0 0 8px; color: var(--ink-2); font-size: 15px; font-variant-numeric: tabular-nums; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 14px; font-weight: 700; }
+.tags .soon { color: var(--urgent); }
+.tags .easy { color: var(--stamp); }
+.fields-line { margin: 0 0 10px; font-size: 15px; color: var(--ink-2); }
+.entry-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 16px; align-items: baseline; }
+.sponsors { margin: 0; font-size: 13px; color: var(--ink-2); max-width: 46ch; }
+.ieee-link { font-weight: 750; font-size: 15px; white-space: nowrap; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+.ieee-link:hover { color: var(--stamp); }
+.empty { padding: 28px 0; border-top: 1px solid var(--rule); font-size: 18px; }
+.empty button { background: none; border: 0; padding: 0; color: var(--stamp); font: inherit; font-weight: 700; text-decoration: underline; cursor: pointer; }
+
+.pp-gpt { margin: 48px 0 0; padding: 22px 0; border-top: 2px solid var(--ink); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; }
+.pp-gpt h2 { font-family: var(--text); text-transform: none; font-size: 20px; font-weight: 750; margin: 0 0 4px; }
+.pp-gpt p { margin: 0; color: var(--ink-2); font-size: 15px; max-width: 56ch; }
+.pp-gpt button { min-height: 48px; padding: 0 20px; border: 2px solid var(--ink); border-radius: 3px; background: transparent; color: var(--ink); font: 750 16px var(--text); cursor: pointer; }
+.pp-foot { margin: 0 var(--gutter); padding: 18px 0 40px; border-top: 1px solid var(--rule); color: var(--ink-2); font-size: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+
+@media (max-width: 900px) {
+  .pp-hero { grid-template-columns: 1fr; min-height: 0; }
+  .desk { min-height: 380px; }
+  .pp-filters { grid-template-columns: 1fr 1fr; }
+  .pp-filters .search { grid-column: 1 / -1; }
+  .seg { grid-column: 1 / -1; width: 100%; }
+  .seg button { flex: 1; }
+}
+@media (max-width: 560px) {
+  .pp-meta { display: none; }
+  .pp-cta { width: 100%; justify-content: center; }
+  .entry { grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
+  .entry .stamp { width: 76px; }
+}
+@media (prefers-reduced-motion: reduce) { .stamp.land { animation: none; } }
+@media (forced-colors: active) { .stamp { color: CanvasText; } .chip[aria-pressed="true"], .seg button[aria-pressed="true"] { border-color: Highlight; outline: 2px solid Highlight; outline-offset: -2px; } }

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confera: IEEE calls for papers open in India</title>
+<style>
+@font-face { font-family: "Unbounded"; src: url("https://cdn.jsdelivr.net/fontsource/fonts/unbounded:vf@latest/latin-wght-normal.woff2") format("woff2"); font-weight: 200 900; font-display: swap; }
+@font-face { font-family: "Hanken Grotesk"; src: url("https://cdn.jsdelivr.net/fontsource/fonts/hanken-grotesk:vf@latest/latin-wght-normal.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+:root {
+  color-scheme: dark;
+  --ground: oklch(17% 0.035 258);      /* the dome after the lights go down */
+  --ground-2: oklch(21% 0.04 258);
+  --ink: oklch(95% 0.012 250);
+  --ink-2: oklch(78% 0.025 250);
+  --rule: oklch(34% 0.035 258);
+  --star: oklch(84% 0.15 82);           /* open CFP: starlight amber, the one accent */
+  --star-ink: oklch(20% 0.04 70);
+  --dim: oklch(70% 0.03 250);           /* closed: far, cold stars */
+  --display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --text: "Hanken Grotesk", system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--text); }
+a { color: inherit; }
+.sky { position: relative; min-height: 100svh; overflow: hidden; display: grid; grid-template-rows: auto 1fr auto; }
+canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+header, .lede, .horizon { position: relative; z-index: 1; }
+header { display: flex; justify-content: space-between; align-items: baseline; padding: 22px clamp(16px, 4vw, 48px); }
+.mark { font-family: var(--display); font-weight: 600; font-size: 18px; letter-spacing: 0.02em; text-decoration: none; }
+.updated { font-size: 14px; color: var(--ink-2); }
+.lede { align-self: center; padding: 0 clamp(16px, 4vw, 48px); max-width: 860px; pointer-events: none; }
+.lede > * { pointer-events: auto; }
+h1 { font-family: var(--display); font-weight: 500; font-stretch: 112%; font-size: clamp(2.4rem, 1.2rem + 4.6vw, 5.4rem); line-height: 1.02; letter-spacing: -0.035em; margin: 0 0 22px; text-wrap: balance; }
+h1 b { font-weight: 700; color: var(--star); }
+.lede p { font-size: clamp(1.05rem, 1rem + 0.3vw, 1.25rem); line-height: 1.55; color: var(--ink-2); max-width: 52ch; margin: 0 0 28px; text-wrap: pretty; }
+form { display: flex; gap: 10px; flex-wrap: wrap; max-width: 620px; }
+label.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+input { flex: 1 1 260px; height: 52px; border-radius: 26px; border: 1px solid var(--rule); background: color-mix(in oklch, var(--ground) 70%, transparent); color: var(--ink); font: 500 17px var(--text); padding: 0 22px; }
+input::placeholder { color: var(--ink-2); }
+button { height: 52px; border-radius: 26px; border: 1px solid transparent; background: var(--star); color: var(--star-ink); font: 650 17px var(--text); padding: 0 24px; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--star); outline-offset: 3px; }
+.horizon { display: flex; justify-content: space-between; padding: 0 clamp(16px, 4vw, 48px) 18px; font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; pointer-events: none; }
+.tip { position: absolute; z-index: 2; pointer-events: none; background: var(--ground-2); border: 1px solid var(--rule); border-radius: 10px; padding: 8px 12px; font-size: 14px; line-height: 1.35; max-width: 280px; opacity: 0; transform: translateY(4px); transition: opacity .15s, transform .15s; }
+.tip.on { opacity: 1; transform: none; }
+.tip strong { color: var(--star); font-weight: 650; }
+.week { padding: 56px clamp(16px, 4vw, 48px) 80px; max-width: 1100px; }
+.week h2 { font-family: var(--display); font-weight: 500; font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem); letter-spacing: -0.02em; margin: 0 0 8px; }
+.week > p { color: var(--ink-2); margin: 0 0 28px; font-size: 17px; }
+ol { list-style: none; margin: 0; padding: 0; }
+li { display: grid; grid-template-columns: 7.5rem 1fr auto; gap: 8px 24px; align-items: baseline; padding: 18px 0; border-top: 1px solid var(--rule); }
+.when { font-family: var(--display); font-weight: 600; font-size: 22px; font-variant-numeric: tabular-nums; color: var(--star); }
+.when small { display: block; font-family: var(--text); font-size: 14px; font-weight: 500; color: var(--ink-2); margin-top: 2px; }
+.name { font-size: 18px; font-weight: 600; line-height: 1.35; }
+.meta { font-size: 15px; color: var(--ink-2); margin-top: 4px; }
+.go { font-size: 15px; font-weight: 600; white-space: nowrap; }
+@media (max-width: 640px) {
+  li { grid-template-columns: 1fr; }
+  .go { justify-self: start; }
+  button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <section class="sky" aria-labelledby="h">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <header>
+      <a class="mark" href="#">Confera</a>
+      <span class="updated">IEEE India · updated 24 Oct 2026</span>
+    </header>
+    <div class="lede">
+      <h1 id="h"><b id="openCount">88</b> calls for papers are open across India tonight.</h1>
+      <p>Every light is an IEEE conference. The brighter it burns, the sooner its deadline closes. Six go dark before 31 October.</p>
+      <form role="search" onsubmit="return false">
+        <label class="sr" for="q">Search conferences</label>
+        <input id="q" placeholder="Your field, a city, or an acronym">
+        <button type="submit">See the 6 closing this week</button>
+      </form>
+    </div>
+    <div class="horizon" aria-hidden="true" id="horizon"></div>
+    <div class="tip" id="tip" role="status"></div>
+  </section>
+  <section class="week" aria-labelledby="w">
+    <h2 id="w">Closing this week</h2>
+    <p>Hybrid ones you can present from Kattankulathur are marked.</p>
+    <ol id="list"></ol>
+  </section>
+</main>
+<script src="data.js"></script>
+<script>
+const TODAY = new Date(CONFERA_TODAY + "T00:00:00");
+const day = 864e5;
+const fmt = (d) => d.toLocaleDateString("en-IN", { day: "numeric", month: "short" });
+const confs = CONFERA.map((c, i) => {
+  const cfp = c.cfp ? new Date(c.cfp + "T00:00:00") : null;
+  return { ...c, i, cfpDate: cfp, left: cfp ? Math.round((cfp - TODAY) / day) : null };
+});
+const open = confs.filter((c) => c.left !== null && c.left >= 0).sort((a, b) => a.left - b.left);
+document.getElementById("openCount").textContent = open.length;
+
+// "Closing this week" list, from the real data.
+const list = document.getElementById("list");
+open.filter((c) => c.left <= 8).forEach((c) => {
+  const li = document.createElement("li");
+  const easy = c.fmt === "hybrid" || c.fmt === "virtual";
+  li.innerHTML = `<div class="when">${fmt(c.cfpDate)}<small>${c.left} days left</small></div>
+    <div><div class="name">${c.name}</div><div class="meta">${c.loc} · ${c.fmt === "inperson" ? "in person" : c.fmt}${easy ? " · present from KTR" : ""}</div></div>
+    <a class="go" href="${c.url}">IEEE page</a>`;
+  list.appendChild(li);
+});
+
+// Horizon: month marks from today, six months out.
+const horizon = document.getElementById("horizon");
+for (let m = 0; m < 7; m++) {
+  const d = new Date(TODAY.getFullYear(), TODAY.getMonth() + m, 1);
+  const s = document.createElement("span");
+  s.textContent = m === 0 ? "Today" : d.toLocaleDateString("en-IN", { month: "short" });
+  horizon.appendChild(s);
+}
+
+// The sky. x = when its call for papers closes (left = tonight, right = six
+// months out); y = a stable lane per field; open calls burn amber and
+// brighter as they near; closed ones are faint, far stars.
+const cv = document.getElementById("sky"), ctx = cv.getContext("2d");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const hash = (s) => { let h = 2166136261; for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619); return (h >>> 0) / 4294967295; };
+let W, H, dpr, stars, dust;
+function layout() {
+  dpr = Math.min(2, devicePixelRatio || 1);
+  W = cv.clientWidth; H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  const span = 184;
+  stars = confs.map((c) => {
+    const isOpen = c.left !== null && c.left >= 0;
+    const t = isOpen ? Math.min(1, c.left / span) : hash(c.name + "x");
+    const lane = hash(c.fields[0] || c.name);
+    return {
+      c, isOpen,
+      x: 0.04 * W + t * 0.92 * W + (hash(c.name) - 0.5) * 18,
+      y: H * (0.08 + 0.74 * (0.15 + 0.85 * lane)) + (hash(c.name + "y") - 0.5) * 60,
+      r: isOpen ? 1.6 + 3.4 * (1 - Math.min(1, c.left / 60)) : 0.9 + hash(c.name + "r") * 0.8,
+      tw: hash(c.name + "t") * Math.PI * 2,
+    };
+  });
+  dust = Array.from({ length: Math.round(W * H / 2600) }, (_, i) => ({ x: hash("dx" + i) * W, y: hash("dy" + i) * H, a: 0.08 + hash("da" + i) * 0.22 }));
+}
+let px = 0, py = 0, tx = 0, ty = 0, hover = null;
+function frame(now) {
+  px += (tx - px) * 0.08; py += (ty - py) * 0.08;
+  ctx.clearRect(0, 0, W, H);
+  const drift = reduce ? 0 : (now / 1000) * 2.2;
+  for (const d of dust) {
+    ctx.fillStyle = `rgba(200,212,240,${d.a})`;
+    ctx.fillRect((d.x + drift * 0.3 + px * 4) % W, d.y + py * 4, 1, 1);
+  }
+  for (const s of stars) {
+    const x = s.x + px * (s.isOpen ? 12 : 6), y = s.y + py * (s.isOpen ? 12 : 6);
+    const tw = reduce ? 1 : 0.75 + 0.25 * Math.sin(now / 900 + s.tw);
+    if (s.isOpen) {
+      const g = ctx.createRadialGradient(x, y, 0, x, y, s.r * 5);
+      g.addColorStop(0, `rgba(255,206,110,${0.55 * tw})`); g.addColorStop(1, "rgba(255,206,110,0)");
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(x, y, s.r * 5, 0, 7); ctx.fill();
+      ctx.fillStyle = `rgba(255,236,196,${0.85 + 0.15 * tw})`;
+    } else ctx.fillStyle = `rgba(186,200,230,${0.35 * tw})`;
+    ctx.beginPath(); ctx.arc(x, y, s === hover ? s.r + 2 : s.r, 0, 7); ctx.fill();
+    s.sx = x; s.sy = y;
+  }
+  requestAnimationFrame(frame);
+}
+const tip = document.getElementById("tip");
+cv.parentElement.addEventListener("pointermove", (e) => {
+  const r = cv.getBoundingClientRect();
+  tx = (e.clientX - r.left) / r.width - 0.5; ty = (e.clientY - r.top) / r.height - 0.5;
+  let best = null, bd = 18 * 18;
+  for (const s of stars) { const d = (s.sx - (e.clientX - r.left)) ** 2 + (s.sy - (e.clientY - r.top)) ** 2; if (d < bd) { bd = d; best = s; } }
+  hover = best;
+  if (best) {
+    const c = best.c;
+    tip.innerHTML = `<strong>${c.acr || "IEEE conference"}</strong> · ${c.loc}<br>${best.isOpen ? `Papers due ${fmt(c.cfpDate)}, ${c.left} days` : "Call for papers closed"}`;
+    tip.style.left = Math.min(r.width - 290, e.clientX - r.left + 14) + "px"; tip.style.top = e.clientY - r.top + 14 + "px";
+    tip.classList.add("on");
+  } else tip.classList.remove("on");
+});
+addEventListener("resize", layout);
+layout(); requestAnimationFrame(frame);
+</script>
+</body>
+</html>

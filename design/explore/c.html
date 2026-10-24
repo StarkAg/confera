@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confera: a field guide to IEEE conferences in India</title>
+<style>
+@font-face { font-family: "Newsreader"; src: url("https://cdn.jsdelivr.net/fontsource/fonts/newsreader:vf@latest/latin-opsz-normal.woff2") format("woff2"); font-weight: 200 800; font-display: swap; }
+:root {
+  color-scheme: light;
+  --ground: oklch(96.5% 0.014 118);     /* field-guide stock with a lichen cast */
+  --ink: oklch(23% 0.02 165);
+  --ink-2: oklch(42% 0.02 165);
+  --rule: oklch(84% 0.02 140);
+  --teal: oklch(50% 0.095 196);         /* habitat ink: the one accent, = open */
+  --teal-ink: oklch(98% 0.01 196);
+  --serif: "Newsreader", Georgia, "Times New Roman", "Liberation Serif", serif;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--serif); font-optical-sizing: auto; }
+a { color: inherit; }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 22px clamp(16px, 4vw, 48px) 64px; }
+header { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; border-bottom: 1px solid var(--ink); padding-bottom: 12px; }
+.mark { font-size: 26px; font-weight: 650; letter-spacing: -0.01em; text-decoration: none; }
+header p { margin: 0; font-size: 16px; color: var(--ink-2); }
+.plate { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: clamp(24px, 4vw, 64px); padding: 40px 0 28px; align-items: center; }
+.specimen { aspect-ratio: 1; max-width: 560px; width: 100%; justify-self: center; }
+.specimen svg { width: 100%; height: 100%; overflow: visible; }
+.draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 2.4s cubic-bezier(.3,.7,.2,1) forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.spin { transform-origin: 300px 300px; animation: turn 90s linear infinite; }
+@keyframes turn { to { transform: rotate(360deg); } }
+.entry h1 { font-size: clamp(2.2rem, 1.3rem + 3vw, 4rem); line-height: 1.04; font-weight: 600; letter-spacing: -0.02em; margin: 0 0 6px; text-wrap: balance; }
+.entry .sci { font-size: 19px; color: var(--ink-2); margin: 0 0 24px; line-height: 1.4; }
+dl { display: grid; grid-template-columns: 9.5rem 1fr; gap: 10px 18px; margin: 0 0 28px; font-size: 18px; line-height: 1.4; }
+dt { color: var(--ink-2); }
+dd { margin: 0; }
+dd.due { font-weight: 650; color: var(--teal); font-variant-numeric: tabular-nums; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border: 1.5px solid var(--teal); color: var(--teal); text-decoration: none; font-size: 18px; font-weight: 600; border-radius: 2px; }
+.btn.solid { background: var(--teal); color: var(--teal-ink); }
+.btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.intro { font-size: 19px; line-height: 1.5; max-width: 60ch; margin: 0 0 30px; color: var(--ink-2); }
+.intro b { color: var(--ink); font-weight: 650; }
+.index h2 { font-size: 26px; font-weight: 600; margin: 0 0 4px; }
+.index > p { margin: 0 0 18px; color: var(--ink-2); font-size: 17px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0 28px; }
+.sp { display: grid; grid-template-columns: 64px 1fr; gap: 14px; padding: 16px 0; border-top: 1px solid var(--rule); text-decoration: none; }
+.sp svg { width: 64px; height: 64px; }
+.sp b { display: block; font-size: 18px; font-weight: 650; }
+.sp span { display: block; font-size: 15px; color: var(--ink-2); line-height: 1.35; }
+.sp:hover b, .sp:focus-visible b { color: var(--teal); }
+.sp:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+@media (max-width: 860px) { .plate { grid-template-columns: 1fr; padding-top: 20px; } .specimen { max-width: 360px; } dl { grid-template-columns: 7.5rem 1fr; font-size: 17px; } header p { display: none; } }
+@media (prefers-reduced-motion: reduce) { .draw { animation: none; stroke-dashoffset: 0; } .spin { animation: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="mark" href="#">Confera</a>
+    <p>A field guide to IEEE conferences in India · 297 entries · revised 24 Oct 2026</p>
+  </header>
+  <main>
+    <section class="plate" aria-labelledby="h">
+      <div class="specimen" id="plate" aria-hidden="true"></div>
+      <div class="entry">
+        <p class="intro"><b id="openCount">88</b> conferences are still taking papers. This is the one that closes first.</p>
+        <h1 id="h"></h1>
+        <p class="sci" id="sci"></p>
+        <dl id="facts"></dl>
+        <div class="actions">
+          <a class="btn solid" id="go" href="#">Open the IEEE page</a>
+          <a class="btn" href="#index">Browse the 87 others</a>
+        </div>
+      </div>
+    </section>
+    <section class="index" id="index" aria-labelledby="ih">
+      <h2 id="ih">Closing next</h2>
+      <p>Each drawing has one spoke per field of interest. The more rings, the more time is left.</p>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+</div>
+<script src="data.js"></script>
+<script>
+const TODAY = new Date(CONFERA_TODAY + "T00:00:00");
+const day = 864e5;
+const FIELDS = ["Computing and Processing", "Communication, Networking and Broadcast Technologies", "Signal Processing and Analysis", "Components, Circuits, Devices and Systems", "Power, Energy and Industry Applications", "Robotics and Control Systems", "Engineering Profession", "General Topics for Engineers", "Fields, Waves and Electromagnetics", "Transportation", "Engineered Materials, Dielectrics and Plasmas", "Photonics and Electrooptics", "Bioengineering", "Aerospace", "Geoscience", "Nuclear Engineering"];
+const confs = CONFERA.map((c) => ({ ...c, cfpDate: c.cfp ? new Date(c.cfp + "T00:00:00") : null }))
+  .map((c) => ({ ...c, left: c.cfpDate ? Math.round((c.cfpDate - TODAY) / day) : null }));
+const open = confs.filter((c) => c.left !== null && c.left >= 0).sort((a, b) => a.left - b.left);
+document.getElementById("openCount").textContent = open.length;
+const long = (d) => d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+
+// The specimen: 16 possible spokes (one per IEEE field), drawn for the
+// fields this conference covers; rings = months left on its call for papers.
+function specimen(c, size, animate) {
+  const C = 300, R = 250;
+  const rings = Math.max(1, Math.min(6, Math.ceil(c.left / 30)));
+  let s = `<svg viewBox="0 0 600 600" width="${size}" height="${size}"><g class="${animate ? "spin" : ""}" fill="none" stroke="currentColor" stroke-linecap="round">`;
+  for (let k = 0; k < rings; k++) {
+    const r = 60 + k * 30;
+    s += `<circle cx="${C}" cy="${C}" r="${r}" stroke-width="${k === 0 ? 3 : 1.5}" pathLength="1" class="${animate ? "draw" : ""}" style="animation-delay:${k * 120}ms;color:var(--ink)" />`;
+  }
+  FIELDS.forEach((f, i) => {
+    const a = (i / FIELDS.length) * Math.PI * 2 - Math.PI / 2;
+    const on = c.fields.includes(f);
+    const x1 = C + Math.cos(a) * 60, y1 = C + Math.sin(a) * 60;
+    const len = on ? R : 92, x2 = C + Math.cos(a) * len, y2 = C + Math.sin(a) * len;
+    s += `<path d="M${x1} ${y1} L${x2} ${y2}" stroke-width="${on ? 4 : 1.5}" pathLength="1" class="${animate ? "draw" : ""}" style="animation-delay:${400 + i * 60}ms;color:${on ? "var(--teal)" : "var(--rule)"}"/>`;
+    if (on) s += `<circle cx="${x2}" cy="${y2}" r="9" stroke-width="3" pathLength="1" class="${animate ? "draw" : ""}" style="animation-delay:${900 + i * 60}ms;color:var(--teal)"/>`;
+  });
+  s += c.fmt === "hybrid" ? `<circle cx="${C}" cy="${C}" r="22" stroke-width="3" style="color:var(--ink)"/><circle cx="${C}" cy="${C}" r="10" fill="currentColor" style="color:var(--ink)"/>`
+    : `<circle cx="${C}" cy="${C}" r="16" fill="currentColor" style="color:var(--ink)"/>`;
+  return s + "</g></svg>";
+}
+const first = open[0];
+document.getElementById("plate").innerHTML = specimen(first, 560, true);
+document.getElementById("h").textContent = first.acr || first.name;
+document.getElementById("sci").textContent = first.name;
+document.getElementById("go").href = first.url;
+const [s, e] = first.dates.split(" to ");
+document.getElementById("facts").innerHTML = `
+  <dt>Papers due</dt><dd class="due">${long(first.cfpDate)}, in ${first.left} days</dd>
+  <dt>Found in</dt><dd>${first.loc}, ${first.fmt === "hybrid" ? "hybrid, so you can present from KTR" : first.fmt === "inperson" ? "in person" : first.fmt}</dd>
+  <dt>Season</dt><dd>${long(new Date(s + "T00:00:00"))}${e ? " to " + long(new Date(e + "T00:00:00")) : ""}</dd>
+  <dt>Habitat</dt><dd>${first.fields.join("; ")}</dd>`;
+const grid = document.getElementById("grid");
+open.slice(1, 9).forEach((c) => {
+  const a = document.createElement("a");
+  a.className = "sp"; a.href = c.url;
+  a.innerHTML = `${specimen(c, 64, false)}<div><b>${c.acr || "IEEE"}</b><span>${c.loc} · papers by ${c.cfpDate.toLocaleDateString("en-IN", { day: "numeric", month: "short" })} (${c.left} days)</span></div>`;
+  grid.appendChild(a);
+});
+</script>
+</body>
+</html>
