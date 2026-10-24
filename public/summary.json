@@ -1,0 +1,92 @@
+{
+  "updated": "2026-10-24",
+  "total": 297,
+  "open": 88,
+  "hybridOpen": 51,
+  "next": [
+    {
+      "acronym": "IDCIoT",
+      "title": "2027 5th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT)",
+      "city": "Ottapalam",
+      "cfp": "2026-10-29",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICIPCN",
+      "title": "2027 7th International Conference on Image Processing and Capsule Networks (ICIPCN)",
+      "city": "Dindigul",
+      "cfp": "2026-10-29",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "IConAECC",
+      "title": "2026 Indian Conference on Advances in Electrical, Computers, and Communications (IConAECC)",
+      "city": "Tiruchirappalli",
+      "cfp": "2026-10-30",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ACET",
+      "title": "2027 3rd International Conference on Advanced Computing and Emerging Technologies (ACET)",
+      "city": "Ghaziabad",
+      "cfp": "2026-10-31",
+      "format": "inperson"
+    },
+    {
+      "acronym": "RadarConf'27",
+      "title": "2027 IEEE Radar Conference (RadarConf'27)",
+      "city": "Bangalore",
+      "cfp": "2026-10-31",
+      "format": "inperson"
+    },
+    {
+      "acronym": "ICETICT",
+      "title": "2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT)",
+      "city": "Cuttack",
+      "cfp": "2026-10-31",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "CICTS",
+      "title": "2027 1st International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS)",
+      "city": "HYDERABAD",
+      "cfp": "2026-11-01",
+      "format": "inperson"
+    },
+    {
+      "acronym": "AVARTA",
+      "title": "2026 International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA)",
+      "city": "Thanjavur, Tamil Nadu",
+      "cfp": "2026-11-09",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICAAIC",
+      "title": "2027 5th International Conference on Applied Artificial Intelligence and Computing (ICAAIC)",
+      "city": "Salem",
+      "cfp": "2026-11-09",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "IVEC",
+      "title": "2027 28th International Vacuum Electronics Conference (IVEC)",
+      "city": "Bangalore",
+      "cfp": "2026-11-10",
+      "format": "inperson"
+    },
+    {
+      "acronym": "ICRFCS",
+      "title": "2027 International Conference on Reasoning AI in Future Communication Systems (ICRFCS)",
+      "city": "Bengaluru",
+      "cfp": "2026-11-12",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICRITO",
+      "title": "2027 13th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)",
+      "city": "Noida NCR",
+      "cfp": "2026-11-15",
+      "format": "inperson"
+    }
+  ]
+}

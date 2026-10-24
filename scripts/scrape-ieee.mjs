@@ -11,6 +11,8 @@
  *   full_cfp.md             -- per-conference CFP report with scope
  *   cfp_deadline_missing.md -- conferences IEEE lists without a CFP deadline
  *   cfp.csv                 -- No, Conference, CFP Deadline, Field of Interest
+ *   public/summary.json     -- a few headline numbers + the next deadlines, read
+ *                              by the Confera card on GradeX's home page
  *
  * Refuses to overwrite anything when the result looks broken (far fewer
  * conferences than last time, or many detail fetches failing), so an API
@@ -190,7 +192,26 @@ async function main() {
   fs.writeFileSync(path.join(ROOT, 'full_cfp.md'), cfpReport);
   fs.writeFileSync(path.join(ROOT, 'cfp_deadline_missing.md'), missingReport);
   fs.writeFileSync(path.join(ROOT, 'cfp.csv'), csv);
-  console.log('[confera] Wrote full.md, full_cfp.md, cfp_deadline_missing.md, cfp.csv.');
+
+  // Small public summary for other sites (GradeX's home card). Days-left is
+  // computed by the reader from the dates, so a day-old summary stays right.
+  const acronym = (title) => (String(title).match(/\(([^()]+)\)\s*$/) || [])[1] || '';
+  const openList = results
+    .filter((d) => isoDate(d.callForPapers) >= today)
+    .sort((a, b) => isoDate(a.callForPapers).localeCompare(isoDate(b.callForPapers)));
+  const summary = {
+    updated: today,
+    total: results.length,
+    open: openList.length,
+    hybridOpen: openList.filter((d) => ['hybrid', 'virtual'].includes(String(d.eventFormat).toLowerCase())).length,
+    next: openList.slice(0, 12).map((d) => ({
+      acronym: acronym(d.eventTitle), title: cell(d.eventTitle), city: d.location?.city || '',
+      cfp: isoDate(d.callForPapers), format: d.eventFormat || '',
+    })),
+  };
+  fs.mkdirSync(path.join(ROOT, 'public'), { recursive: true });
+  fs.writeFileSync(path.join(ROOT, 'public', 'summary.json'), JSON.stringify(summary, null, 2) + '\n');
+  console.log('[confera] Wrote full.md, full_cfp.md, cfp_deadline_missing.md, cfp.csv, public/summary.json.');
 }
 
 main().catch((e) => {

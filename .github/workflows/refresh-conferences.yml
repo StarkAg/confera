@@ -36,7 +36,7 @@ jobs:
         run: |
           git config user.name "confera-bot"
           git config user.email "confera-bot@users.noreply.github.com"
-          git add full.md full_cfp.md cfp_deadline_missing.md cfp.csv
+          git add full.md full_cfp.md cfp_deadline_missing.md cfp.csv public/summary.json
           # The "Generated on" date changes every run; only commit real changes.
           if git diff --cached -I '^- Generated on:' --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
