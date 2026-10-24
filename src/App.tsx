@@ -610,7 +610,8 @@ export default function App() {
           IEEE India · {CONFERENCES.length} conferences{updated ? ` · updated ${updated}` : ""}
         </span>
         <nav className="pp-links" aria-label="Site">
-          <a className="pp-icon text" href={isAdminRoute ? "/" : "/admin"}>{isAdminRoute ? "Explorer" : "Admin"}</a>
+          {/* No public link to /admin; it still works by typing the URL. */}
+          {isAdminRoute && <a className="pp-icon text" href="/">Explorer</a>}
           <a className="pp-icon" href="https://github.com/StarkAg" target="_blank" rel="noreferrer" aria-label="GitHub">
             <GitHubMark />
           </a>
