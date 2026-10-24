@@ -1,7 +1,8 @@
 name: Refresh IEEE conferences
 
-# Daily: re-scrape IEEE's public conference search (scripts/scrape-ieee.mjs),
-# commit the data if anything changed, and redeploy confera-web on Railway.
+# Daily: re-scrape IEEE's public conference search (scripts/scrape-ieee.mjs)
+# and commit the data if anything changed. confera-web on Railway deploys from
+# this repo's main branch, so the commit is what redeploys the site.
 on:
   schedule:
     - cron: "30 1 * * *" # 07:00 IST
@@ -18,8 +19,6 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    env:
-      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,10 +46,3 @@ jobs:
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      # confera-web is deployed by upload, not from GitHub, so push the new
-      # build to Railway. Needs a Railway project token in the RAILWAY_TOKEN
-      # repo secret; without it the data is still committed.
-      - name: Deploy to Railway
-        if: steps.commit.outputs.changed == 'true' && env.RAILWAY_TOKEN != ''
-        run: npx -y @railway/cli@4.30.5 up --service confera-web --detach
