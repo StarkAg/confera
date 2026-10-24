@@ -1,0 +1,56 @@
+name: Refresh IEEE conferences
+
+# Daily: re-scrape IEEE's public conference search (scripts/scrape-ieee.mjs),
+# commit the data if anything changed, and redeploy confera-web on Railway.
+on:
+  schedule:
+    - cron: "30 1 * * *" # 07:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-conferences
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Exits non-zero (and writes nothing) if IEEE returns far fewer
+      # conferences than last time or many lookups fail.
+      - name: Scrape IEEE conferences
+        run: node scripts/scrape-ieee.mjs
+
+      - name: Commit if the data changed
+        id: commit
+        run: |
+          git config user.name "confera-bot"
+          git config user.email "confera-bot@users.noreply.github.com"
+          git add full.md full_cfp.md cfp_deadline_missing.md cfp.csv
+          # The "Generated on" date changes every run; only commit real changes.
+          if git diff --cached -I '^- Generated on:' --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No conference changes."
+          else
+            git commit -m "data: refresh IEEE India conferences ($(date -u +%Y-%m-%d))"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # confera-web is deployed by upload, not from GitHub, so push the new
+      # build to Railway. Needs a Railway project token in the RAILWAY_TOKEN
+      # repo secret; without it the data is still committed.
+      - name: Deploy to Railway
+        if: steps.commit.outputs.changed == 'true' && env.RAILWAY_TOKEN != ''
+        run: npx -y @railway/cli@4.30.5 up --service confera-web --detach
