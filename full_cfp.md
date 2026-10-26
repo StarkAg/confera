@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-10-25
+- Generated on: 2026-10-26
 
 ## 1. 2026 10th International Conference on Electronics, Communication and Aerospace Technology (ICECA)
 - Event ID: 70594
