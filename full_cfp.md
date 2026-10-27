@@ -2,17 +2,9 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-10-26
+- Generated on: 2026-10-27
 
-## 1. 2026 10th International Conference on Electronics, Communication and Aerospace Technology (ICECA)
-- Event ID: 70594
-- CFP Deadline: 2026-07-02
-- CFP Status: closed
-- Field of Interest: Communication, Networking and Broadcast Technologies; Computing and Processing
-- CFP Scope: The 10th International Conference on Electronics, Communication and Aerospace Technology [ICECA 2026] is a premier international conference that aims to promote the recent innovations in various fields of engineering and technology. ICECA 2026 provides a common platform for latest developments, inventive research works and issues to be discussed and experimented for future collaboration, amongst the researchers, academicians and industrialists across the globe. The main objective of the ICECA 2026 conference is to present the latest research and results of scientists, research scholars and students related to Electronics, Communication and Aerospace technologies for future collaboration. This ICECA 2026 conference provides an extensive opportunity for the researchers to discuss, share and exchange the research innovations on the advances in evolving fields of Artificial Intelligence, Machine Learning, Deep Learning, Fog/Edge Computing and so on.
-- API Details: https://conference-api.ieee.org/public/details?id=70594
-
-## 2. 2026 6th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)
+## 1. 2026 6th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)
 - Event ID: 70669
 - CFP Deadline: 2026-08-05
 - CFP Status: closed
@@ -20,7 +12,7 @@
 - CFP Scope: The rapid development of Information and Communication Technologies [ICT], which has the ability to completely change the way people communicate and interact with each other and the environment. In this scenario, recently ubiquitous computing is emerging as the new research paradigm that implements a pervasive usage of intelligent computing technologies in the emerging cyber-physical domains. The 6th International Conference on ubiquitous computing and intelligent information systems [ICUIS 2026] organized by RVS Technical Campus, Coimbatore, India, on 11-13, November 2026 aims to develop a new research forum for researchers, academicians and industrialist to share and exchange their potential insights on the design, implementation and analysis of ubiquitous computing models in intelligent information systems.
 - API Details: https://conference-api.ieee.org/public/details?id=70669
 
-## 3. 2026 4th IEEE International Conference on Industrial Electronics: Developments & Applications (ICIDeA)
+## 2. 2026 4th IEEE International Conference on Industrial Electronics: Developments & Applications (ICIDeA)
 - Event ID: 71740
 - CFP Deadline: 2026-03-15
 - CFP Status: closed
@@ -28,7 +20,7 @@
 - CFP Scope: The conference aims to bring together leading academic researchers and research scholars to exchange and share their experiences and research results on all aspects of Industrial Electronic developments and applications. It will also provide an interdisciplinary platform for researchers, practitioners and educators to present and discuss the most recent innovations, trends and concerns as well as practical challenges encountered and solutions adopted in the fields of Industrial Electronics applications such as electric vehicle, charging infra, energy sector, smart transport, AI applications, cyber security, control systems, robotics and drone technology, electronics & instrumentation, agricultural machinery sector, AI applications, defense and allied areas etc.
 - API Details: https://conference-api.ieee.org/public/details?id=71740
 
-## 4. 2026 IEEE 5th International Conference on Technology, Engineering, Management for Societal impact using Marketing, Entrepreneurship and Talent (TEMSMET)
+## 3. 2026 IEEE 5th International Conference on Technology, Engineering, Management for Societal impact using Marketing, Entrepreneurship and Talent (TEMSMET)
 - Event ID: 70493
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -36,7 +28,7 @@
 - CFP Scope: The 5th IEEE International Conference on Technology, Engineering, Management for Societal Impact using Marketing, Entrepreneurship, and Talent (TEMSMET 2026) aims to bring together researchers, industry leaders, innovators, and policymakers to explore interdisciplinary solutions that drive meaningful societal progress. Guided by the theme “Innovating for All: AI, Sustainability, and the Spirit of Vasudeva Kutumbakam,” the conference focuses on advancing technologies and management practices that foster inclusive growth, ethical innovation, and global well-being.
 - API Details: https://conference-api.ieee.org/public/details?id=70493
 
-## 5. 2026 International Conference on Advanced Engineering for Sustainable and Integrated Systems (ICAESIS)
+## 4. 2026 International Conference on Advanced Engineering for Sustainable and Integrated Systems (ICAESIS)
 - Event ID: 71800
 - CFP Deadline: 2026-04-19
 - CFP Status: closed
@@ -44,7 +36,7 @@
 - CFP Scope: ICAESIS-2026 is a premier interdisciplinary forum that brings together innovators, researchers, academicians, industry professionals, and policy makers to discuss and deliberate on cuttingedge engineering solutions for a sustainable future. The conference aims to explore how advancements in science and technology can contribute to global sustainability through integrated, intelligent, and energy-efficient systems. ICAESIS-2026 provides a unique platform to showcase state-of-the-art research, emerging technologies, industrial applications, and collaborative practices that bridge the gap between theoretical innovation and real-world implementation. With its core focus aligned to the theme "Innovative Engineering for a Sustainable Future," the conference promotes engineering interventions that enhance societal wellbeing while minimizing environmental impact.
 - API Details: https://conference-api.ieee.org/public/details?id=71800
 
-## 6. 2026 10th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)
+## 5. 2026 10th International Conference on Computational System and Information Technology for Sustainable Solutions (CSITSS)
 - Event ID: 71124
 - CFP Deadline: 2026-06-05
 - CFP Status: closed
@@ -52,7 +44,7 @@
 - CFP Scope: About The Conference: The 10th International Conference on Computational Systems and Information Technology for Sustainable Solutions (CSITSS–2026) during October 30–31, 2026 brings together academicians, scientists, researchers, industry professionals, postdoctoral fellows, and research scholars from across the globe to share Advances in Sustainable and Emerging Technologies. The conference focuses on Green Electronics, Renewable Energy, Robotics and Automation, Photonics, Artificial Intelligence, Cyber-Physical Systems, and Quantum Mechanics and Computing.
 - API Details: https://conference-api.ieee.org/public/details?id=71124
 
-## 7. 2026 2nd International Conference on Advances in Computing, Communication and Networking (ICAC2N)
+## 6. 2026 2nd International Conference on Advances in Computing, Communication and Networking (ICAC2N)
 - Event ID: 70538
 - CFP Deadline: 2025-10-01
 - CFP Status: closed
@@ -60,7 +52,7 @@
 - CFP Scope: The IEEE conference is an international forum which aims to bring together leading  academician, researchers and research scholars to exchange and share their experiences and  hard-earned technological advancements about all aspects of based on their research related to  Computing, Communication Control & Networking. We invite all leading researchers, engineers  and scientists in the domain of interest from around the world. We warmly welcome all authors  to submit your research papers to ICAC2N'26 and share the valuable experiences with the  scientist and scholars around the world.
 - API Details: https://conference-api.ieee.org/public/details?id=70538
 
-## 8. 2026 IEEE 5th International Conference on Computer Vision and Machine Intelligence (CVMI)
+## 7. 2026 IEEE 5th International Conference on Computer Vision and Machine Intelligence (CVMI)
 - Event ID: 70811
 - CFP Deadline: 
 - CFP Status: missing
@@ -68,7 +60,7 @@
 - CFP Scope: Biometrics, Forensics, Content protection Face, Iris, Emotion, Sign Language and Gesture Recognition Image/video processing for Autonomous Vehicles 3D image/video processing Image Enhancement/Super Resolution / Restoration Action and Event Detection/Recognition Motion and Tracking Medical Image and Video Analysis Image/ Video Retrieval Vision based Human GAIT Analysis Document and Synthetic Visual Processing Remote sensing, Multispectral/Hyperspectral image Processing Datasets and Evaluation Segmentation and Shape Representation Image/Video Scene Understanding Image/Video Security Human Computer Interaction Visual Sensor Hardware Document Image Analysis Compressed Image/Video Analytics Other Computer Vision Applications Machine Learning Deep Learning Computational Intelligence Optimization Techniques Explainable AI Fairness, Accountability, Privacy, Transparency and Ethics Brain Computer Interaction Hand-sensor based Intelligence Robotic Intelligence Light-weight Intelligent Systems
 - API Details: https://conference-api.ieee.org/public/details?id=70811
 
-## 9. 2026 International Conference on Emerging Digital Intelligence and Generative Engineering (EDIGE)
+## 8. 2026 International Conference on Emerging Digital Intelligence and Generative Engineering (EDIGE)
 - Event ID: 71588
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -76,7 +68,7 @@
 - CFP Scope: The International Conference on Emerging Digital Intelligence and Generative Engineering (EDGE) aims to provide a platform for researchers, academicians, industry professionals, and practitioners to discuss recent advancements in artificial intelligence, generative AI, and intelligent engineering systems.  The conference focuses on innovative methodologies, emerging technologies, and practical applications in digital intelligence, smart systems, edge computing, and AI-driven engineering solutions. It encourages interdisciplinary research, industry collaboration, and the development of responsible, secure, and scalable intelligent systems.
 - API Details: https://conference-api.ieee.org/public/details?id=71588
 
-## 10. 2026 International Conference on Intelligent Computing and Secure Communication Systems (ICICSCS)
+## 9. 2026 International Conference on Intelligent Computing and Secure Communication Systems (ICICSCS)
 - Event ID: 70339
 - CFP Deadline: 2026-07-05
 - CFP Status: closed
@@ -84,7 +76,7 @@
 - CFP Scope: The International Conference on Intelligent Computing and Secure Communication Systems (ICICSCS - 2026) serves as a premier platform for researchers, academicians, industry professionals, and students to exchange and discuss the latest advancements, innovations, and challenges in the fields of wireless communication and IoT.
 - API Details: https://conference-api.ieee.org/public/details?id=70339
 
-## 11. 2026 International Conference on Wireless COMmunication for Military Applications (WICOMM)
+## 10. 2026 International Conference on Wireless COMmunication for Military Applications (WICOMM)
 - Event ID: 69954
 - CFP Deadline: 2026-04-30
 - CFP Status: closed
@@ -92,7 +84,7 @@
 - CFP Scope: The Scope of the conference is to provide platform to the researcher around the globe to share the latest technologies related to wireless communication for Military applications.
 - API Details: https://conference-api.ieee.org/public/details?id=69954
 
-## 12. 2026 Third International Conference on Smart Technologies for Power and Renewable Energy (SPECon)
+## 11. 2026 Third International Conference on Smart Technologies for Power and Renewable Energy (SPECon)
 - Event ID: 68942
 - CFP Deadline: 2026-07-20
 - CFP Status: closed
@@ -100,7 +92,7 @@
 - CFP Scope: Integration of AI and Power Electronics in Emerging Energy Technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=68942
 
-## 13. 2026 Fourth International Conference on Sustainable Communication Networks and Application (ICSCNA)
+## 12. 2026 Fourth International Conference on Sustainable Communication Networks and Application (ICSCNA)
 - Event ID: 72314
 - CFP Deadline: 2026-08-09
 - CFP Status: closed
@@ -108,7 +100,7 @@
 - CFP Scope: This International Conference on Sustainable Communication Networks and Applications [ICSCN 2026] facilitates an innovative platform for researchers and academicians to share and exchange their research ideas to address the prodigious research challenges in developing energy efficient communication network systems, green computing architectures and sustainable network resource management frameworks. The main objective of ICSCN is to serve as a confluence point between researchers, academicians and industrialists to present their state-of-the-art research and works in the areas of sustainable communication networks and applications to materialize prodigious benefits in order to meet the global sustainable needs. ICSCN will be an intriguing platform for scientists, researchers, research scholars and industrialists to present, share and exchange their ideas on the recent advances in sustainable communication networks and applications.
 - API Details: https://conference-api.ieee.org/public/details?id=72314
 
-## 14. 2026 11th International Conference on Research in Intelligent Computing in Engineering (RICE)
+## 13. 2026 11th International Conference on Research in Intelligent Computing in Engineering (RICE)
 - Event ID: 71332
 - CFP Deadline: 2026-05-30
 - CFP Status: closed
@@ -116,7 +108,7 @@
 - CFP Scope: Artificial Intelligence & Machine Learning, Natural Language Processing and Applications, Signal Processing and Embedded Computing, Internet of Things (IoT) and Big Data Analytics, Internet of Things (IoT) and Big Data Analytics, Smart Manufacturing Technology
 - API Details: https://conference-api.ieee.org/public/details?id=71332
 
-## 15. 2026 3rd International Conference on Recent Trends in Microelectronics, Automation, Computing and Communications Systems (ICMACC)
+## 14. 2026 3rd International Conference on Recent Trends in Microelectronics, Automation, Computing and Communications Systems (ICMACC)
 - Event ID: 69869
 - CFP Deadline: 2026-05-30
 - CFP Status: closed
@@ -124,7 +116,7 @@
 - CFP Scope: The scope of this Conference is aimed to raise and disseminate awareness about upcoming research areas, issues, and success stories in various aspects of VLSI, IoT, Communication, Automation, Signal Processing, Biomedical Engineering, and Computing applications.
 - API Details: https://conference-api.ieee.org/public/details?id=69869
 
-## 16. 2026 IEEE International Conference of Electron Devices Society Kolkata Chapter (EDKCON)
+## 15. 2026 IEEE International Conference of Electron Devices Society Kolkata Chapter (EDKCON)
 - Event ID: 70011
 - CFP Deadline: 2026-05-14
 - CFP Status: closed
@@ -132,7 +124,7 @@
 - CFP Scope: EDKCON 2026 is based on mainly different fields of electron devices like Device Modelling and Simulations, Nano-electronic Devices and Technology, Optoelectronic Devices, MEMS, Sensors and Imagers, Power Devices, Deeply Embedded Devices and technology, Characterization, Reliability and Yield, Compound Semiconductors and High Speed Devices, Process and Manufacturing Technology, Circuit and Device Interactions, Memory Devices, Organic Electronics, Emerging Devices, Neuromorphic Devices, Low Power Devices and Circuits, Advanced CMOS and Beyond CMOS Devices, Biodegradable and Flexible electronic Devices. EDKCON 2026 is expected to bring together researchers, educators, students from across academia, government, industry and non-governmental organizations to discuss, share and promote current works and recent accomplishments across all aspects of the Electron Devices and circuits. Distinguished people will be invited to deliver keynote speech and talks on the advancement of Devices.
 - API Details: https://conference-api.ieee.org/public/details?id=70011
 
-## 17. 2026 2nd International Conference on Computational Intelligence for Smart Power System and Sustainable Energy (CISPSSE)
+## 16. 2026 2nd International Conference on Computational Intelligence for Smart Power System and Sustainable Energy (CISPSSE)
 - Event ID: 71806
 - CFP Deadline: 2026-06-30
 - CFP Status: closed
@@ -140,7 +132,7 @@
 - CFP Scope: The 2nd International Conference on Computational Intelligence for Smart Power System and Sustainable Energy (CISPSSE-2026) is a premier interdisciplinary forum dedicated to the evolution of resilient, global energy systems. By uniting pioneers across fields like Smart Grid technologies, Renewable Energy Integration, and Cybersecurity, the conference fosters innovation in Intelligent Energy Management and advanced Circuits/VLSI Technology. With specialized tracks covering Electric Vehicles, Energy Storage, and Sustainable Computing, CISPSSE-2026 provides a comprehensive platform to explore state-of-the-art research and cutting-edge solutions for a sustainable future.
 - API Details: https://conference-api.ieee.org/public/details?id=71806
 
-## 18. 2026 International Conference on Machine Intelligence and Cyber Physical Systems (ICMICPS)
+## 17. 2026 International Conference on Machine Intelligence and Cyber Physical Systems (ICMICPS)
 - Event ID: 71678
 - CFP Deadline: 2026-04-10
 - CFP Status: closed
@@ -148,7 +140,7 @@
 - CFP Scope: The conference aims to provide a multidisciplinary platform for researchers, academicians, industry experts, and policymakers to share innovations in emerging technologies and sustainable systems. It covers Artificial Intelligence, Machine Learning, Data Science, Cloud and Edge Computing, Internet of Things, Cybersecurity, Blockchain, and Quantum Technologies. The scope includes Electronics, Communication, Embedded Systems, Robotics, Automation, Smart Manufacturing, and Next-Generation Networks. It also embraces Renewable Energy, Smart Grids, Sustainable Infrastructure, Environmental Engineering, and Advanced Materials. Contributions in Software Engineering, Human Computer Interaction, Digital Transformation, Business Analytics, Innovation Management, and the ethical and societal dimensions of intelligent and cyber-physical systems are encouraged. Interdisciplinary research addressing real-world challenges and sustainable development is strongly promoted.
 - API Details: https://conference-api.ieee.org/public/details?id=71678
 
-## 19. 2026 7th URSI Regional Conference on Radio Science (URSI-RCRS)
+## 18. 2026 7th URSI Regional Conference on Radio Science (URSI-RCRS)
 - Event ID: 72838
 - CFP Deadline: 2026-07-10
 - CFP Status: closed
@@ -156,7 +148,7 @@
 - CFP Scope: Radio science encompasses the knowledge and study of all aspects of electromagnetic fields and waves. The International Union of Radio Science (Union Radio-Scientifique Internationale), a non-governmental and non-profit organisation under the International Council for Science, is responsible for stimulating and co-ordinating, on an international basis, studies, research, applications, scientific exchange, and communication in the fields of radio science.
 - API Details: https://conference-api.ieee.org/public/details?id=72838
 
-## 20. 2026 International Conference on Power, Energy, Control and Transmission Systems (ICPECTS)
+## 19. 2026 International Conference on Power, Energy, Control and Transmission Systems (ICPECTS)
 - Event ID: 70366
 - CFP Deadline: 2026-08-14
 - CFP Status: closed
@@ -164,7 +156,7 @@
 - CFP Scope: Scope & themes include: smart grids and renewable integration, power electronics and converters, control systems for stability and resilience, condition monitoring & diagnostics, IoT and embedded solutions for energy systems, AI/ML applications for grid operation, and high‑voltage transmission technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=70366
 
-## 21. 2026 IEEE 7th International Women in Technology Conference (WINTECHCON)
+## 20. 2026 IEEE 7th International Women in Technology Conference (WINTECHCON)
 - Event ID: 71074
 - CFP Deadline: 2026-03-06
 - CFP Status: closed
@@ -172,7 +164,7 @@
 - CFP Scope: Annual Women Technical Conference Focus on semiconductor/ Software & System Technology
 - API Details: https://conference-api.ieee.org/public/details?id=71074
 
-## 22. 2026 International Conference on Artificial Intelligence and Emerging Technology (Global AI Summit)
+## 21. 2026 International Conference on Artificial Intelligence and Emerging Technology (Global AI Summit)
 - Event ID: 71361
 - CFP Deadline: 2026-07-04
 - CFP Status: closed
@@ -180,7 +172,7 @@
 - CFP Scope: AISUMMIT 2026, being an interdisciplinary conference aims to apply innovative techniques from computer science, information science, operations research, applied mathematics, software reliability, reliability modelling and statistics for balancing environmental, economic, and societal needs for sustainable development. The focus is on developing sustainable computational and mathematical models and methods for decision making concerning the management and  allocation of resources to solve some of the most challenging problems related to sustainability in society.
 - API Details: https://conference-api.ieee.org/public/details?id=71361
 
-## 23. 2026 2nd IEEE Uttar Pradesh Section Women in Engineering International Conference on Electrical Electronics and Computer Engineering (UPWIECON)
+## 22. 2026 2nd IEEE Uttar Pradesh Section Women in Engineering International Conference on Electrical Electronics and Computer Engineering (UPWIECON)
 - Event ID: 71699
 - CFP Deadline: 2026-04-02
 - CFP Status: closed
@@ -188,7 +180,7 @@
 - CFP Scope: The conference will cover key areas of electrical and electronics engineering, including power systems, renewable energy technologies, smart grids, power electronics, control systems, instrumentation, VLSI design, embedded systems, and communication engineering. It will also include cutting-edge domains such as artificial intelligence, data science, IoT, cybersecurity, and smart computing. The conference emphasizes inclusive innovation, women’s leadership, interdisciplinary collaboration, and technology-driven solutions for societal and industrial challenges.
 - API Details: https://conference-api.ieee.org/public/details?id=71699
 
-## 24. 2026 2nd International Conference on Communication, Computing and Signal Processing (IICCCS)
+## 23. 2026 2nd International Conference on Communication, Computing and Signal Processing (IICCCS)
 - Event ID: 71315
 - CFP Deadline: 2026-08-12
 - CFP Status: closed
@@ -196,7 +188,7 @@
 - CFP Scope: The 2nd International Conference on Communication, Computing and Signal Processing (ICCCS - 2026) encompasses a broad multidisciplinary spectrum focused on the integration of next-generation digital technologies and intelligent systems. Its scope primarily covers Advanced Communication Systems, including 6G networks, IoT infrastructure, and network security; Intelligent Computing, spanning artificial intelligence, big data analytics, and quantum algorithms; and Signal and Image Processing, which addresses computer vision, biometrics, and audio analysis. By bridging these fields, the conference facilitates the exploration of cross-disciplinary applications such as smart city development, autonomous robotics, and sustainable healthcare technology, providing a global forum for researchers to present innovations that drive the evolution of modern electronic and computational ecosystems.
 - API Details: https://conference-api.ieee.org/public/details?id=71315
 
-## 25. 2026 4th International Conference on Advances in Computation, Communication and Information Technology (ICAICCIT)
+## 24. 2026 4th International Conference on Advances in Computation, Communication and Information Technology (ICAICCIT)
 - Event ID: 72855
 - CFP Deadline: 2026-06-10
 - CFP Status: closed
@@ -204,7 +196,7 @@
 - CFP Scope: As observed in current status and future trends, the fourth industrial revolution is humanity's most recent advancement. The cornerstones of Industry 4.0 are Artificial Intelligence, Machine Learning, Big Data, Cloud Computing, Communication and Information Technology. These pillars embrace the ability to make their own decisions through Machine Learning, as well as to collect data in real-time, to be analysed and saved into the Cloud. They also allow for the use of pillars like the Internet of every Thing, Augmented Reality, Cyber Security, Cloud Computing, and finally 5G Networks under 4 themes Artificial Intelligence, Machine Learning & Data Science, Computational Intelligence, Information Technology, Big Data Analytics & Visualization and Communication The Fourth Industrial Revolution (Industry 4.0) represents the latest transformation in human civilization, redefining the way industries, businesses, and societies operate in the digital era. It is driven by cutting-edge technologie
 - API Details: https://conference-api.ieee.org/public/details?id=72855
 
-## 26. 2026 4th International Conference on Artificial Intelligence and Applications (ICAIA)
+## 25. 2026 4th International Conference on Artificial Intelligence and Applications (ICAIA)
 - Event ID: 71392
 - CFP Deadline: 2026-04-15
 - CFP Status: closed
@@ -212,7 +204,7 @@
 - CFP Scope: Track #I: Evolutionary Algorithms Track #II: AI for IoT Applications Track #III: Robotics & AI, Track #IV: AI for Human-Machine Interaction, Track #V: Deep AI & Neural Networks, Track #VI: Pattern Matching and Speech Recognition, Track #VII: AI Applications in Renewable Energy & Sustainability.
 - API Details: https://conference-api.ieee.org/public/details?id=71392
 
-## 27. 2026 5th Edition of IEEE Delhi Section Flagship Conference (DELCON)
+## 26. 2026 5th Edition of IEEE Delhi Section Flagship Conference (DELCON)
 - Event ID: 71798
 - CFP Deadline: 2026-06-15
 - CFP Status: closed
@@ -220,7 +212,7 @@
 - CFP Scope: With the theme “Converging Technologies for Sustainable Innovation,” the conference provides an interdisciplinary forum for presenting original research and applied innovations across communications, networking, computing and intelligent systems, signal processing, electronic and embedded design, cyber-physical and secure systems, sustainable energy and smart grids, advanced materials and emerging devices, and robotics, control, and automation. The scope emphasizes technologies and solutions that enable secure, energy-efficient, and scalable systems with meaningful societal and industrial impact.
 - API Details: https://conference-api.ieee.org/public/details?id=71798
 
-## 28. 2026 IEEE International Conference for Convergence in Engineering (ICCE)
+## 27. 2026 IEEE International Conference for Convergence in Engineering (ICCE)
 - Event ID: 71670
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -228,7 +220,7 @@
 - CFP Scope: The International Conference on Convergence in Engineering (ICCE 2026) aims to provide a premier interdisciplinary platform for researchers, academicians, industry professionals, innovators, and students to present and discuss emerging trends, technologies, and research advancements across multiple domains of engineering. The conference focuses on the convergence of traditional engineering disciplines with modern digital technologies to address contemporary societal, industrial, and global challenges. ICCE 2026 will emphasize innovation, integration, and sustainable technological development by fostering collaboration between academia, industry, and research institutions. ICCE 2026 encourages original research contributions, practical implementations, case studies, industry innovations, and interdisciplinary research that demonstrate convergence across engineering domains. The conference will feature keynote lectures, invited talks, technical paper presentations, workshops, tutorials,
 - API Details: https://conference-api.ieee.org/public/details?id=71670
 
-## 29. 2026 IEEE International Conference for Women in Computing (InCoWoCo)
+## 28. 2026 IEEE International Conference for Women in Computing (InCoWoCo)
 - Event ID: 72795
 - CFP Deadline: 2026-08-20
 - CFP Status: closed
@@ -236,7 +228,7 @@
 - CFP Scope: 2026 IEEE International Conference for Women in Computing (INCOWOCO 2026) is a global series sponsored by IEEE Education Society of IEEE Pune section and IEEE Pune section. The series starting in the year 2024, is to provide a common platform for researchers, especially women, from across the world to deliberate on broad understanding of computing concepts and its technical and business practices in the world of technological advancements. Women are paving their way and marking their presence in almost all tech fields. Since the beginning, women have carved a niche for themselves in the fields of Computers too. Be it the first computer programmer, compiler designer to application developers we have inspiring role models. Yet their achievements are very few when compared to male counterparts.
 - API Details: https://conference-api.ieee.org/public/details?id=72795
 
-## 30. 2026 International Conference on Advances in Computing, Communication and Materials (ICACCM)
+## 29. 2026 International Conference on Advances in Computing, Communication and Materials (ICACCM)
 - Event ID: 70611
 - CFP Deadline: 2026-06-30
 - CFP Status: closed
@@ -244,7 +236,7 @@
 - CFP Scope: The scope of the 2024 IEEE International Conference on Advances in Computing, Communication and Materials (ICACCM 2024) broadly covers computing, communication, and materials science, encouraging interdisciplinary dialogue and research in these areas
 - API Details: https://conference-api.ieee.org/public/details?id=70611
 
-## 31. 2026 International Conference on AI-Driven Sustainable Cyber-Physical Systems (AISCPS)
+## 30. 2026 International Conference on AI-Driven Sustainable Cyber-Physical Systems (AISCPS)
 - Event ID: 71342
 - CFP Deadline: 2026-05-10
 - CFP Status: closed
@@ -252,7 +244,7 @@
 - CFP Scope: The conference focuses on the integration of AI, machine learning, data analytics, sensing, communication, control, and computing technologies with physical systems to develop intelligent, adaptive, secure, and energy-efficient solutions for next-generation applications. AISCPS emphasizes sustainable development goals (SDGs) by addressing energy efficiency, environmental impact, safety, reliability, and human-centric design across cyber-physical infrastructures.
 - API Details: https://conference-api.ieee.org/public/details?id=71342
 
-## 32. 2026 International Conference on Electrical, Electronics, and Computer Science with Advance Power Technologies - A Future Trends (ICE2CPT)
+## 31. 2026 International Conference on Electrical, Electronics, and Computer Science with Advance Power Technologies - A Future Trends (ICE2CPT)
 - Event ID: 72366
 - CFP Deadline: 2026-08-15
 - CFP Status: closed
@@ -260,7 +252,7 @@
 - CFP Scope: The International Conference on Electrical Electronics and Computer Science with Advanced Power Technologies aims to bring together researchers, academicians, industry professionals, and practitioners to exchange innovative ideas, recent advancements, and practical experiences in the fields of electrical engineering, electronics, computer science, and advanced power technologies.  The conference focuses on emerging trends and interdisciplinary approaches that address current challenges and future directions in sustainable energy systems, intelligent control, and digital transformation of power and computing infrastructures.
 - API Details: https://conference-api.ieee.org/public/details?id=72366
 
-## 33. 2026 International Conference on Intelligent Information and Computing Technologies in Engineering (ICIICTE)
+## 32. 2026 International Conference on Intelligent Information and Computing Technologies in Engineering (ICIICTE)
 - Event ID: 72174
 - CFP Deadline: 2026-07-31
 - CFP Status: closed
@@ -268,7 +260,7 @@
 - CFP Scope: Electronics and Communication Networks, Power System Stability, Networking & Broadcasting, Wireless sensor networks and ad hoc networks, cryptography,AR/VR/MR and immersive technologies Smart city,Intelligent robotics and automation Quantum computing fundamentals Bioinformatics and computational biology Computing & Processing (Hardware/Software), Information Technology, Electronics and Communication, Information Technology, Science, Robotics,  Signal Processing, Components, Circuits, Devices & Systems
 - API Details: https://conference-api.ieee.org/public/details?id=72174
 
-## 34. 2026 International Conference on Machine Intelligence and Network Data Security (MINDS)
+## 33. 2026 International Conference on Machine Intelligence and Network Data Security (MINDS)
 - Event ID: 69402
 - CFP Deadline: 2025-12-15
 - CFP Status: closed
@@ -276,7 +268,7 @@
 - CFP Scope: Encourage innovation and the development of new technologies by showcasing original research and industrial applications that describe new, unpublished research that isn’t being reviewed by another conference or publication right now. Here we provide a forum for the presentation and exchange of technical advancements in all areas of the conference’s specific subjects include, but are not restricted to Methods of Soft Computing Artificial Intelligence Utilizing Internet of Things Hybrid and Renewable Energy Sources in Optical Communication Systems Mobile and Cloud Computing Deep Learning in Machine Learning Networks of Data and Securities.
 - API Details: https://conference-api.ieee.org/public/details?id=69402
 
-## 35. 2026 Ninth International Conference on Parallel, Distributed and Grid Computing (PDGC)
+## 34. 2026 Ninth International Conference on Parallel, Distributed and Grid Computing (PDGC)
 - Event ID: 73007
 - CFP Deadline: 2026-07-01
 - CFP Status: closed
@@ -284,7 +276,7 @@
 - CFP Scope: PDGC-2026 will serve as an international forum for researchers and practitioners interested in recent advances in the areas of parallel, distributed and grid computing. It will provide an opportunity to present and exchange advanced scientific and technological information in hardware, software and theoretical foundation in these areas.
 - API Details: https://conference-api.ieee.org/public/details?id=73007
 
-## 36. 2026 Third International Conference on Next Generation Intelligent Systems (ICNGIS)
+## 35. 2026 Third International Conference on Next Generation Intelligent Systems (ICNGIS)
 - Event ID: 71873
 - CFP Deadline: 2026-06-15
 - CFP Status: closed
@@ -292,7 +284,7 @@
 - CFP Scope: The conference aims to provide an intellectual forum for researchers and professionals to exchange their expertise and innovative ideas to take on challenging research problems in the various emerging fields pertaining to intelligent systems. The conference offers an opportunity for the participants to showcase their research findings, discuss latest advancements in analytical, numerical and experimental techniques to tackle cutting-edge research problems, to identify key trends and issues confronting future research, and pursue effective collaboration in R&D. The conference program schedule includes invited lectures, technical sessions and tutorials. Eminent academicians, industry experts and researchers from various national and international level institutions and R&D organizations will deliver keynote lectures and chair technical sessions.
 - API Details: https://conference-api.ieee.org/public/details?id=71873
 
-## 37. 2026 11th International Conference on Smart Structures and Systems (ICSSS)
+## 36. 2026 11th International Conference on Smart Structures and Systems (ICSSS)
 - Event ID: 71604
 - CFP Deadline: 2026-08-07
 - CFP Status: closed
@@ -300,7 +292,7 @@
 - CFP Scope: For electrical and electronics engineers and scientists in universities and research centres, utilities and industry to present their work and share information in the area of smart structures and systems.
 - API Details: https://conference-api.ieee.org/public/details?id=71604
 
-## 38. 2026 1st International Conference on Next-Gen Computing: Converging Microelectronics and Mechatronics for Transformative Solutions (ICCMM)
+## 37. 2026 1st International Conference on Next-Gen Computing: Converging Microelectronics and Mechatronics for Transformative Solutions (ICCMM)
 - Event ID: 66375
 - CFP Deadline: 2026-05-15
 - CFP Status: closed
@@ -308,7 +300,7 @@
 - CFP Scope: Computing, Microelectronics, Mechatronics
 - API Details: https://conference-api.ieee.org/public/details?id=66375
 
-## 39. 2026 2nd International Conference on Digital Innovations for Sustainable Solutions (ICDISS)
+## 38. 2026 2nd International Conference on Digital Innovations for Sustainable Solutions (ICDISS)
 - Event ID: 73101
 - CFP Deadline: 2026-07-10
 - CFP Status: closed
@@ -316,7 +308,7 @@
 - CFP Scope: The conference focuses on emerging computational technologies and their role in achieving sustainable development goals. It provides an international forum for researchers, academicians, industry experts, and policymakers to present innovative research in Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Cyber Security, Quantum Computing, Cloud Computing, Bioinformatics, Computational Intelligence, Intelligent Analytics, and Communication Systems. The conference emphasizes the development of intelligent, secure, scalable, and sustainable computational solutions for real-world challenges. The conference aims to promote knowledge exchange, facilitate interdisciplinary research collaborations, and showcase innovative computational solutions that contribute to achieving the United Nations Sustainable Development Goals (SDGs) and building a sustainable digital future.
 - API Details: https://conference-api.ieee.org/public/details?id=73101
 
-## 40. 2026 6th International Conference on Advancement in Electronics & Communication Engineering (AECE)
+## 39. 2026 6th International Conference on Advancement in Electronics & Communication Engineering (AECE)
 - Event ID: 71519
 - CFP Deadline: 2026-09-15
 - CFP Status: closed
@@ -324,7 +316,7 @@
 - CFP Scope: The scope of (AECE-2025) is to provide an international forum to promote, enhance and stimulate international research interactions and collaboration in the fields of Computer Science, Electronics, Electrical, Healthcare and Information Technology. It will facilitate to promote the exchange of ideas among interested researchers, students, industrialists, developers and practitioners. This conference will also feature plenary talks, workshops, and parallel technical sessions.
 - API Details: https://conference-api.ieee.org/public/details?id=71519
 
-## 41. 2026 9th International Conference on Emerging Technologies in Computer Engineering: Responsible AI and Green Digital Infrastructure for Sustainable FinTech and Smart Societies (ICETCE)
+## 40. 2026 9th International Conference on Emerging Technologies in Computer Engineering: Responsible AI and Green Digital Infrastructure for Sustainable FinTech and Smart Societies (ICETCE)
 - Event ID: 72526
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -332,7 +324,7 @@
 - CFP Scope: The conference ICETCE-2026 will focus on emerging technologies in computer engineering with special emphasis on Responsible AI, Green Data Centers, Sustainable Digital Infrastructure, FinTech systems, and AI-driven hardware technologies. The technical program will be organized into multiple thematic tracks covering both theoretical and applied research across academia and industry.
 - API Details: https://conference-api.ieee.org/public/details?id=72526
 
-## 42. 2026 IEEE 8th PhD Colloquium on Emerging Domain Innovation and Technology for Society (PhD EDITS)
+## 41. 2026 IEEE 8th PhD Colloquium on Emerging Domain Innovation and Technology for Society (PhD EDITS)
 - Event ID: 72743
 - CFP Deadline: 2026-07-30
 - CFP Status: closed
@@ -340,7 +332,7 @@
 - CFP Scope: PhD EDITS 2026 aims to bring together highly motivated community of research scholars to exchange their idea/ongoing work. The platform is very unique in the sense that it provides scholars an opportunity to directly interact one-to-one with industry and academia experts and discuss their problem, process, direction of research. The colloquium is an initiative by a group of scholars from different institutions, mentored by experts, to accentuate the need for research outreach to a wider scientific community and to the society at large. PhD EDITS-2026 invites doctoral students to submit their work, which can be at any stage of the research process (proposal, intermediate or near completion).
 - API Details: https://conference-api.ieee.org/public/details?id=72743
 
-## 43. 2026 International Conference on Artificial Intelligence Machine Learning & Cybernetics (IC-AIMLC)
+## 42. 2026 International Conference on Artificial Intelligence Machine Learning & Cybernetics (IC-AIMLC)
 - Event ID: 71104
 - CFP Deadline: 2026-03-02
 - CFP Status: closed
@@ -348,7 +340,7 @@
 - CFP Scope: IC-AIMLC2026 aims to bridge the gap between theoretical research and real-world applications, fostering innovation that supports technological advancement, sustainability, and societal well-being. The conference encourages high-quality, peer-reviewed contributions that demonstrate originality, technical excellence, and practical relevance.
 - API Details: https://conference-api.ieee.org/public/details?id=71104
 
-## 44. 2026 International Conference on Intelligent Networks and Data-driven Intelligent Applications (ICon INDIA)
+## 43. 2026 International Conference on Intelligent Networks and Data-driven Intelligent Applications (ICon INDIA)
 - Event ID: 72241
 - CFP Deadline: 2026-08-31
 - CFP Status: closed
@@ -356,7 +348,7 @@
 - CFP Scope: The International Conference on Intelligent Networks and Data-driven Intelligent Applications (ICon INDIA 2026) aims to bring together researchers, academicians, industry professionals, and innovators from across the globe to discuss emerging trends in next-generation networks, artificial intelligence, data analytics, and intelligent computing systems. The conference provides a vibrant platform for presenting cutting-edge research, fostering collaborations, and exploring innovative technologies that shape the future of smart connectivity, intelligent decision-making systems, and digital transformation. ICon INDIA encourages interdisciplinary research contributions that integrate wireless communications, computing, signal processing, machine learning, business analytics, and intelligent infrastructure.
 - API Details: https://conference-api.ieee.org/public/details?id=72241
 
-## 45. 2026 International Conference on Intelligent Systems & Data-driven Computing (ISDDC)
+## 44. 2026 International Conference on Intelligent Systems & Data-driven Computing (ISDDC)
 - Event ID: 70090
 - CFP Deadline: 2026-04-15
 - CFP Status: closed
@@ -364,7 +356,7 @@
 - CFP Scope: The conference will be devoted to all developments in Intelligent Systems & Data-driven Computing. Researchers from all over the country and abroad will gather physically in order to introduce their recent advances in the field and thereby promoting exchange of new ideas, results and techniques. The conference will be a catalyst in promoting research work, sharing views and getting innovative ideas in this field.
 - API Details: https://conference-api.ieee.org/public/details?id=70090
 
-## 46. 2026 World Conference on Cognitive Computing and Generative AI (WCCG)
+## 45. 2026 World Conference on Cognitive Computing and Generative AI (WCCG)
 - Event ID: 72710
 - CFP Deadline: 2026-06-10
 - CFP Status: closed
@@ -372,7 +364,7 @@
 - CFP Scope: Cognitive Computing and Generative AI
 - API Details: https://conference-api.ieee.org/public/details?id=72710
 
-## 47. 2026 5th International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET)
+## 46. 2026 5th International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET)
 - Event ID: 70000
 - CFP Deadline: 2025-12-15
 - CFP Status: closed
@@ -380,7 +372,7 @@
 - CFP Scope: ICEFEET-2026 is the Fifth edition of the International Conference on Emerging Frontiers in Electrical and Electronic Technologies (ICEFEET-2026) at the Department of Electrical Engineering, National Institute of Technology Patna during 9-10th July 2026. This conference is to provide scientists, researchers, academicians, and industry personnel with a forum to deliberate, exchange ideas, and produce research collaborations for the technologies that have the potential to significantly impact the domains of Power systems, Power Converters, Control systems, Machine Drives, Embedded systems, Measurement, and Sensing technologies. This conference features plenary talks by eminent persons, paper & poster presentations, panel discussions, and opportunities for the industry. This will provide a platform for gaining knowledge and facilitate interaction among the participants.
 - API Details: https://conference-api.ieee.org/public/details?id=70000
 
-## 48. 2026 IEEE North Karnataka  Subsection Flagship International Conference (NKCon)
+## 47. 2026 IEEE North Karnataka  Subsection Flagship International Conference (NKCon)
 - Event ID: 72568
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -388,7 +380,7 @@
 - CFP Scope: The Conference aims to provide an active platform for researchers, scientist, engineers and students throughout the world to present their latest research findings, ideas , and applications in the fields of interest which fall under the scope of IEEE
 - API Details: https://conference-api.ieee.org/public/details?id=72568
 
-## 49. 2026 7th International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS)
+## 48. 2026 7th International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS)
 - Event ID: 70805
 - CFP Deadline: 2026-08-21
 - CFP Status: closed
@@ -396,7 +388,7 @@
 - CFP Scope: In recent years, Internet of Things [IoT] technology envisions to develop a hyper- connected world, where the intelligent systems can communicate and control each other to deliver highly diversified services and applications to the users. The primary motivation of ICICNIS 2026 is to deliver state-of-the-art research insights on Internet of things [IoT] paradigm to access, manage and control the objects/things/people working under various information systems and deployed under wide range of applications like smart cities, health care, industries, smart homes, etc. 7th International Conference on IoT Based Control Networks and Intelligent Systems [ICICNIS 2026] aims to showcase the ongoing research works and efforts in the domain of computation management, control networks in IoT Systems. This issue will provide the opportunity for the researchers/academicians/industrialists to gain intensive knowledge on the new emerging IoT technologies and applications.
 - API Details: https://conference-api.ieee.org/public/details?id=70805
 
-## 50. 2026 International Conference on Computing, Communication and Wireless Networks (ICCWN)
+## 49. 2026 International Conference on Computing, Communication and Wireless Networks (ICCWN)
 - Event ID: 71597
 - CFP Deadline: 2026-05-21
 - CFP Status: closed
@@ -404,7 +396,7 @@
 - CFP Scope: Computer, IT, AI, and Communication Engineering
 - API Details: https://conference-api.ieee.org/public/details?id=71597
 
-## 51. 2026 6th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)
+## 50. 2026 6th International Conference on Evolutionary Computing and Mobile Sustainable Networks (ICECMSN)
 - Event ID: 70660
 - CFP Deadline: 2026-08-16
 - CFP Status: closed
@@ -412,7 +404,7 @@
 - CFP Scope: Today, Network sustainability has become capital in both academia and industries present all over the globe, which has generated a solution for the impact of optimization in mobile communication networks. Recently, the evolving advances in Evolutionary Computing technologies including swarm intelligence algorithms and other evolutionary algorithm paradigms are emerging as widely accepted descriptors for mobile sustainable networks virtualization, optimization, and automation. To deal with the emerging impacts on mobile communication networks, The 6th International Conference on Evolutionary Computing and Mobile Sustainable Networks [ICECMSN 2026] conceives an innovative research platform for soliciting the state-of-the research works on developing a sustainable design and their implementation in mobile networks. The main aim of this international conference is to promote and reflect the recent research works in evolutionary computation technologies and mobile sustainable networks.
 - API Details: https://conference-api.ieee.org/public/details?id=70660
 
-## 52. 2026 International Conference on Smart Computing for Sustainable Development (ICSCSD)
+## 51. 2026 International Conference on Smart Computing for Sustainable Development (ICSCSD)
 - Event ID: 67723
 - CFP Deadline: 2026-05-09
 - CFP Status: closed
@@ -420,7 +412,7 @@
 - CFP Scope: Smart Computing & Artificial Intelligence for Sustainability, IoT, Edge, and Cloud Technologies for Sustainable Development, Blockchain & Cybersecurity for Smart Systems, Smart Cities, Infrastructure, and Sustainable Urban Development, Data Science & Big Data Analytics for Green Technologies, Renewable Energy, Smart Grids & Energy-Efficient Systems, Robotics & Automation for Sustainable Industries, Next-Generation Communication Networks for Sustainability, Ethical AI, Education, and Policy for Sustainable Computing
 - API Details: https://conference-api.ieee.org/public/details?id=67723
 
-## 53. 2026 IEEE 2nd International Conference on Advances in Signal Processing, Power, Communication and Computing (ASPCC)
+## 52. 2026 IEEE 2nd International Conference on Advances in Signal Processing, Power, Communication and Computing (ASPCC)
 - Event ID: 70852
 - CFP Deadline: 2026-07-10
 - CFP Status: closed
@@ -428,7 +420,7 @@
 - CFP Scope: ASPCC is a biennial research-oriented conference jointly conducted by the Department of Electronics & Telecommunication Engineering and Department of Electrical Engineering, along with IEEE Student Branch, IIIT Bhubaneswar. ASPCC 2026 technical program will include contributed papers and contributions from invited speakers. It will have pre-conference- tutorials, keynotes, plenary talks, technical sessions, special sessions, expert panels, and student research forum.
 - API Details: https://conference-api.ieee.org/public/details?id=70852
 
-## 54. 2026 International Conference on Intelligent Computing and Emerging Communication Technologies (ICEC)
+## 53. 2026 International Conference on Intelligent Computing and Emerging Communication Technologies (ICEC)
 - Event ID: 72009
 - CFP Deadline: 2026-05-31
 - CFP Status: closed
@@ -436,7 +428,7 @@
 - CFP Scope: ICEC aims to empower society for sustainable development by applying various emerging computing technologies. The purpose of this conference is to aggregate professionals, researchers, educationalists, social activists, industry experts, and policymakers in broad domains of emerging computing like business, economics, entrepreneurship, education, tourism, hospitality, agriculture, health care, and other related areas including core sciences and engineering. The objective is to share opinions, identify challenges, offer best practices, and provide result driven computational based feasible solutions to facilitate the growth and prosperity of society as a whole.
 - API Details: https://conference-api.ieee.org/public/details?id=72009
 
-## 55. 2026 4th DMIHER International Conference on Artificial Intelligence in Healthcare, Education and Industry (IDICAIHEI)
+## 54. 2026 4th DMIHER International Conference on Artificial Intelligence in Healthcare, Education and Industry (IDICAIHEI)
 - Event ID: 70421
 - CFP Deadline: 2026-09-02
 - CFP Status: closed
@@ -444,7 +436,7 @@
 - CFP Scope: To highlight the ideas for, mentioned tracks in AI, Healthcare, big data, and  biomedical engineering, development of a sustainable solution for mankind. The idea is to bring  researchers from various domains to come together and discuss the technology. This proposed  conference aims to produce quality research and add knowledge in AI domain.
 - API Details: https://conference-api.ieee.org/public/details?id=70421
 
-## 56. 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES)
+## 55. 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES)
 - Event ID: 72373
 - CFP Deadline: 
 - CFP Status: missing
@@ -452,7 +444,7 @@
 - CFP Scope: The scope of the conference is multidisciplinary and will involve researchers of different areas having research orientation. The conference will focus on the emerging areas in the field of Power Electronics & Drives, Power Conditioning & Renewable Energy, Control Systems & Applications, Signal Processing & VLSI, Industrial Instrumentation, Communication and Embedded Systems, Computational Intelligence etc.
 - API Details: https://conference-api.ieee.org/public/details?id=72373
 
-## 57. 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS)
+## 56. 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS)
 - Event ID: 70908
 - CFP Deadline: 
 - CFP Status: missing
@@ -460,7 +452,7 @@
 - CFP Scope: The theme “Future‑Ready Leadership: Empowering changemakers to navigate emerging technologies with vision and purpose” emphasizes preparing leaders to thrive in a rapidly evolving digital era. Its scope includes fostering adaptability, innovation, Project management, sustainable and ethical responsibility in leadership while integrating AI, data science, IoT, and other emerging technologies into decision‑making. It empowers students, professionals, and faculty to become changemakers who drive purposeful transformation, aligning technology with sustainability, inclusivity, and equity. The theme also highlights career readiness through skill development, industry collaboration, and global networking, ensuring leaders are equipped to address societal challenges and create resilient, future‑oriented pathways for collective progress.
 - API Details: https://conference-api.ieee.org/public/details?id=70908
 
-## 58. 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC)
+## 57. 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC)
 - Event ID: 71451
 - CFP Deadline: 
 - CFP Status: missing
@@ -468,7 +460,7 @@
 - CFP Scope: COSMIC-2026 provides an international forum for researchers, academicians, and industry professionals to present and discuss recent advances, challenges, and future directions in computing, semiconductor technologies, mechatronics, intelligent systems, and communications. The conference focuses on both theoretical foundations and practical applications of emerging technologies such as artificial intelligence, machine learning, Internet of Things, cyber-physical systems, robotics, embedded systems, and advanced communication networks. COSMIC-2026 aims to foster interdisciplinary collaboration and knowledge exchange across academia and industry.
 - API Details: https://conference-api.ieee.org/public/details?id=71451
 
-## 59. 2026 IEEE 4th International Conference on Communication, Security, and Artificial Intelligence (ICCSAI)
+## 58. 2026 IEEE 4th International Conference on Communication, Security, and Artificial Intelligence (ICCSAI)
 - Event ID: 70914
 - CFP Deadline: 2026-07-14
 - CFP Status: closed
@@ -476,7 +468,7 @@
 - CFP Scope: High-Performance & Quantum Computing, Security & Privacy, Communication, Bioengineering, Medical devices, Cloud, Edge, Fog & Distributed Computing, AI, ML, Big Data, Green ICT, Cybersecurity, Software Engineering, Algorithms, Embedded Systems, Intelligent Automation, 5G/6G, IoT, Satellite, Optical & Quantum Communication, WSN, Smart Grids, Emerging Technologies, SDN, IEEE 802 Standards, Signal & Network Security, AR/VR, AI-Driven & Edge Networks, Digital Twins, Smart Cities, Blockchain, Autonomous Systems, Telemedicine, Sustainable Networks, Immersive Tech, Robotics Comms, Power Semiconductors, AC/DC Converters, Electric Drives, EV Systems, Renewable Power Conversion, Energy Storage, Wireless Power Transfer, Power Control Algorithms, Thermal & Reliability Systems & sustainability and all topics related to computer science, electricals and electronics
 - API Details: https://conference-api.ieee.org/public/details?id=70914
 
-## 60. 2026 IEEE India Geoscience and Remote Sensing Symposium (InGARSS)
+## 59. 2026 IEEE India Geoscience and Remote Sensing Symposium (InGARSS)
 - Event ID: 70663
 - CFP Deadline: 2026-05-30
 - CFP Status: closed
@@ -484,7 +476,7 @@
 - CFP Scope: GIS, Remote Sensing, Geo Science and Remote Sensing
 - API Details: https://conference-api.ieee.org/public/details?id=70663
 
-## 61. 2026 5th International Conference on Automation, Computing and Renewable Systems (ICACRS)
+## 60. 2026 5th International Conference on Automation, Computing and Renewable Systems (ICACRS)
 - Event ID: 70751
 - CFP Deadline: 2026-09-03
 - CFP Status: closed
@@ -492,7 +484,7 @@
 - CFP Scope: Many computational intelligence and learning methods, such as expert systems, neural networks, genetic algorithms and so on have found success in a variety of control and automation fields. Intelligent Control, which differs from conventional approaches based on methodologies derived from Artificial Intelligence[AI] and soft computing techniques, is capable of dealing with problems in diverse computational and communication domains and, more recently, those related to renewable energy and mobile autonomous systems, where conventional methods were unsuccessful. Nevertheless, new technologies such as artificial intelligence, edge computing, and the Internet of Things have led to an unprecedented development of control and intelligent systems. The theme of ICACRS 2026 is "Intelligent Computational Methods, Automation and Emerging trends in renewable energy".
 - API Details: https://conference-api.ieee.org/public/details?id=70751
 
-## 62. 2026 IEEE 6th International Conference on ICT in Business Industry & Government (ICTBIG)
+## 61. 2026 IEEE 6th International Conference on ICT in Business Industry & Government (ICTBIG)
 - Event ID: 71693
 - CFP Deadline: 2026-09-01
 - CFP Status: closed
@@ -500,7 +492,7 @@
 - CFP Scope: Scope of the conference is for academia, industry in the field of information and communication technology. ICT applications in Engineering, Management and sciences.
 - API Details: https://conference-api.ieee.org/public/details?id=71693
 
-## 63. 2026 International Conference on NexGen Networks and Cybernetics (IC2NC)
+## 62. 2026 International Conference on NexGen Networks and Cybernetics (IC2NC)
 - Event ID: 70659
 - CFP Deadline: 2026-09-01
 - CFP Status: closed
@@ -508,7 +500,7 @@
 - CFP Scope: The International Conference on NexGen Networks and Cybernetics (IC2NC) aims to bring together leading researchers, academicians, industry experts, and practitioners to discuss and explore advancements in next-generation networks and cybernetics. The conference provides a platform for exchanging ideas, sharing research findings, and fostering collaborations in the domains of networking technologies, cybersecurity, artificial intelligence, and cyber-physical systems.
 - API Details: https://conference-api.ieee.org/public/details?id=70659
 
-## 64. 2026 International Conference on Power Energy, Environment & Intelligent Control (PEEIC)
+## 63. 2026 International Conference on Power Energy, Environment & Intelligent Control (PEEIC)
 - Event ID: 68322
 - CFP Deadline: 2026-09-05
 - CFP Status: closed
@@ -516,7 +508,7 @@
 - CFP Scope: Participants, including scholars, industry experts, and faculty members, will gain valuable insights into the evolving landscape of digital energy networks—particularly the transformation of traditional electrical infrastructure and environmental challenges into modern power engineering solutions.  The proposed conference aims to bring together teachers, researchers, scientists, engineers, and academicians to foster meaningful discussions and collaboration. It will serve as a platform for the exchange of experiences, innovative ideas, and research findings across a broad range of contemporary topics. These include renewable energy systems, smart grids, smart sensors, advanced control techniques, computational intelligence, electrical and electronics engineering, intelligent systems in healthcare, and environmental sustainability.
 - API Details: https://conference-api.ieee.org/public/details?id=68322
 
-## 65. 2026 International Conference on Big Data Analytics in Bioinformatics (DABCon)
+## 64. 2026 International Conference on Big Data Analytics in Bioinformatics (DABCon)
 - Event ID: 70897
 - CFP Deadline: 2026-07-30
 - CFP Status: closed
@@ -524,7 +516,7 @@
 - CFP Scope: The purpose of the conference DABCon-2026 is to gather pioneering academicians and industry experts in the fields of Bioinformatics, Computational Biology, Artificial Intelligence, Machine Learning, Deep Learning and any other emerging technologies. The conference aims to bring together leading academicians, scientists, research scholars, professionals, decisionmakers and industrial practitioners to share and present their original research contributions.
 - API Details: https://conference-api.ieee.org/public/details?id=70897
 
-## 66. 2026 International Conference on Intelligent and Secure Engineering Solutions (CISES)
+## 65. 2026 International Conference on Intelligent and Secure Engineering Solutions (CISES)
 - Event ID: 71930
 - CFP Deadline: 2026-08-31
 - CFP Status: closed
@@ -532,7 +524,7 @@
 - CFP Scope: CISES2026 focuses on cutting-edge research in area such as artificial intelligence, machine learning, data analytics, Internet of Things (IoT), cybersecurity, blockchain technologies, smart computing, cloud and edge computing, and secure communication system. Emphasis is placed on intelligent methodology that enhance system performance, reliability, and scalability, and scalability, along with security mechanisms that ensure data privacy, integrity, and resilience against evolving cyber threats.
 - API Details: https://conference-api.ieee.org/public/details?id=71930
 
-## 67. 2026 International Conference on Research in Multidisciplinary Knowledge for Sustainable Modernization and Advancements in Resilient Technologies (RMK SMART)
+## 66. 2026 International Conference on Research in Multidisciplinary Knowledge for Sustainable Modernization and Advancements in Resilient Technologies (RMK SMART)
 - Event ID: 71792
 - CFP Deadline: 2026-10-03
 - CFP Status: closed
@@ -540,7 +532,7 @@
 - CFP Scope: The RMKSMART International Conference 2026 focuses on advancing sustainable and resilient technologies aligned with the United Nations Sustainable Development Goals (SDGs). It provides a multidisciplinary platform for researchers, academicians, industry experts, and policymakers to present innovative engineering solutions. The conference covers 17 SDG-aligned tracks across emerging domains such as AI, sustainable energy, smart infrastructure, and digital transformation. It emphasizes sustainable modernization through ethical, inclusive, and scalable technological advancements. The event fosters academia–industry collaboration and encourages young researchers to contribute to global sustainability challenges. Selected papers will be recommended for publication in the IEEE Xplore Digital Library, subject to review standards.
 - API Details: https://conference-api.ieee.org/public/details?id=71792
 
-## 68. 2026 IEEE 2nd International Conference on Smart Power Control and Renewable Energy (ICSPCRE)
+## 67. 2026 IEEE 2nd International Conference on Smart Power Control and Renewable Energy (ICSPCRE)
 - Event ID: 71188
 - CFP Deadline: 2026-08-01
 - CFP Status: closed
@@ -548,7 +540,7 @@
 - CFP Scope: The main scopes of the Conference are:                Smart Grid Architectures & Control Energy Storage Technologies & Management Renewable Energy Integration Power Electronics and Machine Drives AI & Data-Driven Power System Solutions Electric Vehicles & Charging Infrastructure Communication & Cyber-Physical Systems
 - API Details: https://conference-api.ieee.org/public/details?id=71188
 
-## 69. 2026 IEEE 5th International Conference on Data, Decision and Systems (ICDDS)
+## 68. 2026 IEEE 5th International Conference on Data, Decision and Systems (ICDDS)
 - Event ID: 72315
 - CFP Deadline: 2026-07-31
 - CFP Status: closed
@@ -556,7 +548,7 @@
 - CFP Scope: ICDDS 2026 invites high-quality original contributions from researchers, engineers, and subject matter experts from academia, industry, and start-ups to present their latest innovations in Data/Decision Systems (DDS) and their applications. ICDDS 2026 aims to look broadly at data-based innovation and technologies in interdisciplinary areas. The conference is particularly interested in all aspects of data and decision science, applications, solution design, and system challenges in new paradigms, ranging from theory to applied research.
 - API Details: https://conference-api.ieee.org/public/details?id=72315
 
-## 70. 2026 IEEE Sustainable Power and Energy Conference (iSPEC)
+## 69. 2026 IEEE Sustainable Power and Energy Conference (iSPEC)
 - Event ID: 66762
 - CFP Deadline: 2026-07-31
 - CFP Status: closed
@@ -564,7 +556,7 @@
 - CFP Scope: 2026 IEEE Sustainable Power Energy Conference (iSPEC) aims to advance sustainable energy systems by addressing the key challenges and enhancing innovation in areas like renewable energy integration, smart grids, and energy storage. The conference focuses on improving grid resilience, enhancing energy efficiency, reducing carbon emissions, and leveraging AI, IoT, and advanced digital technologies for optimization and predictive maintenance. It also emphasizes the economic and policy frameworks, social responsibility, and environmental governance to promote sustainable development. By uniting researchers, industry professionals, and policymakers, iSPEC serves as a platform to explore cutting-edge solutions, share knowledge, and shape the future of clean and reliable energy systems.
 - API Details: https://conference-api.ieee.org/public/details?id=66762
 
-## 71. 2026 International Conference on Computational Intelligence and Sustainable Communication Systems (ICCISCS)
+## 70. 2026 International Conference on Computational Intelligence and Sustainable Communication Systems (ICCISCS)
 - Event ID: 70916
 - CFP Deadline: 2026-07-01
 - CFP Status: closed
@@ -572,7 +564,7 @@
 - CFP Scope: Computational Sciences, Data Sciences, and Artificial Intelligence & Machine Learning are the driving forces behind transformative growth across industries. Advanced computational intelligence enables solutions for complex tasks such as knowledge retrieval, large-scale simulations, automation, device control, and efficient data management. It also deepens scientific understanding through mathematical modeling and highperformance computing. With Computational Intelligence and Communication at the core of modern AI and ML advancements.
 - API Details: https://conference-api.ieee.org/public/details?id=70916
 
-## 72. 2026 International Conference on Intelligent Computing and Artificial Intelligence (ICICAI)
+## 71. 2026 International Conference on Intelligent Computing and Artificial Intelligence (ICICAI)
 - Event ID: 71940
 - CFP Deadline: 2026-10-03
 - CFP Status: closed
@@ -580,7 +572,7 @@
 - CFP Scope: The International Conference on Intelligent Computing and Artificial Intelligence (ICICAI-2026), organized by the Department of Computer Science and Engineering at GGITS, Jabalpur, and sponsored by IEEE Madhya Pradesh Section, focuses on advancements in intelligent computing and AI. The conference covers emerging areas such as machine learning, deep learning, and robotics, while promoting interdisciplinary collaboration to address real-world challenges. Discussions will include theoretical foundations, algorithms, and applications across sectors like healthcare and agriculture, with an emphasis on ethics and responsible AI use. It features keynote talks, technical sessions, and networking opportunities to foster innovation and impactful research.
 - API Details: https://conference-api.ieee.org/public/details?id=71940
 
-## 73. 2026 International Conference on Next Generation Engineering and Technology Innovations (NGETI)
+## 72. 2026 International Conference on Next Generation Engineering and Technology Innovations (NGETI)
 - Event ID: 71489
 - CFP Deadline: 2026-05-30
 - CFP Status: closed
@@ -588,7 +580,7 @@
 - CFP Scope: Innovations in Engineering and Technology
 - API Details: https://conference-api.ieee.org/public/details?id=71489
 
-## 74. 2026 Sustainability through Ancient Knowledge and Emerging Technologies (SANKET)
+## 73. 2026 Sustainability through Ancient Knowledge and Emerging Technologies (SANKET)
 - Event ID: 72753
 - CFP Deadline: 2026-07-01
 - CFP Status: closed
@@ -596,7 +588,7 @@
 - CFP Scope: SANKET 2026 is an interdisciplinary conference that brings together academicians, researchers, and industry professionals to discuss topics on sustainability in energy, water, climate, and waste management.
 - API Details: https://conference-api.ieee.org/public/details?id=72753
 
-## 75. 2026 Conference on Indian Design, Semiconductors, Packaging and Systems Program (IDSPS)
+## 74. 2026 Conference on Indian Design, Semiconductors, Packaging and Systems Program (IDSPS)
 - Event ID: 72729
 - CFP Deadline: 2026-07-31
 - CFP Status: closed
@@ -604,7 +596,7 @@
 - CFP Scope: Design, Semiconductors, Packaging and Systems
 - API Details: https://conference-api.ieee.org/public/details?id=72729
 
-## 76. 2026 First International Conference on Signal Processing, Automation, Communication and Emerging Technology (ICSPACET)
+## 75. 2026 First International Conference on Signal Processing, Automation, Communication and Emerging Technology (ICSPACET)
 - Event ID: 70226
 - CFP Deadline: 2026-10-01
 - CFP Status: closed
@@ -612,7 +604,7 @@
 - CFP Scope: SPACE serves as a vital platform to discuss the latest advancements, research trends, and real-world challenges in designing intelligent, efficient, and sustainable engineering systems. SPACE emphasizes the importance of integrating advanced signal processing techniques, automation strategies, and communication frameworks to meet the evolving demands of smart industries, healthcare systems, transportation, and IoT-enabled environments. It provides an excellent opportunity for delegates to exchange ideas, share findings, and explore new collaborations across academia, research organizations, and industries. Through this conference, participants will gain exposure to groundbreaking concepts in artificial intelligence, machine learning, robotics, 5G/6G communication, embedded systems, and signal analytics, bridging the gap between theory and practical implementation. SPACE ultimately aims to create a dynamic ecosystem that supports knowledge sharing and technological advancement.
 - API Details: https://conference-api.ieee.org/public/details?id=70226
 
-## 77. 2026 9th International Conference on Recent Trends in Advanced Computing (ICRTAC)
+## 76. 2026 9th International Conference on Recent Trends in Advanced Computing (ICRTAC)
 - Event ID: 70537
 - CFP Deadline: 2026-08-15
 - CFP Status: closed
@@ -620,7 +612,7 @@
 - CFP Scope: The 9th International Conference on Recent Trends in Advanced Computing, themed ‘Transforming Sustainability through Computing: Automated Solutions for Global SDG Challenges’, focuses on how advanced computing can support the United Nations Sustainable Development Goals. It highlights automated, intelligent and data‑driven solutions for global issues such as poverty, climate change, sustainable cities and resilient infrastructure. Key areas include AI/ML, blockchain, 5G/6G, drones, quantum computing, AR/VR, digital twins, smart cities, fog/edge computing, cybersecurity, Industry 4.0 and Robotic Process Automation. The conference offers a platform for researchers, practitioners and educators to present innovations, share best practices and design computing‑based systems that accelerate progress toward a sustainable and equitable future.
 - API Details: https://conference-api.ieee.org/public/details?id=70537
 
-## 78. 2026 IEEE 12th Power India International Conference (PIICON)
+## 77. 2026 IEEE 12th Power India International Conference (PIICON)
 - Event ID: 69146
 - CFP Deadline: 2026-01-15
 - CFP Status: closed
@@ -628,7 +620,7 @@
 - CFP Scope: PIICON 2026 will showcase cutting-edge research and transformative ideas under the overarching theme:"Sustainable Power and Energy Solutions for Future Electric Grids and E-Mobility." This theme underscores the urgent need for global collaboration in accelerating the transition towards sustainable energy ecosystems. It highlights emerging challenges and opportunities in power and energy transformation, particularly in light of climate change, renewable integration, and the electrification of transport.In response to the dynamic evolution of global energy sectors, PIICON 2026 aims to address key challenges such as grid stability, emission reduction, and the integration of renewable energy sources into existing infrastructure. The conference also emphasizes the critical role of electric vehicles and associated technologies in revolutionizing the transportation sector.
 - API Details: https://conference-api.ieee.org/public/details?id=69146
 
-## 79. 2026 International Conference on Computational Intelligence in Electrical and Electronics Systems (CIE2S)
+## 78. 2026 International Conference on Computational Intelligence in Electrical and Electronics Systems (CIE2S)
 - Event ID: 71754
 - CFP Deadline: 2026-03-20
 - CFP Status: closed
@@ -636,7 +628,7 @@
 - CFP Scope: 1. Computational Intelligence & AI Techniques • Artificial Intelligence and Machine Learning • Deep Learning and Neural Networks • Evolutionary Computing and Swarm Intelligence • Fuzzy Logic Systems • Hybrid Optimization Algorithms 2. Electrical Engineering Systems • Power Systems and Smart Grids • Renewable Energy Systems • Power Electronics and Electrical Drives • Energy Management and Storage Systems • Electric Vehicle Technologies 3. Electronics and Communication Engineering • Wireless Communication Systems (5G/6G) • MIMO and Advanced Antenna Systems • Mobile Ad Hoc Networks (MANET) • IoT and Embedded Systems • Signal and Image Processing 4. Intelligent Control and Automation • Robotics and Automation • Control Systems Engineering • Industrial Automation 5. Emerging Interdisciplinary Applications • Biomedical Signal Processing • Medical Imaging and Healthcare Systems • Neuromorphic Engineering • Secure and Intelligent Networking
 - API Details: https://conference-api.ieee.org/public/details?id=71754
 
-## 80. 2026 15th International Conference on System Modeling & Advancement in Research Trends (SMART)
+## 79. 2026 15th International Conference on System Modeling & Advancement in Research Trends (SMART)
 - Event ID: 71644
 - CFP Deadline: 2026-10-04
 - CFP Status: closed
@@ -644,7 +636,7 @@
 - CFP Scope: The main objective of SMART 2026 is to provide platform to the Researchers, Engineers and Scholars in the field of Computer Science and Information Technology to disseminate their latest research results and to exchange views on the future research directions in these areas. The conference focuses on the study and exchange of academic achievements of international researchers which serves as academic discussion communication platform which is beneficial for research in the field of computer science aiming to stimulate researchers in their work
 - API Details: https://conference-api.ieee.org/public/details?id=71644
 
-## 81. 2026 1st International Conference on Intelligent and Sustainable Computing Systems (ICISCS)
+## 80. 2026 1st International Conference on Intelligent and Sustainable Computing Systems (ICISCS)
 - Event ID: 70929
 - CFP Deadline: 2026-07-03
 - CFP Status: closed
@@ -652,7 +644,7 @@
 - CFP Scope: The International Conference on Intelligent and Sustainable Computing Systems (ICISCS 2026) aims to provide a comprehensive platform for examining the convergence of intelligent technologies and sustainable computing paradigms to address contemporary global challenges. With rapid digital transformation across sectors, there is a growing demand for computing systems that are not only intelligent and high-performing but also energy-efficient, environmentally responsible, and socially inclusive. ICISCS 2026 focuses on promoting research and innovation that integrate intelligence with sustainability to develop resilient, scalable, and future-ready computing ecosystems.The scope of the conference covers theoretical foundations, algorithmic advancements, system architectures, and real-world applications of next-generation technologies, including Artificial Intelligence (AI), Machine Learning (ML), Internet of Things (IoT), cyber-physical systems, cloud and edge computing, green computing, an
 - API Details: https://conference-api.ieee.org/public/details?id=70929
 
-## 82. 2026 3rd International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS)
+## 81. 2026 3rd International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS)
 - Event ID: 71562
 - CFP Deadline: 2026-08-05
 - CFP Status: closed
@@ -660,7 +652,7 @@
 - CFP Scope: International Conference on Intelligent Algorithms for Computational Intelligence Systems (IACIS) is intended to provide a common platform for Researchers, Academicians, Scientists, Industrial Practitioners, Engineers, and students in frontline evolutionary challenging fields, to exchange their ideas and findings for technological evolution to benefit society.
 - API Details: https://conference-api.ieee.org/public/details?id=71562
 
-## 83. 2026 6th IEEE International Conference on Applied Electromagnetics, Signal Processing, & Communication (AESPC)
+## 82. 2026 6th IEEE International Conference on Applied Electromagnetics, Signal Processing, & Communication (AESPC)
 - Event ID: 72113
 - CFP Deadline: 2026-04-15
 - CFP Status: closed
@@ -668,7 +660,7 @@
 - CFP Scope: This International Conference on Applied Electromagnetics, Signal Processing & Communication (AESPC-2026), is dedicated to advanced research in the areas of microwave  as well as antenna engineering, signal processing and communication. The conference aims at  bringing together the researchers, scientists, engineers and research scholars from all areas of  engineering and technology, to provide an international forum to exchange their ideas, foster  collaboration, practical developments experiences and cover new grounds. The conference will  feature invited talks by eminent researchers from around the world, technical paper sessions,  poster sessions, demos, tutorials and workshop, AI/ML
 - API Details: https://conference-api.ieee.org/public/details?id=72113
 
-## 84. 2026 7th International Conference on Communication, Computing & Industry 6.0 (C2I6)
+## 83. 2026 7th International Conference on Communication, Computing & Industry 6.0 (C2I6)
 - Event ID: 70122
 - CFP Deadline: 2026-08-15
 - CFP Status: closed
@@ -676,7 +668,7 @@
 - CFP Scope: The 7th International Conference on Communication, Computing, and Industry 6.0 is a global platform for the researchers to exchange research results and ideas on the Communication, Computing, and Industry 6.0. This conference aims to bring together experts from many sectors to create a linked ecosystem inspired by the sixth industrial revolution. C2I6-2025 aims to enhance industry-academic engagement and bridge the gap between the two by encouraging peer-reviewed paper submissions, keynotes, invited lectures, and panel discussions. The conference is also a great opportunity for students and researchers to improve their research skills.
 - API Details: https://conference-api.ieee.org/public/details?id=70122
 
-## 85. 2026 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)
+## 84. 2026 Asian Hardware Oriented Security and Trust Symposium (AsianHOST)
 - Event ID: 72909
 - CFP Deadline: 2026-07-07
 - CFP Status: closed
@@ -684,7 +676,7 @@
 - CFP Scope: Asian Hardware Oriented Security and Trust Symposium (AsianHOST) aims to facilitate the rapid growth of hardware security research and development. AsianHOST highlights new results in the area of hardware and system security. Relevant research topics include techniques, tools, design/test methods, architectures, circuits, and publications of secure hardware.
 - API Details: https://conference-api.ieee.org/public/details?id=72909
 
-## 86. 2026 Fifth International Conference on Microelectronics, Signals & Systems (ICMSS)
+## 85. 2026 Fifth International Conference on Microelectronics, Signals & Systems (ICMSS)
 - Event ID: 73321
 - CFP Deadline: 2026-09-15
 - CFP Status: closed
@@ -692,7 +684,7 @@
 - CFP Scope: The conference covers an array of critical topics including Devices, Circuits, and Systems, VLSI and Nanotechnology, Computer Architecture and Embedded Systems, Signal Processing and Multimedia, Artificial Intelligence and Data Science, and Robotics and Cybernetics. These tracks highlight the fundamental role of technology in shaping the future of electronics, communications, and computing.  Further extending its relevance, ICMSS explores fields such as Communications Networks, IoT, Antenna and Microwave Techniques, Security and Privacy, and Control and Automation. With a focus on both hardware and software, the conference bridges the gap between theoretical research and practical applications.
 - API Details: https://conference-api.ieee.org/public/details?id=73321
 
-## 87. 2026 Fifth International Conference on Multimedia Processing, Communication & Information Technology (MPCIT)
+## 86. 2026 Fifth International Conference on Multimedia Processing, Communication & Information Technology (MPCIT)
 - Event ID: 70734
 - CFP Deadline: 2026-07-10
 - CFP Status: closed
@@ -700,7 +692,7 @@
 - CFP Scope: IEEE International Conference on Multimedia Processing, Communication and Information Technology – MPCIT 2026, will be held during December 13-14, 2026 in Hybrid Mode at JNN College of Engineering Shivamogga, Karnataka, India. MPCIT 2026 is to bring together innovative academics and industrial experts in the field of Electronics, Telecommunication, Computer Science, and Information Technology to a common forum. The primary goal of the conference is to promote research and development activities in Multimedia Processing, Communication and Information Technology. Another goal is to promote scientific information interchange between researchers, developers, engineers, students, and practitioners working in India and abroad. The conference will be an ideal platform for people to share views and experiences in Information, Telecommunication, Computing Techniques and related areas.
 - API Details: https://conference-api.ieee.org/public/details?id=70734
 
-## 88. 2026 Fifth International Conference on Smart Technologies, Communication and Robotics (STCR)
+## 87. 2026 Fifth International Conference on Smart Technologies, Communication and Robotics (STCR)
 - Event ID: 70542
 - CFP Deadline: 2026-09-01
 - CFP Status: closed
@@ -708,7 +700,7 @@
 - CFP Scope: This conference will provide a wonderful forum to refresh knowledge base and explore the innovations in signal processing and systems. It is also for researchers, academia, professionals, and students to disseminate information on the latest developments of signal processing and systems. This conference strives to offer plenty of networking opportunities and interact with leading scientists and researchers, friends and colleagues. There is a need for real innovations that come from research in telecommunication. Technology for effective utilization of frequency resources, high speed data communications, power saving of wireless communication devices, GPS-based relative positioning method between vehicles and such, which expands the possibilities of wireless communications, is the need of the hour. The primary goal of STCR is to provide a platform to promote sharing of ideas which will contribute to fostering continued research in the respective fields.
 - API Details: https://conference-api.ieee.org/public/details?id=70542
 
-## 89. 2026 IEEE Calcutta Conference (CALCON)
+## 88. 2026 IEEE Calcutta Conference (CALCON)
 - Event ID: 71885
 - CFP Deadline: 2026-04-06
 - CFP Status: closed
@@ -716,7 +708,7 @@
 - CFP Scope: Students and Research scholars will be able to publish their works and interact with subject experts from Universities and Industry
 - API Details: https://conference-api.ieee.org/public/details?id=71885
 
-## 90. 2026 International Conference on Smart Electronics and Communication Systems (ISENSE)
+## 89. 2026 International Conference on Smart Electronics and Communication Systems (ISENSE)
 - Event ID: 70654
 - CFP Deadline: 2026-05-31
 - CFP Status: closed
@@ -724,7 +716,7 @@
 - CFP Scope: This conference is the second edition of IEEE ISENSE, organized by the department of Electronics and Communication Engineering, IIIT Kottayam, aimed to promulgate the innovations and breakthroughs that occur in the contemporary world of Electronics and Communication Engineering. The conference encompasses 8 vital tracks such as:  1. VLSI & Embedded Systems  2. Communication Systems  3. IoT & Sensor Networks  4. Security & Privacy  5. RF, Microwave & Optics  6. Signal, Speech & Image Processing  7. Emerging Technologies: AI, ML, DL & NLP  8. Robotics & Automation  Apart from the main conference, it also motivates researchers to learn, unlearn and exemplify their talents in usage of advanced tools and technologies through tutorial sessions. Further, our conference is a platform for our viable sponsors to introduce and showcase their products relevant to research in the aforementioned fields.
 - API Details: https://conference-api.ieee.org/public/details?id=70654
 
-## 91. 2026 24th National Power Systems Conference (NPSC)
+## 90. 2026 24th National Power Systems Conference (NPSC)
 - Event ID: 69087
 - CFP Deadline: 2026-05-31
 - CFP Status: closed
@@ -732,7 +724,7 @@
 - CFP Scope: The National Power Systems Conference (NPSC) has held its position as India's leading conference in power engineering since 1981.  This biennial event brings together professionals from academia, industry, and utilities, fostering the exchange of ideas, knowledge, expertise, and experiences related to the evolving landscape of electric power systems. More details about the previous NPSC can be found at https://ee.iitb.ac.in/~npsc/. The theme of NPSC 2026 is: Resilient and Sustainable Energy and Transportation Ecosystem
 - API Details: https://conference-api.ieee.org/public/details?id=69087
 
-## 92. 2026 10th IEEE India International Conference on Power Electronics (IICPE)
+## 91. 2026 10th IEEE India International Conference on Power Electronics (IICPE)
 - Event ID: 72126
 - CFP Deadline: 2026-06-30
 - CFP Status: closed
@@ -740,7 +732,7 @@
 - CFP Scope: The 10th IEEE India International Conference on Power Electronics (IICPE-2026) invites original research contributions from academia and industry in the field of power electronics and its emerging applications. The conference provides a platform to share innovations and discuss advancements toward sustainable and intelligent energy systems.  Topics of Interest include: Power electronic converters and wide bandgap devices (SiC, GaN) Renewable energy systems and grid integration Electric vehicles and charging infrastructure Energy storage and battery management systems AI, machine learning, and digital control in power electronics Power quality, reliability, and protection HVDC, FACTS, and modern transmission systems Industrial drives and automation Modeling, simulation, and real-time implementation Smart grids, smart cities, and sustainable energy solutions
 - API Details: https://conference-api.ieee.org/public/details?id=72126
 
-## 93. 2026 IEEE Electrical Design of Advanced Packaging and Systems (EDAPS)
+## 92. 2026 IEEE Electrical Design of Advanced Packaging and Systems (EDAPS)
 - Event ID: 71222
 - CFP Deadline: 2026-08-21
 - CFP Status: closed
@@ -748,7 +740,7 @@
 - CFP Scope: Advances in electrical design, modeling, simulation, and measurement at the chip, package, and system levels.
 - API Details: https://conference-api.ieee.org/public/details?id=71222
 
-## 94. 2026 IEEE Microwaves, Antennas, and Propagation Conference (MAPCON)
+## 93. 2026 IEEE Microwaves, Antennas, and Propagation Conference (MAPCON)
 - Event ID: 69907
 - CFP Deadline: 2026-08-06
 - CFP Status: closed
@@ -756,7 +748,7 @@
 - CFP Scope: An international platform for Microwave, Antenna and Propagation experts and technologists from Industry, Academia and Startup ecosystem to collaborate and share their vision, expertise and knowledge.
 - API Details: https://conference-api.ieee.org/public/details?id=69907
 
-## 95. 2026 12th International Symposium on Smart Electronic Systems (iSES)
+## 94. 2026 12th International Symposium on Smart Electronic Systems (iSES)
 - Event ID: 71144
 - CFP Deadline: 2026-06-06
 - CFP Status: closed
@@ -764,7 +756,7 @@
 - CFP Scope: The primary objective of iSES is to provide a platform for both hardware and software researchers to interact under one umbrella for further development of smart electronic systems. Symposium addresses key technologies and enabling technologies for Smart Systems as well    as solutions for Energy, agriculture, health, biomedical, industry, housing, sustainability, social cohesion and mobility. Smart systems entail architectures, systems software and algorithms as key technologies. Nonetheless, other technologies such as the internet, data analytics, security, cognitive science join as enabling technologies. Smart systems adapt to changing conditions such as context, application and may possess own awareness and cater to the needs of efficient sensing, storage, software and computing. At the same time, big data Internet of Things (IoT) and cyber-physical systems have been evolving with simultaneous development of hardware and software and span across everyday consumer electronics.
 - API Details: https://conference-api.ieee.org/public/details?id=71144
 
-## 96. 2026 Fourth International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)
+## 95. 2026 Fourth International Conference on Sustainable Computing and Data Communication Systems (ICSCDS)
 - Event ID: 73109
 - CFP Deadline: 2026-09-07
 - CFP Status: closed
@@ -772,7 +764,7 @@
 - CFP Scope: The current advances in technologies require sustainable networking and computing models to meet the growing demand of emerging indispensable ICT applications such as smart cities, entertainment, business, healthcare etc. On the other hand, data intelligence and communication plays a critical role in sustainable computing, especially the size of the data is beyond the ability of commonly used computing platforms for capturing, managing, and processing the data. Recent breakthroughs in data mining, data modelling, data processing, and artificial intelligence are seeking applications in energy networks to build a more sustainable environment. As the opportunities and challenges co-exist in both the fields, this 4th International Conference of Sustainable Computing and Data Communication Systems [ICSCDS 2026] provides a platform to initiate research discussions in all aspects including theoretical studies, real-time applications, and experimental prototypes.
 - API Details: https://conference-api.ieee.org/public/details?id=73109
 
-## 97. 2026 2nd International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)
+## 96. 2026 2nd International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)
 - Event ID: 72507
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -780,7 +772,7 @@
 - CFP Scope: The 2nd International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT-2026) serves as a premier platform for researchers, academicians, industry professionals, and students to exchange and discuss the latest advancements, innovations, and challenges in the fields of Communication, networks and computational techniques. This conference will provide a forum for presenting cutting-edge research findings, methodologies, and technologies and will address the emerging trends, challenges, and opportunities in intelligent communication and computational networks.
 - API Details: https://conference-api.ieee.org/public/details?id=72507
 
-## 98. 2026 Fifteenth International Conference on Image Processing Theory, Tools and Applications (IPTA)
+## 97. 2026 Fifteenth International Conference on Image Processing Theory, Tools and Applications (IPTA)
 - Event ID: 69052
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -788,7 +780,7 @@
 - CFP Scope: IPTA 2026 aims to bring together international researchers, innovators, educators, and practitioners in the field of image processing and allied areas, to engage with high-quality educational content, share their achievements, exchange experiences, and discuss future directions in the field.
 - API Details: https://conference-api.ieee.org/public/details?id=69052
 
-## 99. 2026 IEEE 33rd International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW)
+## 98. 2026 IEEE 33rd International Conference on High Performance Computing, Data and Analytics Workshop (HiPCW)
 - Event ID: 70274
 - CFP Deadline: 2026-04-06
 - CFP Status: closed
@@ -796,7 +788,7 @@
 - CFP Scope: All areas of high performance computing, data, and analytics including areas of AI/ML
 - API Details: https://conference-api.ieee.org/public/details?id=70274
 
-## 100. 2026 IEEE 33rd International Conference on High Performance Computing, Data, and Analytics (HiPC)
+## 99. 2026 IEEE 33rd International Conference on High Performance Computing, Data, and Analytics (HiPC)
 - Event ID: 70273
 - CFP Deadline: 2026-04-06
 - CFP Status: closed
@@ -804,7 +796,7 @@
 - CFP Scope: All areas of high performance computing, data, and analytics including areas of AI/ML
 - API Details: https://conference-api.ieee.org/public/details?id=70273
 
-## 101. 2026 IEEE International Conference on Power Electronics, Drives and Energy Systems (PEDES)
+## 100. 2026 IEEE International Conference on Power Electronics, Drives and Energy Systems (PEDES)
 - Event ID: 69446
 - CFP Deadline: 2026-02-15
 - CFP Status: closed
@@ -812,7 +804,7 @@
 - CFP Scope: Recent Development in Power Electronics. The Conference focuses on the recent technologies, strategies and challenges faced by power electronic systems, Industrial drives, Electrical Machines, renewable energy resources integration, and the interconnection to modern power systems, and operation in the smart grid for a better, smarter and more environment-friendly system. Focus areas of the conference are Power Electronic Converters, Control Systems, Smart Grid Technology, Renewable Energy Resources, Distributed Generation and Grid Interconnection, Electric Vehicles, Energy storage & battery charging techniques, FACTS & Custom power, Power Quality, EMI/EMC, Microgrid, Smartgrid, Energy policies and Standards, Wide-band-gap devices, Lighting Technology, power electronics education, and Application of AI & ML Techniques to Power Electronics
 - API Details: https://conference-api.ieee.org/public/details?id=69446
 
-## 102. 2026 1st International Conference on Deep Learning Innovations for Smart Humanized AI (DISHA)
+## 101. 2026 1st International Conference on Deep Learning Innovations for Smart Humanized AI (DISHA)
 - Event ID: 71301
 - CFP Deadline: 2026-06-10
 - CFP Status: closed
@@ -820,7 +812,7 @@
 - CFP Scope: DISHA 2026, themed “Generative Artificial Intelligence, Deep Learning and Internet of Things,” envisions a future where intelligent systems seamlessly integrate learning, perception, generation, and real-time sensing to enable autonomous, scalable, and human-centric digital ecosystems. The conference serves as a global forum for advances in deep learning architectures, generative AI and large language models, computer vision, natural language processing, and edge intelligence. Emphasis is placed on AI–IoT convergence, smart sensing, embedded intelligence, and semantic communication systems for real-time, secure, and energy-efficient operation. Application domains include smart healthcare, autonomous and robotic systems, intelligent networking, and smart content creation. The scope further emphasizes ethical, explainable, and trustworthy AI to ensure responsible innovation aligned with societal needs and sustainable digital transformation.
 - API Details: https://conference-api.ieee.org/public/details?id=71301
 
-## 103. 2026 24th OITS International Conference on Information Technology (OCIT)
+## 102. 2026 24th OITS International Conference on Information Technology (OCIT)
 - Event ID: 73091
 - CFP Deadline: 2026-07-07
 - CFP Status: closed
@@ -828,7 +820,7 @@
 - CFP Scope: The OITS International Conference on Information Technology (OCIT) is a premier international forum for high quality research in the areas of Information Technology. OCIT 2026 is a premier international forum for high-quality Information Technology research, jointly organized by the Orissa Information Technology Society (OITS) and NIT Kurukshetra. We invite researchers and industry practitioners to present their findings on a wide range of emerging IT topics and applications. The conference is technically co-sponsored by the IEEE Delhi Section, with proceedings intended for publication in IEEE Xplore.
 - API Details: https://conference-api.ieee.org/public/details?id=73091
 
-## 104. 2026 2nd International Conference on Intelligent Computing and Systems at the Edge (ICEdge)
+## 103. 2026 2nd International Conference on Intelligent Computing and Systems at the Edge (ICEdge)
 - Event ID: 72014
 - CFP Deadline: 2026-07-15
 - CFP Status: closed
@@ -836,7 +828,7 @@
 - CFP Scope: The tremendous progress in AI and IoT is driving the emergence of AIoT systems that enable real-time sensing, processing, secure communication, and intelligent decision-making at the Edge. This conference aims to bring together researchers, industry experts and government bodies to share insights and innovations in AIoT and Edge system development.
 - API Details: https://conference-api.ieee.org/public/details?id=72014
 
-## 105. 2026 2nd International Conference on Robotics and Mechatronics (ICRM)
+## 104. 2026 2nd International Conference on Robotics and Mechatronics (ICRM)
 - Event ID: 70874
 - CFP Deadline: 2026-05-15
 - CFP Status: closed
@@ -844,7 +836,7 @@
 - CFP Scope: The scope of Robotics and Mechatronics encompasses advancements in medical and surgical  robotics, soft robotics, and mobile and industrial robotics, addressing applications in healthcare,  manufacturing, hazardous environments, and agriculture. Aerial and underwater robotics focus  on surveillance, exploration, and environmental monitoring, while innovations in mechanical  design, mechatronics applications, and intelligent systems enhance robot learning, human-robot interaction, and autonomous decision-making. Embedded systems and sensing technologies  drive real-time robotic applications through microcontroller- and FPGA-based systems, sensor  fusion, wireless communication, and edge computing, enabling precise control and perception in robotics. Artificial intelligence, including machine learning, deep learning, computer vision, and  natural language processing, facilitates robot autonomy, navigation, and interaction.
 - API Details: https://conference-api.ieee.org/public/details?id=70874
 
-## 106. 2026 Fourth International Conference on Emerging Applications of Material Science and Technology (ICEAMST)
+## 105. 2026 Fourth International Conference on Emerging Applications of Material Science and Technology (ICEAMST)
 - Event ID: 70617
 - CFP Deadline: 2026-09-08
 - CFP Status: closed
@@ -852,7 +844,7 @@
 - CFP Scope: The International Conference on Emerging Applications of Material Science and Technology (ICEAMST 2026), scheduled to take place on 17-19, December 2026, at RV College of Engineering, Bengaluru, India, is set to be an exciting collaborative event in the dynamic landscape of material science and technology. This year, themed around "Innovations in Electronic Materials: Advancing Technology for a Sustainable Future," ICEAMST 2026 aims to be an interdisciplinary platform for researchers, scientists, and engineers in the field of material science and engineering. This conference intends to enable an interdisciplinary research collaboration, providing insights into state-of-the-art developments in nano electronics, sustainable technologies, and the multifunctionality, reliability, and scalability of electronic materials.
 - API Details: https://conference-api.ieee.org/public/details?id=70617
 
-## 107. 2026 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)
+## 106. 2026 IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)
 - Event ID: 74125
 - CFP Deadline: 2026-07-08
 - CFP Status: closed
@@ -860,7 +852,7 @@
 - CFP Scope: Primarily communications, wired and wireless networks
 - API Details: https://conference-api.ieee.org/public/details?id=74125
 
-## 108. 2026 IEEE Pune Section International Conference (PuneCon)
+## 107. 2026 IEEE Pune Section International Conference (PuneCon)
 - Event ID: 71280
 - CFP Deadline: 2026-05-10
 - CFP Status: closed
@@ -868,7 +860,7 @@
 - CFP Scope: The scope of the conference includes Domains/Tracks in the following key areas but not limited to only these areas. The sessions are based on following fields and tracks, 1. Intelligent Systems 2. Secure Systems 3. Human Centric Systems 4. Distributed, Edge and Cloud Computing 5. Cyber Physical Systems 6. Life Sciences 7. Indian Knowledge System and Technology integration. 8. Computer Vision and Machine Learning, 9. Electric vehicles, 10. Medical Signal Processing
 - API Details: https://conference-api.ieee.org/public/details?id=71280
 
-## 109. 2026 International Conference on Communication and Smart Devices (ICCoSD)
+## 108. 2026 International Conference on Communication and Smart Devices (ICCoSD)
 - Event ID: 72295
 - CFP Deadline: 2026-06-30
 - CFP Status: closed
@@ -876,7 +868,7 @@
 - CFP Scope: This premier conference brings together researchers, academics, and industry professionals to discuss the latest research and development related to communication systems and smart device technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=72295
 
-## 110. 2026 International Conference on Future Electronics, Sustainable Computing & Intelligent Systems (FESCIS)
+## 109. 2026 International Conference on Future Electronics, Sustainable Computing & Intelligent Systems (FESCIS)
 - Event ID: 72647
 - CFP Deadline: 2026-08-15
 - CFP Status: closed
@@ -884,7 +876,7 @@
 - CFP Scope: The primary goal of FESCIS 2026 is to promote research and developmental activities across Future Electronics, Sustainable Computing, and Intelligent Systems. The conference aims to address critical problems in engineering sciences and healthcare, making a revolutionary contribution to social welfare through science and technology.  FESCIS 2026 advances the frontiers of intelligent computing in engineering, sciences, healthcare, energy, and environmental domains. The conference focuses on interdisciplinary and emerging thrust areas, promoting cognitive computing for complex problem-solving and multidisciplinary research aligned with national development priorities.
 - API Details: https://conference-api.ieee.org/public/details?id=72647
 
-## 111. 2026 International Conference on Signal Processing, Computation, Electronics, Power and Telecommunication (IConSCEPT)
+## 110. 2026 International Conference on Signal Processing, Computation, Electronics, Power and Telecommunication (IConSCEPT)
 - Event ID: 71826
 - CFP Deadline: 2026-07-21
 - CFP Status: closed
@@ -892,7 +884,7 @@
 - CFP Scope: The international conference on signal processing, computation, electronics, power, and telecommunication (IConSCEPT 2023) aims to bring together leading academicians, scientists, engineers, and researchers under a common platform to share and exchange their knowledge  and experiences in broad areas of interests including but not limited to wireless communication systems and networks; 5G and beyond; underwater sensor networks; antenna and wave propagation; RF, microwave, satellite, and optical communications; digital signal and image processing; remote sensing; VLSI and embedded systems; power electronics; electric machines and drives; electric vehicles; energy storage and management; renewable energy systems; smart grid; industrial control systems, and robotics; industry 4.0; artificial intelligence; machine  learning; deep learning; data analytics; internet of things; blockchain; edge computing; cloud computing; cyber-physical systems; augmented reality; virtual reality.
 - API Details: https://conference-api.ieee.org/public/details?id=71826
 
-## 112. 2026 10th Conference on Information and Communication Technology (CICT)
+## 111. 2026 10th Conference on Information and Communication Technology (CICT)
 - Event ID: 72580
 - CFP Deadline: 2026-08-30
 - CFP Status: closed
@@ -900,7 +892,7 @@
 - CFP Scope: The Conference on Information and Communication Technology (CICT) is a flagship annual event jointly organized by the five Ministry of Education-funded Indian Institutes of Information Technology, providing a platform for researchers, industry professionals, and academicians to exchange ideas and present innovations in the field of ICT. The conference features keynote lectures, tutorial sessions, technical and poster presentations, as well as industry and Women in Engineering forums. It covers a wide range of domains including Artificial Intelligence and Machine Learning, IoT and Wireless Sensor Networks, Robotics and Automation, Big Data and Cloud Computing, Cybersecurity and Information Privacy, Signal, Image and Video Processing, Next-Generation Communication Technologies, Industry 4.0 and Smart Manufacturing, Healthcare Analytics, and Education.
 - API Details: https://conference-api.ieee.org/public/details?id=72580
 
-## 113. 2026 14th International Conference on Intelligent Systems and Embedded Design (ISED)
+## 112. 2026 14th International Conference on Intelligent Systems and Embedded Design (ISED)
 - Event ID: 71492
 - CFP Deadline: 2026-08-15
 - CFP Status: closed
@@ -908,7 +900,7 @@
 - CFP Scope: The conference aims to foster collaborative endeavors and unveil cutting-edge research that can further drive innovation and development in the interdisciplinary domains of high performance or low-power circuits, algorithms, electronics, embedded systems, AI chips, and SoC technology, Generative driven deign, AI/ML driven intelligent systems, etc.
 - API Details: https://conference-api.ieee.org/public/details?id=71492
 
-## 114. 2026 4th International Conference on Smart Systems for applications in Electrical Sciences (ICSSES)
+## 113. 2026 4th International Conference on Smart Systems for applications in Electrical Sciences (ICSSES)
 - Event ID: 72440
 - CFP Deadline: 2026-08-27
 - CFP Status: closed
@@ -916,7 +908,7 @@
 - CFP Scope: The conference focuses on advanced research and innovations in electrical sciences and smart systems, bringing together areas from electronics, computing, and intelligent technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=72440
 
-## 115. 2026 IEEE 20th International Conference on Industrial and Information Systems (ICIIS)
+## 114. 2026 IEEE 20th International Conference on Industrial and Information Systems (ICIIS)
 - Event ID: 71472
 - CFP Deadline: 2026-07-31
 - CFP Status: closed
@@ -924,7 +916,7 @@
 - CFP Scope: ICIIS 2026 covers a wide range of engineering disciplines, with added focus on sustainability and trustworthiness. The conference is being organised to function as a platform for dissemination of recent high-quality research work. It covers the wide domain of Computer Science, Electronics, and Electrical Engineering and will provide a means to exchange innovative ideas and recent advances among researchers from academia and industry.
 - API Details: https://conference-api.ieee.org/public/details?id=71472
 
-## 116. 2026 IEEE 8th International Conference on Condition Assessment Techniques in Electrical Systems (CATCON)
+## 115. 2026 IEEE 8th International Conference on Condition Assessment Techniques in Electrical Systems (CATCON)
 - Event ID: 71426
 - CFP Deadline: 2026-08-18
 - CFP Status: closed
@@ -932,7 +924,7 @@
 - CFP Scope: The conference addresses advanced condition monitoring, diagnostics, and prognostics of electrical insulation and power assets operating under complex electrical and environmental stresses. It covers monitoring and diagnostic techniques for HVDC and UHVAC transmission systems, as well as predictive diagnostics of electrical equipment used in mining and heavy-industry applications. The scope includes performance-oriented monitoring of electrified transport systems and decentralized energy infrastructures influenced by power electronic interfaces. Emphasis is placed on AI- and digital twin-based decision support for insulation prognostics and asset health management. The conference also highlights smart sensing and monitoring frameworks for reliable operation of converter-dominated power systems.
 - API Details: https://conference-api.ieee.org/public/details?id=71426
 
-## 117. 2026 IEEE India Council International Conference (INDICON)
+## 116. 2026 IEEE India Council International Conference (INDICON)
 - Event ID: 72446
 - CFP Deadline: 2026-06-15
 - CFP Status: closed
@@ -940,7 +932,7 @@
 - CFP Scope: Objectives of INDICON 2026 Provide a global platform for interdisciplinary knowledge exchange. Showcase cutting-edge R&D from academia, industry, and government. Promote sustainable engineering practices aligned with Net-Zero targets. Foster collaborations among IEEE societies, researchers, startups & industries. Enable young researchers with tutorials, workshops & innovation challenges.
 - API Details: https://conference-api.ieee.org/public/details?id=72446
 
-## 118. 2026 IEEE Silchar Subsection Conference (SILCON)
+## 117. 2026 IEEE Silchar Subsection Conference (SILCON)
 - Event ID: 71035
 - CFP Deadline: 
 - CFP Status: missing
@@ -948,7 +940,7 @@
 - CFP Scope: Communication and Networking, Signal Processing, RF, Microwave and mmWave, Micro/Nanoelectronics Devices and Circuits, Artificial Intelligence, Data Science & Computing, Software Engineering, Power System and Smart Grid, Power Electronics and Drives, Control and Instrumentation, Humanitarian Technology & Engineering Education
 - API Details: https://conference-api.ieee.org/public/details?id=71035
 
-## 119. 2026 Indian Conference on Advances in Electrical, Computers, and Communications (IConAECC)
+## 118. 2026 Indian Conference on Advances in Electrical, Computers, and Communications (IConAECC)
 - Event ID: 70685
 - CFP Deadline: 2026-10-30
 - CFP Status: open
@@ -956,7 +948,7 @@
 - CFP Scope: The theme of IConAECC 2026 is "Innovations for Sustainable Development." The conference aims to serve as a platform for researchers, academia, and industry to share knowledge across various disciplines in Electrical, Communication, and Computer Science. Additionally, IConAECC 2026 will provide a forum for world-class researchers to come together and share their research achievements, ideas, and progress in addressing future challenges in these fields.
 - API Details: https://conference-api.ieee.org/public/details?id=70685
 
-## 120. 2026 International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA)
+## 119. 2026 International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA)
 - Event ID: 67284
 - CFP Deadline: 2026-11-09
 - CFP Status: open
@@ -964,7 +956,7 @@
 - CFP Scope: The First International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA 2026) is set to be a groundbreaking global forum, bringing together brilliant minds from academia, industry, and research to shape the future of semiconductor and AI-driven technologies. This premier event will serve as a catalyst for innovation, collaboration, and transformative breakthroughs across a spectrum of emerging domains, including Machine Learning & Artificial Intelligence, Reconfigurable Computing & Processor Design, Analog & RF Circuits, Embedded Security, Semiconductor & Circuit Design, Embedded Systems, IoT & Cyber-Physical Systems, and Optical & Quantum Computing. AVARTA 2026 aims to redefine the possibilities of intelligent systems, fostering cutting-edge discussions and technological advancements that will drive the future of VLSI and AI solutions.
 - API Details: https://conference-api.ieee.org/public/details?id=67284
 
-## 121. 2026 International Conference on Emerging Trends in Electronics, Computing, and Intelligent Systems (ETECIS)
+## 120. 2026 International Conference on Emerging Trends in Electronics, Computing, and Intelligent Systems (ETECIS)
 - Event ID: 70889
 - CFP Deadline: 2026-05-10
 - CFP Status: closed
@@ -972,7 +964,7 @@
 - CFP Scope: The International Conference on Emerging Trends in Electronics, Computing, and Intelligent Systems (ICETECIS) provides a global forum for researchers, academicians, and industry professionals to exchange knowledge and explore innovations shaping the future of technology. The conference emphasizes advances in electronics, computing architectures, intelligent systems, and their interdisciplinary applications in areas such as communication, automation, healthcare, and sustainable development. With keynote talks, technical sessions, and collaborative opportunities, ICETECIS fosters discussions on state-of-the-art research, practical challenges, and emerging trends driving intelligent and connected systems for next-generation solutions.
 - API Details: https://conference-api.ieee.org/public/details?id=70889
 
-## 122. 2026 1st Odisha AI Conference (OAIC)
+## 121. 2026 1st Odisha AI Conference (OAIC)
 - Event ID: 72676
 - CFP Deadline: 2026-07-10
 - CFP Status: closed
@@ -980,7 +972,7 @@
 - CFP Scope: The conference will serve as a premier platform for exchanging ideas, presenting research findings, and fostering collaborations that address real-world challenges through AI-driven solutions. OAIC  will focus on both theoretical developments and practical applications of AI across diverse domains such as healthcare, energy systems, smart cities, agriculture, communication networks, and industrial automation. The conference also emphasizes ethical AI, sustainable development, and the integration of AI with emerging technologies to drive societal and economic transformation.
 - API Details: https://conference-api.ieee.org/public/details?id=72676
 
-## 123. 2026 8th IEEE International Conference on Emerging Electronics (ICEE)
+## 122. 2026 8th IEEE International Conference on Emerging Electronics (ICEE)
 - Event ID: 72661
 - CFP Deadline: 2026-09-01
 - CFP Status: closed
@@ -988,7 +980,7 @@
 - CFP Scope: Electron Devices, Circuits and Systems
 - API Details: https://conference-api.ieee.org/public/details?id=72661
 
-## 124. 2026 IEEE 13th Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)
+## 123. 2026 IEEE 13th Uttar Pradesh Section International Conference on Electrical, Electronics and Computer Engineering (UPCON)
 - Event ID: 71595
 - CFP Deadline: 2026-05-31
 - CFP Status: closed
@@ -996,7 +988,7 @@
 - CFP Scope: UPCON-2026 provides an international platform for researchers and professionals to present and exchange advances in electrical, electronics, and computer engineering, spanning power and energy systems, communication, computing, intelligent systems, and emerging interdisciplinary technologies, while fostering collaboration between academia and industry. Details of previous editions are available at: https://upcon2025.iitbhu.ac.in/
 - API Details: https://conference-api.ieee.org/public/details?id=71595
 
-## 125. 2026 3rd International Conference on Artificial Intelligence Trends and Pattern Recognition (ICAITPR)
+## 124. 2026 3rd International Conference on Artificial Intelligence Trends and Pattern Recognition (ICAITPR)
 - Event ID: 70786
 - CFP Deadline: 2026-03-16
 - CFP Status: closed
@@ -1004,7 +996,7 @@
 - CFP Scope: The International Conference on Artificial Intelligence Trends and Pattern Recognition (ICAITPR) provides a global platform for researchers, academicians, and industry professionals to exchange knowledge and explore innovations in AI and its applications. The scope of the conference spans Future Trends in AI, including conversational and generative AI, robotics, big data, language processing, deep learning, computer vision, biometrics, and AI for healthcare and gender equality. It covers Data Analytics and Visualizations, focusing on predictive analytics, LLM models, ethical considerations, finance, supply chain, smart cities, and AI for precision agriculture. The track on Network & Information Security and Privacy emphasizes IoT security, quantum cryptography, blockchain, cloud security, and AI for food, water, and healthcare safety. Sustainable Advances in High Performance Computing address parallel, distributed, hybrid, and quantum computing for smart cities and Industry 5.0.
 - API Details: https://conference-api.ieee.org/public/details?id=70786
 
-## 126. 2026 8th International Conference on Energy, Power and Environment (ICEPE)
+## 125. 2026 8th International Conference on Energy, Power and Environment (ICEPE)
 - Event ID: 72159
 - CFP Deadline: 2026-06-14
 - CFP Status: closed
@@ -1012,7 +1004,7 @@
 - CFP Scope: Researchers and experts will be invited to deliver works done, keynote speeches and invited talks on recent trends and significant developments in the emerging technologies. The conference will emphasize on integration of sustainable technologies to encompass the variety of challenges effectively for smart electric grids. The scope of the conference is to promote a forum, where researchers and engineers involved with electrical power systems may exchange their experiences and present solutions for actual and future problems. The conference offers a platform to the prominent academicians and industrial practitioners from all over the world to discuss about the environmental problems, intensive international efforts to reduce emission of greenhouse gases and increased generation of electrical energy to facilitate industrial growth and presents a base for identifying directions for continuation of research.
 - API Details: https://conference-api.ieee.org/public/details?id=72159
 
-## 127. 2026 International Conference on Innovations in Communication, Intelligent Computing Systems, and Semiconductor Technology for Sustainable Development Environments (IC2CS)
+## 126. 2026 International Conference on Innovations in Communication, Intelligent Computing Systems, and Semiconductor Technology for Sustainable Development Environments (IC2CS)
 - Event ID: 67085
 - CFP Deadline: 2026-06-10
 - CFP Status: closed
@@ -1020,7 +1012,7 @@
 - CFP Scope: This conference aims to bring together leading experts, researchers, and practitioners from around the globe to explore the latest advancements in semiconductor technology, communication systems, and intelligent computing solutions. The conference will focus on critical roles in fostering sustainable development across various sectors. Topics of interest include, but not limited to: Semiconductor Technology: Emerging materials, fabrication techniques, and applications in modern electronics and energy-efficient devices. Communication Systems: Advancements in wireless, optical, and quantum communication technologies for sustainable and efficient global connectivity. Intelligent Computing Systems: AI, machine learning, and advanced computing techniques, automation, and decision-making. Sustainable Development: Integration of innovative technologies with sustainable practices, focusing on environmental sustainability, resource management, and energy efficiency.
 - API Details: https://conference-api.ieee.org/public/details?id=67085
 
-## 128. 2026 International Conference on Societal Intelligence and Smart Communities (SISCom)
+## 127. 2026 International Conference on Societal Intelligence and Smart Communities (SISCom)
 - Event ID: 72080
 - CFP Deadline: 2026-08-20
 - CFP Status: closed
@@ -1028,7 +1020,7 @@
 - CFP Scope: Rapid advances in artificial intelligence, data analytics, Internet of Things (IoT), cyber-physical systems, and digital governance are transforming how societies function and how communities are planned, governed, and sustained. The concept of Societal Intelligence refers to the collective capacity of societies to sense, analyze, learn, and act intelligently using technology, data, and human-centered design to improve quality of life. Smart Communities extend this vision by integrating intelligent systems into urban and rural environments to enhance inclusivity, sustainability, resilience, and well-being.
 - API Details: https://conference-api.ieee.org/public/details?id=72080
 
-## 129. 2026 International Conference on AI-Driven Cybersecurity (AICYBER)
+## 128. 2026 International Conference on AI-Driven Cybersecurity (AICYBER)
 - Event ID: 70893
 - CFP Deadline: 2026-06-10
 - CFP Status: closed
@@ -1036,7 +1028,7 @@
 - CFP Scope: AICYBER 2026 aims to provide an international platform for researchers, academicians, industry professionals, and students to present and discuss recent advancements in Artificial Intelligence, Machine Learning, Cyber Security, Intelligent Systems, and Smart Technologies.  The conference focuses on addressing emerging challenges in secure intelligent systems through AI-driven models, cyber resilience, data intelligence, and sustainable digital transformation, aligned with global technological and societal needs.
 - API Details: https://conference-api.ieee.org/public/details?id=70893
 
-## 130. 2026 International Conference on AI-Enabled Smart Solutions for Industry, Governance, Healthcare, and Sustainable Development (AISIGH–SD)
+## 129. 2026 International Conference on AI-Enabled Smart Solutions for Industry, Governance, Healthcare, and Sustainable Development (AISIGH–SD)
 - Event ID: 70672
 - CFP Deadline: 2026-03-10
 - CFP Status: closed
@@ -1044,13 +1036,21 @@
 - CFP Scope: The International Conference on AI-Enabled Smart Solutions for Industry, Governance, Healthcare, and Sustainable Development (AISIGH–SD 2026) explores the design, deployment, governance and societal implications of AI systems that enable intelligent, resilient and equitable solutions across industry, public sector, healthcare and sustainable development domains. The conference brings together researchers, practitioners, policymakers and community stakeholders to present novel algorithms, systems, case studies, evaluations, policy analyses, and interdisciplinary collaborations that prioritize social impact, ethics, transparency, and long-term sustainability.AISIGH–SD 2026 solicits original, unpublished papers, system demonstrations, data and dataset papers, position papers, and workshop proposals on AI-enabled solutions for industry, governance, healthcare, and sustainable development. Topics of interest include, but are not limited to, applied machine learning, trustworthy.
 - API Details: https://conference-api.ieee.org/public/details?id=70672
 
-## 131. 2026 4th International Conference on Disruptive Technologies (ICDT)
+## 130. 2026 4th International Conference on Disruptive Technologies (ICDT)
 - Event ID: 70969
 - CFP Deadline: 2026-08-07
 - CFP Status: closed
 - Field of Interest: Bioengineering; Communication, Networking and Broadcast Technologies; Computing and Processing; Engineering Profession; General Topics for Engineers; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis
 - CFP Scope: ICDT-2026 is envisioned as a premier international forum for academicians, researchers, industry professionals, and students to exchange ideas and research outcomes in disruptive technologies, including but not limited to: • Artificial Intelligence and Machine Learning • Software Engineering and Advanced Computing • Blockchain Technologies • Internet of Things (IoT) • Cybersecurity and Secure Systems • Cloud, Edge, and Distributed Computing • Intelligent Communications and Networks The conference program will comprise keynote lectures, invited talks, panel discussions, and rigorously peer-reviewed technical paper sessions, addressing both theoretical advancements and real-world applications. Strong emphasis is placed on student engagement, research mentoring, and skill development, in alignment with IEEE CS’s mission of professional growth and knowledge dissemination.
 - API Details: https://conference-api.ieee.org/public/details?id=70969
+
+## 131. 2027 40th International Conference on VLSI Design and 26th International Conference on Embedded Systems (VLSID)
+- Event ID: 73230
+- CFP Deadline: 2026-06-27
+- CFP Status: closed
+- Field of Interest: Components, Circuits, Devices and Systems; Computing and Processing
+- CFP Scope: The VLSI Design Conference (VLSID) is a premier global event bridging academia and the semiconductor industry. It focuses on innovations in very large-scale integration (VLSI) circuits, embedded systems, and Electronic Design Automation (EDA), frequently exploring themes at the intersection of hardware, AI, and sustainable computing
+- API Details: https://conference-api.ieee.org/public/details?id=73230
 
 ## 132. 2027 19th International Conference on COMmunication Systems and NETworkS (COMSNETS)
 - Event ID: 72567

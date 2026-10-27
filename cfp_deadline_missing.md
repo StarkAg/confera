@@ -1,17 +1,17 @@
 # CFP Deadline Missing Report
 
 - CFP Deadline missing: 18 of 297
-- Generated on: 2026-10-26
+- Generated on: 2026-10-27
 
 ## Conferences with Missing CFP Deadline
 
 | # | Conference | Field of Interest |
 | --- | --- | --- |
-| 8 | 2026 IEEE 5th International Conference on Computer Vision and Machine Intelligence (CVMI) | Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
-| 56 | 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES) | Aerospace; Bioengineering; Components, Circuits, Devices and Systems; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
-| 57 | 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers |
-| 58 | 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
-| 118 | 2026 IEEE Silchar Subsection Conference (SILCON) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
+| 7 | 2026 IEEE 5th International Conference on Computer Vision and Machine Intelligence (CVMI) | Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
+| 55 | 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES) | Aerospace; Bioengineering; Components, Circuits, Devices and Systems; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
+| 56 | 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers |
+| 57 | 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
+| 117 | 2026 IEEE Silchar Subsection Conference (SILCON) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
 | 141 | 2027 2nd International Conference on Artificial Intelligence and Emerging Technologies (ICAIET) | Communication, Networking and Broadcast Technologies; Computing and Processing; Robotics and Control Systems |
 | 142 | 2027 11th International Conference on Signal Processing and Communication (ICSC) | Aerospace; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; General Topics for Engineers; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
 | 182 | 2027 5th International Conference on Range Technology (ICORT) | Aerospace; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineering Profession; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
