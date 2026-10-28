@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-10-27
+- Generated on: 2026-10-28
 
 ## 1. 2026 6th International Conference on Ubiquitous Computing and Intelligent Information Systems (ICUIS)
 - Event ID: 70669
