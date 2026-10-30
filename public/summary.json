@@ -1,23 +1,9 @@
 {
-  "updated": "2026-10-29",
-  "total": 297,
-  "open": 88,
+  "updated": "2026-10-30",
+  "total": 298,
+  "open": 89,
   "hybridOpen": 51,
   "next": [
-    {
-      "acronym": "IDCIoT",
-      "title": "2027 5th International Conference on Intelligent Data Communication Technologies and Internet of Things (IDCIoT)",
-      "city": "Ottapalam",
-      "cfp": "2026-10-29",
-      "format": "hybrid"
-    },
-    {
-      "acronym": "ICIPCN",
-      "title": "2027 7th International Conference on Image Processing and Capsule Networks (ICIPCN)",
-      "city": "Dindigul",
-      "cfp": "2026-10-29",
-      "format": "hybrid"
-    },
     {
       "acronym": "IConAECC",
       "title": "2026 Indian Conference on Advances in Electrical, Computers, and Communications (IConAECC)",
@@ -87,6 +73,20 @@
       "city": "Noida NCR",
       "cfp": "2026-11-15",
       "format": "inperson"
+    },
+    {
+      "acronym": "SCES",
+      "title": "2027 IEEE 9th Students Conference on Engineering and Systems (SCES)",
+      "city": "Prayagraj",
+      "cfp": "2026-11-15",
+      "format": "inperson"
+    },
+    {
+      "acronym": "ICSFT",
+      "title": "2027 2nd International Conference on Sustainable and Futuristic Technologies (ICSFT)",
+      "city": "Pune",
+      "cfp": "2026-11-15",
+      "format": "hybrid"
     }
   ]
 }
