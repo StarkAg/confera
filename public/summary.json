@@ -1,16 +1,9 @@
 {
-  "updated": "2026-10-30",
-  "total": 298,
+  "updated": "2026-10-31",
+  "total": 293,
   "open": 89,
   "hybridOpen": 51,
   "next": [
-    {
-      "acronym": "IConAECC",
-      "title": "2026 Indian Conference on Advances in Electrical, Computers, and Communications (IConAECC)",
-      "city": "Tiruchirappalli",
-      "cfp": "2026-10-30",
-      "format": "hybrid"
-    },
     {
       "acronym": "ACET",
       "title": "2027 3rd International Conference on Advanced Computing and Emerging Technologies (ACET)",
@@ -87,6 +80,13 @@
       "city": "Pune",
       "cfp": "2026-11-15",
       "format": "hybrid"
+    },
+    {
+      "acronym": "SIETCON",
+      "title": "2027 International Conference on Scalable Intelligent Emerging Technologies and Networking (SIETCON)",
+      "city": "Tumkur",
+      "cfp": "2026-11-18",
+      "format": "inperson"
     }
   ]
 }
