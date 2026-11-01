@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-10-31
+- Generated on: 2026-11-01
 
 ## 1. 2026 Third International Conference on Smart Technologies for Power and Renewable Energy (SPECon)
 - Event ID: 68942
@@ -1423,7 +1423,7 @@
 ## 178. 2027 3rd International Conference on Advanced Computing and Emerging Technologies (ACET)
 - Event ID: 72643
 - CFP Deadline: 2026-10-31
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Computing and Processing
 - CFP Scope: ADVANCED COMPUTING & EMERGING TECHNOLOGIES
 - API Details: https://conference-api.ieee.org/public/details?id=72643
@@ -1815,7 +1815,7 @@
 ## 227. 2027 IEEE Radar Conference (RadarConf'27)
 - Event ID: 71733
 - CFP Deadline: 2026-10-31
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Aerospace; Engineering Profession; Fields, Waves and Electromagnetics; Geoscience; Signal Processing and Analysis
 - CFP Scope: Radar and Electronic Warfare
 - API Details: https://conference-api.ieee.org/public/details?id=71733
@@ -2087,7 +2087,7 @@
 ## 261. 2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT)
 - Event ID: 72666
 - CFP Deadline: 2026-10-31
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Computing and Processing; Engineering Profession; General Topics for Engineers
 - CFP Scope: The 2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT) provides a platform for researchers, academicians, and industry professionals to share advances in intelligent computing. The conference covers core areas such as artificial intelligence, machine learning, deep learning, data analytics, and computational intelligence, along with enabling technologies like IoT, cloud and edge computing. It emphasizes both theoretical developments and real-world applications in domains including healthcare, smart cities, energy systems, cybersecurity, and automation. The conference aims to promote interdisciplinary research, innovation, and collaboration to address current challenges and future directions in intelligent computing.
 - API Details: https://conference-api.ieee.org/public/details?id=72666
