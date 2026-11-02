@@ -1,16 +1,9 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "total": 293,
-  "open": 86,
+  "open": 85,
   "hybridOpen": 50,
   "next": [
-    {
-      "acronym": "CICTS",
-      "title": "2027 1st International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS)",
-      "city": "HYDERABAD",
-      "cfp": "2026-11-01",
-      "format": "inperson"
-    },
     {
       "acronym": "AVARTA",
       "title": "2026 International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA)",
@@ -87,6 +80,13 @@
       "city": "Kalyani",
       "cfp": "2026-11-30",
       "format": "hybrid"
+    },
+    {
+      "acronym": "IC3ECSBHI",
+      "title": "2027 3rd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)",
+      "city": "Greater Noida -NCR Delhi",
+      "cfp": "2026-11-30",
+      "format": "inperson"
     }
   ]
 }

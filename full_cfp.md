@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-01
+- Generated on: 2026-11-02
 
 ## 1. 2026 Third International Conference on Smart Technologies for Power and Renewable Energy (SPECon)
 - Event ID: 68942
@@ -1959,7 +1959,7 @@
 ## 245. 2027 1st International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS)
 - Event ID: 72911
 - CFP Deadline: 2026-11-01
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Fields, Waves and Electromagnetics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis
 - CFP Scope: The International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS 2027) is designed to offer a multidisciplinary forum to share and exchange latest developments in Computational Intelligence, Communication technologies and Sustainable systems. The new topics of the conference are the artificial intelligence and smart systems, machine learning and renewable energy, wireless communication, cloud computing, cyber security, IoT, and sustainable computing. CICTS 2027 welcomes innovation in research and networking with partner companies for solving real-world industrial, societal and environmental challenges via intellectually sound and environmentally sustainable technology solutions.
 - API Details: https://conference-api.ieee.org/public/details?id=72911
