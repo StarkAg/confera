@@ -1,16 +1,16 @@
 # CFP Deadline Missing Report
 
 - CFP Deadline missing: 17 of 297
-- Generated on: 2026-11-04
+- Generated on: 2026-11-05
 
 ## Conferences with Missing CFP Deadline
 
 | # | Conference | Field of Interest |
 | --- | --- | --- |
-| 44 | 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES) | Aerospace; Bioengineering; Components, Circuits, Devices and Systems; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
-| 45 | 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers |
-| 46 | 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
-| 107 | 2026 IEEE Silchar Subsection Conference (SILCON) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
+| 43 | 2026 IEEE 6th International Conference on Power, Control & Embedded Systems (ICPCES) | Aerospace; Bioengineering; Components, Circuits, Devices and Systems; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
+| 44 | 2026 IEEE WIE International Leadership Summit  -Bangalore (IEEE ILS) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers |
+| 45 | 2026 Third International Conference on Computing, Semiconductor, Mechatronics, Intelligent Systems and Communications (COSMIC) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Robotics and Control Systems; Signal Processing and Analysis |
+| 106 | 2026 IEEE Silchar Subsection Conference (SILCON) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
 | 131 | 2027 2nd International Conference on Artificial Intelligence and Emerging Technologies (ICAIET) | Communication, Networking and Broadcast Technologies; Computing and Processing; Robotics and Control Systems |
 | 132 | 2027 11th International Conference on Signal Processing and Communication (ICSC) | Aerospace; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; General Topics for Engineers; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
 | 172 | 2027 5th International Conference on Range Technology (ICORT) | Aerospace; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineering Profession; Fields, Waves and Electromagnetics; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
