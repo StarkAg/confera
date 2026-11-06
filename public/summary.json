@@ -1,7 +1,7 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "total": 297,
-  "open": 88,
+  "open": 89,
   "hybridOpen": 52,
   "next": [
     {
@@ -75,18 +75,18 @@
       "format": "hybrid"
     },
     {
+      "acronym": "ICCCISP",
+      "title": "2027 International Conference on Cognitive Computing and Intelligent Signal Processing (ICCCISP)",
+      "city": "Pandharpur",
+      "cfp": "2026-11-30",
+      "format": "inperson"
+    },
+    {
       "acronym": "ICRCICN",
       "title": "2027 Eighth International Conference on Research in Computational Intelligence and Communication Networks (ICRCICN)",
       "city": "Kalyani",
       "cfp": "2026-11-30",
       "format": "hybrid"
-    },
-    {
-      "acronym": "IC3ECSBHI",
-      "title": "2027 3rd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)",
-      "city": "Greater Noida -NCR Delhi",
-      "cfp": "2026-11-30",
-      "format": "inperson"
     }
   ]
 }
