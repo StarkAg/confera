@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-06
+- Generated on: 2026-11-07
 
 ## 1. 2026 IEEE International Conference of Electron Devices Society Kolkata Chapter (EDKCON)
 - Event ID: 70011
@@ -1956,7 +1956,15 @@
 - CFP Scope: The International Conference on Emerging Trends in Technologies for Industry aims to provide a multidisciplinary platform for researchers, academicians, industry professionals, innovators, and practitioners to share advancements, research outcomes, and practical insights on transformative technologies shaping modern industry. The conference will focus on technological innovations that are driving efficiency, sustainability, automation, and digital transformation across industrial sectors.
 - API Details: https://conference-api.ieee.org/public/details?id=71446
 
-## 245. 2027 1st International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS)
+## 245. 2027 IEEE 2nd International Conference on Smart Power, Energy, Renewables, and Transportation (SPERT)
+- Event ID: 74472
+- CFP Deadline: 2026-12-15
+- CFP Status: open
+- Field of Interest: Power, Energy and Industry Applications; Transportation
+- CFP Scope: IEEE-SPERT 2027, the second international IEEE conference in the Gujarat region, provides a platform for researchers, practitioners, and students to present advances in power electronics, power and energy systems, and sustainable transportation. It aims to disseminate high-quality research, foster academia-industry collaboration in a rapidly growing industrial hub, and build a regional community of future researchers and engineers. The technical program covers 11 tracks: smart power systems and grid technologies; advanced power electronics and converters; electric machines, drives and control; renewable energy and microgrids; energy storage and management; electric vehicles and charging; smart transportation and automotive technologies; intelligent control for energy applications; hydrogen energy and fuel cells; emerging technologies for sustainable transportation; and control and automation.
+- API Details: https://conference-api.ieee.org/public/details?id=74472
+
+## 246. 2027 1st International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS)
 - Event ID: 72911
 - CFP Deadline: 2026-11-01
 - CFP Status: closed
@@ -1964,7 +1972,7 @@
 - CFP Scope: The International Conference on Computational Intelligence & Communication Technologies for Sustainability (CICTS 2027) is designed to offer a multidisciplinary forum to share and exchange latest developments in Computational Intelligence, Communication technologies and Sustainable systems. The new topics of the conference are the artificial intelligence and smart systems, machine learning and renewable energy, wireless communication, cloud computing, cyber security, IoT, and sustainable computing. CICTS 2027 welcomes innovation in research and networking with partner companies for solving real-world industrial, societal and environmental challenges via intellectually sound and environmentally sustainable technology solutions.
 - API Details: https://conference-api.ieee.org/public/details?id=72911
 
-## 246. 2027 4th International Conference on Control, Computing, Communication and Materials (ICCCCM)
+## 247. 2027 4th International Conference on Control, Computing, Communication and Materials (ICCCCM)
 - Event ID: 73328
 - CFP Deadline: 2027-02-28
 - CFP Status: open
@@ -1972,7 +1980,7 @@
 - CFP Scope: Control, Computing, Communication and Materials
 - API Details: https://conference-api.ieee.org/public/details?id=73328
 
-## 247. 2027 2nd International Conference on Emerging Trends in Mobile Computing and Sustainable Informatics (ICEMCSI)
+## 248. 2027 2nd International Conference on Emerging Trends in Mobile Computing and Sustainable Informatics (ICEMCSI)
 - Event ID: 73565
 - CFP Deadline: 2027-01-30
 - CFP Status: open
@@ -1980,7 +1988,7 @@
 - CFP Scope: This international conference serves a forum for researchers to address mobile networks, computing models, algorithms, sustainable models, and advanced informatics that supports the symbiosis of mobile computing and sustainable informatics.
 - API Details: https://conference-api.ieee.org/public/details?id=73565
 
-## 248. 2027 IEEE International Conference on Computer Vision and Machine Intelligence (CVMI)
+## 249. 2027 IEEE International Conference on Computer Vision and Machine Intelligence (CVMI)
 - Event ID: 73831
 - CFP Deadline: 2027-02-25
 - CFP Status: open
@@ -1988,7 +1996,7 @@
 - CFP Scope: AI in biometrics, forensics, content protection, Trustworthy, explainable and ethical AI, Machine learning, Deep learning ,Image/video security, blockchain for image and video security ,Audio and video deepfakes, Computational intelligence, AI & intelligence in other applications
 - API Details: https://conference-api.ieee.org/public/details?id=73831
 
-## 249. 2027 International Conference on Sustainable Energy, Automation, Mechatronics and Storage (ICSEAMS)
+## 250. 2027 International Conference on Sustainable Energy, Automation, Mechatronics and Storage (ICSEAMS)
 - Event ID: 73148
 - CFP Deadline: 2027-01-31
 - CFP Status: open
@@ -1996,7 +2004,7 @@
 - CFP Scope: The ICSEAMS2027 aims to bring together leading academicians, researchers, students and research scholars to interact and exchange novel ideas about all aspects adopted in the field of Sustainable Energy, Automation, Mechatronics and Storage. Participation from Industry and Academia will make the conference a vibrant experience.
 - API Details: https://conference-api.ieee.org/public/details?id=73148
 
-## 250. 2027 International Conference on Intelligent Computing for Sustainable Energy Technologies and Industrial Control (ICSETIC)
+## 251. 2027 International Conference on Intelligent Computing for Sustainable Energy Technologies and Industrial Control (ICSETIC)
 - Event ID: 73291
 - CFP Deadline: 2027-01-30
 - CFP Status: open
@@ -2004,7 +2012,7 @@
 - CFP Scope: The Conferenceis the first IEEE International Conference on Intelligent Computing for Sustainable Energy Technologies and Industrial Control. It provides a global platform for researchers, academicians, industry experts, innovators, and students to present and exchange advances in Electrical Engineering, Computer Science, Information Technology, and allied interdisciplinary fields. Jointly organized by the Department of Electrical Engineering and Information Technology, NIT Raipur, the conference promotes collaboration among academia, industry, and research organizations to address emerging technological challenges. The technical program covers power systems, renewable energy, smart grids, power electronics, AI, machine learning, IoT, cloud computing, blockchain, cybersecurity, robotics, digital twins, quantum computing, data analytics, signal and image processing, photonics, and other next-generation technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=73291
 
-## 251. 2027 International Conference on Vision for Interdisciplinary Science, Technology, and Applications (BVUCON)
+## 252. 2027 International Conference on Vision for Interdisciplinary Science, Technology, and Applications (BVUCON)
 - Event ID: 73532
 - CFP Deadline: 2026-10-20
 - CFP Status: closed
@@ -2012,7 +2020,7 @@
 - CFP Scope: The BVUCON is an international conference on vision for interdisciplinary science, technology, and applications, bringing together researchers, academicians, industry professionals, innovators, policymakers, and students to present and share their cutting-edge research, emerging technologies, and innovative solutions that contribute to sustainable development through interdisciplinary collaboration. The conference welcomes original research papers, review articles, industrial case studies, and application-oriented contributions in the fields of science, engineering, technology, healthcare, management, environmental sciences, and allied disciplines. Six multidisciplinary tracks will make up the conference: Artificial Intelligence and Intelligent Systems; Smart Infrastructure and Advanced Manufacturing; Renewable Energy and Environmental Sustainability; AI in Healthcare; Innovation in Education and Society; and Emerging Technologies and Interdisciplinary Applications.
 - API Details: https://conference-api.ieee.org/public/details?id=73532
 
-## 252. 2027 IEEE Wireless Antenna and Microwave Symposium (WAMS)
+## 253. 2027 IEEE Wireless Antenna and Microwave Symposium (WAMS)
 - Event ID: 72032
 - CFP Deadline: 2026-12-31
 - CFP Status: open
@@ -2020,7 +2028,7 @@
 - CFP Scope: Key areas of interest include but are not limited to: • Advanced wireless communication technologies (5G, 6G and beyond) • Antenna theory, design, and applications • Microwave circuits, devices, and systems • Signal processing techniques for communication systems • Emerging trends in RF, millimeter-wave, and terahertz technologies
 - API Details: https://conference-api.ieee.org/public/details?id=72032
 
-## 253. 2027 13th International Conference on Smart Computing and Communications (ICSCC)
+## 254. 2027 13th International Conference on Smart Computing and Communications (ICSCC)
 - Event ID: 74434
 - CFP Deadline: 2027-02-12
 - CFP Status: open
@@ -2028,7 +2036,7 @@
 - CFP Scope: ICSCC 2027 will offer researchers, delegates and scholars an incredible chance to interact with each other and share their experience and knowledge in ‘Intelligent Technologies for Smart and Sustainable Future’. The goal of ICSCC 2027 is to provide the perfect platform for researchers and practitioners from academia and industry to share their experience, foster collaborations among industry and academia, and get enlightened about the state-of the-art advancements in their respective domains. The conference has been held since 2008. Over the past many years, ICSCC has developed into a well-established conference for sharing insights, experiences and interaction on various aspects of evolving technologies and patterns related to Computer Science, Information Technology, Communication, Electronics, and Energy Systems. The ICSCC 2027 offers a rich program, including keynote speeches, regular presentations and workshops. The theme for ICSCC 2027 is ‘Intelligent Technologies for Smart and S
 - API Details: https://conference-api.ieee.org/public/details?id=74434
 
-## 254. 2027 Artificial Intelligence, Advanced Computing and Quantum Technologies ( AIAQ )
+## 255. 2027 Artificial Intelligence, Advanced Computing and Quantum Technologies ( AIAQ )
 - Event ID: 73020
 - CFP Deadline: 2027-03-15
 - CFP Status: open
@@ -2036,7 +2044,7 @@
 - CFP Scope: The scope of the conference includes theoretical foundations, algorithmic developments, computational frameworks, and real-world applications in next-generation intelligent and high-performance systems. Special emphasis will be given to scalable AI, large-scale computing, quantum technologies, data-intensive systems, and interdisciplinary applications addressing modern global challenges.
 - API Details: https://conference-api.ieee.org/public/details?id=73020
 
-## 255. 2027 International Conference on Futuristic Sustainable Devices (ICFSD)
+## 256. 2027 International Conference on Futuristic Sustainable Devices (ICFSD)
 - Event ID: 73982
 - CFP Deadline: 2027-03-03
 - CFP Status: open
@@ -2044,7 +2052,7 @@
 - CFP Scope: he scope of the International Conference on Futuristic Smart Devices & Technology centers on advancing smart generation technologies spanning computation, data architectures, and integrated communication infrastructure. The conference covers technical dimensions including core engineering, security and privacy policy, and interdisciplinary tracks such as machine learning and robotics
 - API Details: https://conference-api.ieee.org/public/details?id=73982
 
-## 256. 2027 Third International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies (CE2CT)
+## 257. 2027 Third International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies (CE2CT)
 - Event ID: 74032
 - CFP Deadline: 
 - CFP Status: missing
@@ -2052,7 +2060,7 @@
 - CFP Scope: Computer Science and Engineering with theory and applications in different areas, Electrical Engineering Technologies with theory and applications in different areas, Electronics and Communication Technologies with theory and applications in different areas, Interdisciplinary and Emerging Technologies, Networking and Broadcast Technology, Engineering Profession, Computing and Processing, Quantum Computing, Robotics and Control Systems, Power, Energy and Industry Applications, Signal Processing and Analysis, Components, Circuits, Devices and Systems, Engineered Materials, Augmented and Virtual Reality, Bioinformatics and Computational Biology, Neurotechnology and Brain-Computer Interfaces, Smart Manufacturing and Industry, Multidisciplinary Modeling and Simulation. Mathematical Modeling and Optimization Techniques, Technology and Engineering Management, Operations and Decision Sciences, Innovation and Entrepreneurship, Leadership and Organizational Management in Technology.
 - API Details: https://conference-api.ieee.org/public/details?id=74032
 
-## 257. 2027 7th International Conference on Inventive Computation and Information Technologies (ICICIT)
+## 258. 2027 7th International Conference on Inventive Computation and Information Technologies (ICICIT)
 - Event ID: 73494
 - CFP Deadline: 2027-04-02
 - CFP Status: open
@@ -2060,7 +2068,7 @@
 - CFP Scope: With the intriguing development of technologies in several industries along with the advent of accrescent and ubiquitous computational resources, it creates an ample number of opportunities to develop innovative computational technologies in order to solve the wide range of uncertainties, imprecision and vagueness issues in various real-life problems. Hybridizing the modern computational techniques with traditional computing methods has attracted the researchers and academicians to focus on developing innovative computational techniques. In the near future, computational techniques may provide underlying solutions by effectively using evolving technologies such as computer vision, Natural Language Processing, Deep Learning, Machine learning, scientific computing, and computational vision.
 - API Details: https://conference-api.ieee.org/public/details?id=73494
 
-## 258. 2027 International Conference on Multidisciplinary Research in Science and Engineering (ICMDRSE)
+## 259. 2027 International Conference on Multidisciplinary Research in Science and Engineering (ICMDRSE)
 - Event ID: 72983
 - CFP Deadline: 2026-08-01
 - CFP Status: closed
@@ -2068,7 +2076,7 @@
 - CFP Scope: The 1st International Conference on Multidisciplinary Research in Science and Engineering (ICMDRSE-2027) aims to provide an international platform for researchers, academicians, scientists, industry professionals, and students to present and exchange innovative ideas, research findings, and technological advancements in multidisciplinary domains of science and engineering. The conference focuses on emerging areas including Artificial Intelligence, Intelligent Systems, Distributed Computing, Data Science, Smart Technologies, Renewable Energy, Healthcare Technologies, Advanced Engineering Systems, and Applied Sciences. It encourages interdisciplinary collaboration and promotes research that addresses real-world industrial, societal, and environmental challenges through sustainable and intelligent solutions. . ICMDRSE-2027 will feature keynote lectures, technical paper presentations, special sessions, workshops, and expert discussions that foster knowledge sharing, innovation.
 - API Details: https://conference-api.ieee.org/public/details?id=72983
 
-## 259. 2027 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA)
+## 260. 2027 Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA)
 - Event ID: 74366
 - CFP Deadline: 2027-03-31
 - CFP Status: open
@@ -2076,7 +2084,7 @@
 - CFP Scope: Advanced Computing and Communication Technologies for High Performance Applications (ACCTHPA) is a prime conference which intends to provide a forum that brings together the researchers from academia and industry to convene and swap over the ideas and recent research work on the High Performance Applications. We hope to see original contributions from interdisciplinary areas making using of HPC for the betterment of humanity.
 - API Details: https://conference-api.ieee.org/public/details?id=74366
 
-## 260. 2027 8th International Conference on Smart Systems and Inventive Technology (ICSSIT)
+## 261. 2027 8th International Conference on Smart Systems and Inventive Technology (ICSSIT)
 - Event ID: 73835
 - CFP Deadline: 2027-04-11
 - CFP Status: open
@@ -2084,7 +2092,7 @@
 - CFP Scope: The 8th International Conference on Smart Systems and Inventive Technology (ICSSIT 2027) is a global platform that brings together academia and industry to explore and share cutting-edge advancements in the fields of smart systems and innovative technologies. The theme of ICSSIT 2027 is “Innovations in Systems Science, Cybernetics, and Intelligent Systems”, emphasizing the transformative role of intelligent and adaptive technologies in advancing modern industries. The conference will spotlight research in intelligent control, decision-making, machine learning, human–machine systems, cognitive computing, and cyber-physical systems, along with their integration into complex real-world applications.
 - API Details: https://conference-api.ieee.org/public/details?id=73835
 
-## 261. 2027 11th International Conference on Inventive Systems and Control (ICISC)
+## 262. 2027 11th International Conference on Inventive Systems and Control (ICISC)
 - Event ID: 73928
 - CFP Deadline: 2027-04-09
 - CFP Status: open
@@ -2092,7 +2100,7 @@
 - CFP Scope: The 2027 11th International Conference on Inventive Systems and Control (ICISC) aims to explore the transformative potential of intelligent systems and control technologies in the industrial sector. As data availability continues to increase and computing and storage capabilities of Information and Communication Technology (ICT) systems expand, technological advancements like Artificial Intelligence (AI), Machine Learning, Deep Learning, and Intelligent Control are profoundly influencing diverse industrial and engineering fields. From smart manufacturing to healthcare, energy, and transportation, these technologies are reshaping operational processes, optimizing efficiency, and driving automation in industry applications. This year's theme, "Intelligent Systems and Control Technologies for Industry Applications," aims to spotlight advancements and practical applications of intelligent systems and control technologies across various industrial sectors.
 - API Details: https://conference-api.ieee.org/public/details?id=73928
 
-## 262. 2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT)
+## 263. 2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT)
 - Event ID: 72666
 - CFP Deadline: 2026-10-31
 - CFP Status: closed
@@ -2100,7 +2108,7 @@
 - CFP Scope: The 2027 2nd International Conference on Emerging Trends in Intelligent Computing Techniques (ICETICT) provides a platform for researchers, academicians, and industry professionals to share advances in intelligent computing. The conference covers core areas such as artificial intelligence, machine learning, deep learning, data analytics, and computational intelligence, along with enabling technologies like IoT, cloud and edge computing. It emphasizes both theoretical developments and real-world applications in domains including healthcare, smart cities, energy systems, cybersecurity, and automation. The conference aims to promote interdisciplinary research, innovation, and collaboration to address current challenges and future directions in intelligent computing.
 - API Details: https://conference-api.ieee.org/public/details?id=72666
 
-## 263. 2027 International Conference on Computer Applications and Artificial Intelligence (ICCAAI)
+## 264. 2027 International Conference on Computer Applications and Artificial Intelligence (ICCAAI)
 - Event ID: 73617
 - CFP Deadline: 2027-02-02
 - CFP Status: open
@@ -2108,7 +2116,7 @@
 - CFP Scope: The scope of the International Conference on Computer Applications and Artificial Intelligence (ICCAAI) is to provide an international forum where researchers, academicians, industry professionals, and students present and discuss advances in computer applications, artificial intelligence, and related technologies. The conference encourages both theoretical research and practical applications that address real-world challenges
 - API Details: https://conference-api.ieee.org/public/details?id=73617
 
-## 264. 2027 International Conference on Data Science and Engineering (ICDSE)
+## 265. 2027 International Conference on Data Science and Engineering (ICDSE)
 - Event ID: 73247
 - CFP Deadline: 2027-03-31
 - CFP Status: open
@@ -2116,7 +2124,7 @@
 - CFP Scope: Agentic AI for Public Health and Wellness
 - API Details: https://conference-api.ieee.org/public/details?id=73247
 
-## 265. 2027 2nd International Conference on Emerging Trends in Information, Communication & Systems (ICETICS)
+## 266. 2027 2nd International Conference on Emerging Trends in Information, Communication & Systems (ICETICS)
 - Event ID: 74017
 - CFP Deadline: 2026-10-10
 - CFP Status: closed
@@ -2124,7 +2132,7 @@
 - CFP Scope: The conference focuses on emerging research, technologies, and applications in Information, Communication, Computing, and Intelligent Systems. The scope includes Artificial Intelligence, Machine Learning, Deep Learning, Generative AI, Data Science, Big Data Analytics, Computer Vision, Image and Signal Processing, Multimedia, Natural Language and Speech Processing, IoT, Industrial IoT, Cyber-Physical Systems, Cloud, Edge, Fog and Distributed Computing, Wireless Communication, 5G/6G, Next-Generation Networks, Cybersecurity, Privacy, Digital Forensics, Blockchain, Embedded Systems, VLSI, Robotics, Automation, Software Engineering, Human-Computer Interaction, Healthcare Informatics, Smart Agriculture, Smart Cities, Intelligent Transportation, Smart Energy, Sustainable Computing, Industry 4.0/5.0, Digital Transformation, Knowledge Engineering, Decision Support Systems, Quantum Computing, Educational Technology, Enterprise Computing, and other emerging interdisciplinary technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=74017
 
-## 266. International Conference on Computational intelligence, Communication and Sustainable System ( ICCICSS )
+## 267. International Conference on Computational intelligence, Communication and Sustainable System ( ICCICSS )
 - Event ID: 72747
 - CFP Deadline: 2026-09-02
 - CFP Status: closed
@@ -2132,7 +2140,7 @@
 - CFP Scope: The conference scope covers state-of-the-art research and innovations in computational intelligence, advanced communication networks, and sustainable technological systems, emphasizing interdisciplinary solutions for smart, efficient, and sustainable global development
 - API Details: https://conference-api.ieee.org/public/details?id=72747
 
-## 267. 2027 2nd International Conference on AI-Driven Innovations and Applications (IC-AIDA)
+## 268. 2027 2nd International Conference on AI-Driven Innovations and Applications (IC-AIDA)
 - Event ID: 74042
 - CFP Deadline: 2027-03-18
 - CFP Status: open
@@ -2140,7 +2148,7 @@
 - CFP Scope: The 2nd International Conference on AI-Driven Innovations and Applications (IC-AIDA 2027) focuses on recent advancements in Artificial Intelligence, Data Science, and emerging technologies that address real-world challenges through intelligent and data-driven solutions. The conference provides a platform for researchers, academicians, industry professionals, and practitioners to present innovative research and practical applications in AI-driven systems. The scope includes AI applications in healthcare and precision medicine, cybersecurity and intelligent threat intelligence, human-centric and multimodal AI, smart and precision agriculture, smart cities and industrial systems, advanced AI technologies and next-generation computing, sustainable development and environmental intelligence, and human–machine interaction. The conference also promotes interdisciplinary research, ethical and sustainable AI, innovation, and industry–academia collaboration.
 - API Details: https://conference-api.ieee.org/public/details?id=74042
 
-## 268. 2027 4th International Conference on Intelligent and Sustainable Power and Energy Systems (ICISPES)
+## 269. 2027 4th International Conference on Intelligent and Sustainable Power and Energy Systems (ICISPES)
 - Event ID: 72103
 - CFP Deadline: 2027-02-15
 - CFP Status: open
@@ -2148,7 +2156,7 @@
 - CFP Scope: The ICISPES is aimed to address the state-of-the-art multidisciplinary research needs & interdisciplinary aspects of intelligent and sustainable technologies in power and energy systems in the form of research papers from industry, faculty, research scholars, and PG/UG students, along with keynote lectures and a number of invited talks from reputed speakers. The ICISPES provides an international platform for all research scholars, practitioners, academicians, students and scientists to discuss and exhibit the latest research developments and discoveries in intelligent and sustainable technologies. This conference enables us to share and exchange research knowledge and ideas in Power & Energy systems.
 - API Details: https://conference-api.ieee.org/public/details?id=72103
 
-## 269. 2027 International Conference on Intelligence Computing Communication, and Sustainable Technologies (IC2ST)
+## 270. 2027 International Conference on Intelligence Computing Communication, and Sustainable Technologies (IC2ST)
 - Event ID: 73699
 - CFP Deadline: 2027-03-31
 - CFP Status: open
@@ -2156,7 +2164,7 @@
 - CFP Scope: The International Conference on Intelligence, Communication, Computing and Sustainable Technologies (IC2ST-27) aims to provide a premier interdisciplinary platform for researchers, academicians, industry professionals, and students to present and discuss innovations in intelligent systems, advanced communication technologies, computing paradigms, and sustainable engineering solutions. The conference focuses on the integration of Artificial Intelligence, next-generation communication networks, computational intelligence, and green technologies to address real-world challenges aligned with sustainable development goals. IC2ST-27 seeks high-quality original research contributions that demonstrate theoretical advancements, practical implementations, and innovative applications contributing to technological sustainability.
 - API Details: https://conference-api.ieee.org/public/details?id=73699
 
-## 270. 2027 10th International Conference on Trends in Electronics and Informatics (ICOEI)
+## 271. 2027 10th International Conference on Trends in Electronics and Informatics (ICOEI)
 - Event ID: 72766
 - CFP Deadline: 2027-05-07
 - CFP Status: open
@@ -2164,7 +2172,7 @@
 - CFP Scope: The 10th International Conference on Trends in Electronics and Informatics (ICOEI 2027) encourages seamless integration of electronics and informatics to enable innovations in various fields such as IoT, edge computing, and sustainable technologies. As technologies like human augmentation, digital twins, and advanced robotics gain prominence, the theme of 10th ICOEI 2027 will be "Navigating the Frontiers: Unleashing the Potential of Electronics and Informatics" with a focus on creating more efficient, secure, and human-centric systems, laying the foundation for a transformative era marked by intelligent connectivity, data-driven insights, and sustainable solutions.
 - API Details: https://conference-api.ieee.org/public/details?id=72766
 
-## 271. 2027 10th International Conference on Circuit, Power & Computing Technologies (ICCPCT)
+## 272. 2027 10th International Conference on Circuit, Power & Computing Technologies (ICCPCT)
 - Event ID: 74069
 - CFP Deadline: 2027-04-15
 - CFP Status: open
@@ -2172,7 +2180,7 @@
 - CFP Scope: The Conference theme is Recent Innovations, Current Advancements and Challenges in power and computing technologies
 - API Details: https://conference-api.ieee.org/public/details?id=74069
 
-## 272. 2027 7th International Conference on Soft Computing for Security Applications (ICSCSA)
+## 273. 2027 7th International Conference on Soft Computing for Security Applications (ICSCSA)
 - Event ID: 74050
 - CFP Deadline: 2027-05-10
 - CFP Status: open
@@ -2180,7 +2188,7 @@
 - CFP Scope: In recent years, soft computing plays a pivotal role in developing optimal and sustainable solutions. This evolving field integrates various methodologies and techniques, including artificial neural networks, fuzzy logic, fuzzy neural networks, expert systems, and genetic algorithms. Further research in the soft computing domain is crucial as it enables the development of advanced solutions that effectively navigate uncertainties, imprecisions, and complexities, contributing to enhanced problem-solving in diverse fields such as security, optimization, and decision support and construct intelligent, automated, and secure systems. This 7th International Conference on Soft Computing for Security Applications will serve as a comprehensive platform to discuss different facets of soft computing across diverse domains. The conference invites submissions presenting research findings related to the application of soft computing techniques for enhancing security, and decision support.
 - API Details: https://conference-api.ieee.org/public/details?id=74050
 
-## 273. 2027 8th International Conference on Electronics and Sustainable Communication Systems (ICESC)
+## 274. 2027 8th International Conference on Electronics and Sustainable Communication Systems (ICESC)
 - Event ID: 74098
 - CFP Deadline: 2027-05-18
 - CFP Status: open
@@ -2188,7 +2196,7 @@
 - CFP Scope: In this contemporary era of Informatics, electronics, and communication technologies it has always been critical to develop more sustainable electronics and communication systems to meet the increasing technological demands. To effectively maintain a sustainable environment and communication technologies, it is always required to meet the quality of service requirements of the emerging smart ICT applications. Nevertheless there are many challenges in reducing the energy consumption of the emerging digital electronics and wireless communication networks. In this perspective, this 8th International Conference on Electronics and Sustainable Communication Systems (ICESC 2027) held at Hindustan Institute of Technology, Coimbatore, India on 19-21, August 2027 brings together the state-of-the-art research works to propose novel architectures, models, and algorithms for solving the emerging challenges in almost all the areas of sustainable electronics and communication technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=74098
 
-## 274. 2027 IEEE International Conference on Advanced Technologies and Smart Cities (ATSC)
+## 275. 2027 IEEE International Conference on Advanced Technologies and Smart Cities (ATSC)
 - Event ID: 74184
 - CFP Deadline: 2027-05-31
 - CFP Status: open
@@ -2196,7 +2204,7 @@
 - CFP Scope: Smart CitiesCommunication systems and Communication Standards Soft computing, Fuzzy Systems and ANN Sensors and sensor networks Security and authentication Air Interface, Wave propagation and Antennas Mathematical Modeling and simulation Data Mining, Web Technology and Ontology Parallel and distributed systems Microwave Theory and Techniques Microwave Devices and Circuits Adhoc Networks and wireless networks IT and Management RFIDs and applications
 - API Details: https://conference-api.ieee.org/public/details?id=74184
 
-## 275. 2027 Third International Conference on Advanced Technologies in Intelligent Control, Environment, Computing & Communication Engineering (ICATIECE)
+## 276. 2027 Third International Conference on Advanced Technologies in Intelligent Control, Environment, Computing & Communication Engineering (ICATIECE)
 - Event ID: 72885
 - CFP Deadline: 2027-01-15
 - CFP Status: open
@@ -2204,7 +2212,7 @@
 - CFP Scope: ICATIECE-2027 provides a platform for researchers, academicians, and industry experts to share advancements in Intelligent Control, Environment, Computing, and Communication Engineering. The conference covers AI/ML, IoT, cybersecurity, sustainable technologies, automation, 5G/6G, smart systems, and emerging engineering innovations.
 - API Details: https://conference-api.ieee.org/public/details?id=72885
 
-## 276. 2027 11th International Conference on Computing, Communication, Control & Automation (ICCUBEA)
+## 277. 2027 11th International Conference on Computing, Communication, Control & Automation (ICCUBEA)
 - Event ID: 73791
 - CFP Deadline: 2027-05-10
 - CFP Status: open
@@ -2212,7 +2220,7 @@
 - CFP Scope: The scope of the International Conference on Computing, Communication, Control and Automation (ICCUBEA 2027) addresses a multi-tiered technological spectrum bridging fundamental engineering with next-generation innovations. At its core, the conference spans foundational disciplines in computer science, wireless communications, control theory, and industrial automation. Within these fields, it highlights operational subsets driving digital transformation, including edge-based Internet of Things (IoT) architectures, intelligent robotics, cyber-physical systems, VLSI design, smart grid energy management, and AI-driven cybersecurity. Pushing into frontier paradigms, ICCUBEA 2027 emphasizes emerging research avenues such as Agentic and Explainable AI (XAI), quantum computing algorithms, 6G communication networks, neuromorphic hardware acceleration, sustainable green IT, and climate-resilient intelligent infrastructure to solve complex industrial and societal challenges.
 - API Details: https://conference-api.ieee.org/public/details?id=73791
 
-## 277. 2027 International Conference on Signal Processing, Electromagnetics, Communication Technologies, RF Antennas and Microwaves (SPECTRAM)
+## 278. 2027 International Conference on Signal Processing, Electromagnetics, Communication Technologies, RF Antennas and Microwaves (SPECTRAM)
 - Event ID: 74085
 - CFP Deadline: 2026-11-02
 - CFP Status: closed
@@ -2220,7 +2228,7 @@
 - CFP Scope: The conference aims to bring together researchers, academicians, industry professionals, scientists, and students working in the fields of microwave engineering, antenna design, electromagnetic wave  propagation, wireless communications, RF systems, and emerging  signal processing technologies. The conference will serve as a platform for presenting cutting-edge  research, exchanging technical knowledge, fostering collaborations, and discussing future trends in antenna and propagation technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=74085
 
-## 278. 2027 International Conference on Current Trends In Advanced Computing (ICCTAC)
+## 279. 2027 International Conference on Current Trends In Advanced Computing (ICCTAC)
 - Event ID: 74041
 - CFP Deadline: 2026-10-30
 - CFP Status: closed
@@ -2228,7 +2236,7 @@
 - CFP Scope: ICCTAC-2027 provides an international platform for researchers, academicians, industry professionals, scientists, and students to present and discuss recent advancements, emerging technologies, innovative methodologies, and applications in advanced computing and allied areas. The conference covers research in artificial intelligence, machine learning, data science, cybersecurity, cloud and edge computing, Internet of Things, computer networks, software engineering, blockchain, natural language processing, computer vision, big data analytics, and other emerging areas of computing. The conference promotes knowledge sharing, research collaboration, and academia–industry interaction.
 - API Details: https://conference-api.ieee.org/public/details?id=74041
 
-## 279. 2027 Second International Conference on Agrivoltaics Innovations Focusing on Smart Farming with Renewable Energy, Machine Learning and Embedded Technologies (IC-AISMART)
+## 280. 2027 Second International Conference on Agrivoltaics Innovations Focusing on Smart Farming with Renewable Energy, Machine Learning and Embedded Technologies (IC-AISMART)
 - Event ID: 73399
 - CFP Deadline: 2027-05-10
 - CFP Status: open
@@ -2236,7 +2244,7 @@
 - CFP Scope: The conference focuses on advances in agrivoltaics, smart farming, renewable energy, artificial intelligence, machine learning, embedded systems, Internet of Things, robotics, autonomous systems, and industrial automation. It aims to bring together researchers, academicians, industry professionals, entrepreneurs, and students to present innovative technologies and practical solutions for sustainable agriculture, energy-efficient farming, intelligent monitoring, precision agriculture, crop management, environmental protection, and smart rural development.
 - API Details: https://conference-api.ieee.org/public/details?id=73399
 
-## 280. 2027 International Conference on Future Intelligence and Sustainable Technologies (ICFIST)
+## 281. 2027 International Conference on Future Intelligence and Sustainable Technologies (ICFIST)
 - Event ID: 72851
 - CFP Deadline: 2027-01-15
 - CFP Status: open
@@ -2244,7 +2252,7 @@
 - CFP Scope: The conference focuses on the integration of future intelligence with sustainability-driven solutions that address real-world societal, environmental, and technological challenges.
 - API Details: https://conference-api.ieee.org/public/details?id=72851
 
-## 281. 2027 International Conference on Networks Computers and Communications (ICNCCom)
+## 282. 2027 International Conference on Networks Computers and Communications (ICNCCom)
 - Event ID: 73918
 - CFP Deadline: 2027-06-30
 - CFP Status: open
@@ -2252,7 +2260,7 @@
 - CFP Scope: 2027 International Conference on Networks, Computers and Communications (ICNCCom 2027) is aimed to serve as an international forum to provide a unique platform to the fellow academic community, industry experts, practitioners, researchers, and developers working in the field Networks, Computer Science, Artificial Intelligence and Wireless communications, for exchanging knowledge, experience, and findings by demonstrating new results and present emerging directions in the ICNCCom 2027.
 - API Details: https://conference-api.ieee.org/public/details?id=73918
 
-## 282. 2027 5th International Conference on Intelligent Cyber Physical Systems and Internet of Things (ICoICI)
+## 283. 2027 5th International Conference on Intelligent Cyber Physical Systems and Internet of Things (ICoICI)
 - Event ID: 74316
 - CFP Deadline: 2027-05-20
 - CFP Status: open
@@ -2260,7 +2268,7 @@
 - CFP Scope: The main theme of this conference is "Towards Convergence of Intelligent Cyber-Physical Systems and Internet of Things" This concept produces synergies with the more established technologies like Internet of Things [IoT], and Cyber Physical Systems [CPS] to describe and solve many of the challenges from various fields including autonomous systems, smart grids, healthcare monitoring, industrial systems & control, robotics etc. The Fifth International Conference on Intelligent Cyber Physical Systems and Internet of Things [ICoICI 2027] is devoted to advanced computing and networking technologies to enable intelligent and efficient IoT and CPS.
 - API Details: https://conference-api.ieee.org/public/details?id=74316
 
-## 283. 2027 1st C. V. Raman Global University International Conference on Emerging Computing and Engineering Technologies (CGUODISHACON)
+## 284. 2027 1st C. V. Raman Global University International Conference on Emerging Computing and Engineering Technologies (CGUODISHACON)
 - Event ID: 73524
 - CFP Deadline: 
 - CFP Status: missing
@@ -2268,7 +2276,7 @@
 - CFP Scope: The conference provides an international forum for researchers, academicians, industry professionals, and students to present and discuss recent advances in emerging computing and engineering technologies. The scope includes artificial intelligence, machine learning, data science, communication systems, 5G/6G networks, Internet of Things, cyber-physical systems, embedded systems, VLSI, signal and image processing, robotics, cloud and edge computing, cybersecurity, and sustainable engineering solutions. The conference aims to promote interdisciplinary research and foster collaboration between academia, industry, and government.
 - API Details: https://conference-api.ieee.org/public/details?id=73524
 
-## 284. 2027 1st International Conference on Emerging Research in Novel Technologies & Utilities (ICERNTU)
+## 285. 2027 1st International Conference on Emerging Research in Novel Technologies & Utilities (ICERNTU)
 - Event ID: 73502
 - CFP Deadline: 
 - CFP Status: missing
@@ -2276,7 +2284,7 @@
 - CFP Scope: The International Conference on Emerging Research in Novel Technologies & Utilities (ICERNTU) aims to provide a multidisciplinary platform for researchers, academicians, scientists, industry professionals, policymakers, innovators, and students to share recent advancements, emerging trends, and practical applications that contribute to sustainable development and societal well-being. The conference focuses on the convergence of engineering, technology, science, management, education, law, Medical Science, and indigenous knowledge systems to address global challenges aligned with the United Nations Sustainable Development Goals (SDGs). It encourages interdisciplinary research that integrates technological innovation with environmental stewardship, social responsibility, economic resilience, and inclusive growth.
 - API Details: https://conference-api.ieee.org/public/details?id=73502
 
-## 285. 2027 International Conference on Secure Information Systems and Technologies (ICSIST)
+## 286. 2027 International Conference on Secure Information Systems and Technologies (ICSIST)
 - Event ID: 74144
 - CFP Deadline: 2027-06-05
 - CFP Status: open
@@ -2284,7 +2292,7 @@
 - CFP Scope: The International Conference on Secure Information Systems and Technologies (ICSIST) aims to bring together researchers, academicians, industry experts, and practitioners from around the world to share their latest innovations, research findings, and experiences in the domains of cybersecurity, information assurance, secure computing, and emerging technologies. ICSIST serves as a platform for discussing the design, development, and deployment of secure information systems, privacy-preserving technologies, and intelligent defense mechanisms for modern digital ecosystems.
 - API Details: https://conference-api.ieee.org/public/details?id=74144
 
-## 286. 2027 International Conference on Intelligent Systems, Cybernetics, and Smart Technologies (ISCST)
+## 287. 2027 International Conference on Intelligent Systems, Cybernetics, and Smart Technologies (ISCST)
 - Event ID: 74117
 - CFP Deadline: 2027-02-15
 - CFP Status: open
@@ -2292,7 +2300,7 @@
 - CFP Scope: The International Conference on Intelligent Systems, Cybernetics, and Smart Technologies (ISCST) provides a global platform for researchers, academicians, scientists, and industry professionals to share advances in Artificial Intelligence, Machine Learning, Data Analytics, Cybernetics, Intelligent Computing, and Smart Technologies. The conference covers Deep Learning, Generative AI, Explainable AI, Data Mining, Intelligent Decision Systems, Intelligent Control, Robotics, Autonomous Systems, IoT, Edge/Fog/Cloud Computing, Smart Cities, Healthcare, Agriculture, Intelligent Transportation, Industry 4.0/5.0, Cyber-Physical Systems, Digital Twins, Federated Learning, AI Security, Privacy, and Green AI. ISCST welcomes innovative theoretical, methodological, experimental, and application-oriented research advancing intelligent, secure, adaptive, autonomous, and sustainable solutions for a smarter future.
 - API Details: https://conference-api.ieee.org/public/details?id=74117
 
-## 287. 2027 Second International Conference on Secure IoT and Cybersecurity (ICOSICS)
+## 288. 2027 Second International Conference on Secure IoT and Cybersecurity (ICOSICS)
 - Event ID: 74412
 - CFP Deadline: 2027-06-21
 - CFP Status: open
@@ -2300,7 +2308,7 @@
 - CFP Scope: Secure IoT and cybersecurity are essential to protect sensitive data, ensure privacy, and maintain trust in billions of connected devices. They safeguard critical infrastructures and daily life systems from cyberattacks, disruptions, and safety risks. The International Conference on Secure IoT and Cybersecurity (ICOSICS) aims to bring together researchers, developers, and practitioners to explore and advance innovative solutions ensuring the security, privacy, and resilience of emerging IoT technologies. The conference will span the full spectrum from theoretical foundations to practical implementations, across both industrial and consumer applications.
 - API Details: https://conference-api.ieee.org/public/details?id=74412
 
-## 288. 2027 International Conference on Computational Intelligence and Smart Communication (CISC)
+## 289. 2027 International Conference on Computational Intelligence and Smart Communication (CISC)
 - Event ID: 74196
 - CFP Deadline: 2027-05-15
 - CFP Status: open
@@ -2308,7 +2316,7 @@
 - CFP Scope: The International Conference on Computational Intelligence and Smart Communication (CISC-2027) provides a platform for researchers, academicians, industry professionals, and students to share recent innovations, trends, and challenges in computational intelligence and smart communication. The conference promotes interdisciplinary research and practical solutions in AI and data analytics, computer vision, biomedical systems, cybersecurity, cloud computing, IoT, mathematical modelling, next-generation communication, VLSI, microelectronics, and emerging intelligent technologies. CISC-2027 features keynote talks, technical paper presentations, and interactive sessions for knowledge exchange and networking. All papers undergo rigorous double-blind peer review to ensure quality and originality. The conference aims to strengthen academia–industry collaboration and advance intelligent, secure, sustainable, and application-oriented technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=74196
 
-## 289. 2027 International Conference on Quantum Informatics, Communication Systems and Applications (IQICSA)
+## 290. 2027 International Conference on Quantum Informatics, Communication Systems and Applications (IQICSA)
 - Event ID: 72196
 - CFP Deadline: 2027-02-10
 - CFP Status: open
@@ -2316,7 +2324,7 @@
 - CFP Scope: IQICSA-2027 dedicated to exploring how quantum principles are transforming the way computation is conceived, built, and applied. The conference creates a shared space for researchers, technologists, educators, and industry innovators to exchange ideas, challenge assumptions, and present breakthroughs that push beyond classical limits. This event is designed not just to report progress, but to shape the direction of quantum computing research and development in the years ahead. The major scope of conference is given below: 1. Quantum Informatics & Information Theory 2. Quantum Computing Technologies 3. Quantum applications in Healthcare and drug discovery, Finance and optimization , Smart cities and IoT , Defense, cybersecurity, and Quantum-enhanced AI and data analytics 4. Quantum Communication & Cryptography 5. Quantum Hardware & Devices 6. Quantum Communication Systems & Networks (Next-Gen)
 - API Details: https://conference-api.ieee.org/public/details?id=72196
 
-## 290. 2027 6th International Conference on Innovative Mechanisms for Industry Applications (ICIMIA)
+## 291. 2027 6th International Conference on Innovative Mechanisms for Industry Applications (ICIMIA)
 - Event ID: 74519
 - CFP Deadline: 2027-06-18
 - CFP Status: open
@@ -2324,7 +2332,7 @@
 - CFP Scope: Sasurie College of Engineering organizing the 6th International Conference on Innovative Mechanisms for Industry Applications (ICIMIA 2027) to be held on 4-6, October 2027. This conference will discuss the impact of transition to the recent Industrial Revolution on Efficiency, Ecosystem, Infrastructure, and Competitiveness of industrial operation. The impact of innovative mechanisms like IoT and Blockchain on supply chain support and other industrial applications are mainly focused.  The conference also covers the impact of IoT and Blockchain on optimizing the industrial decentralization, connectivity, services delivery and logistic operations in terms of exploring the real-time industrial applications to improve the production and accuracy.
 - API Details: https://conference-api.ieee.org/public/details?id=74519
 
-## 291. 2027 3rd International Conference on Computing, Sciences, and Communications (ICCSC)
+## 292. 2027 3rd International Conference on Computing, Sciences, and Communications (ICCSC)
 - Event ID: 74007
 - CFP Deadline: 2027-05-25
 - CFP Status: open
@@ -2332,7 +2340,7 @@
 - CFP Scope: The conference will provide a multidisciplinary platform for original research, innovative technologies, theoretical and experimental studies, engineering applications, and emerging technological developments across Aerospace Engineering, Bioengineering, Communication, Networking and Broadcast Technologies, Transportation, Components, Circuits, Devices and Systems, Computing and Processing, Engineered Materials, Dielectrics and Plasmas, Engineering Profession, Waves and Electromagnetics, Geoscience, Nuclear Engineering, Photonics and Electrooptics, Power, Energy and Industrial Applications, Robotics and Control Systems, and Signal Processing and Analysis. The conference will cover both fundamental and application-oriented research, including Artificial Intelligence, Machine Learning, Generative AI, Deep Learning, Data Science, Computer Vision, Natural Language Processing, Intelligent Computing, Software Engineering, Cybersecurity, Internet of Things, Edge and Cloud Computing, Cyber-Phy
 - API Details: https://conference-api.ieee.org/public/details?id=74007
 
-## 292. 2027 International Conference on Advances in Blockchain, Human-Centric AI, and Cyber Security (ABHAY)
+## 293. 2027 International Conference on Advances in Blockchain, Human-Centric AI, and Cyber Security (ABHAY)
 - Event ID: 73252
 - CFP Deadline: 2027-05-15
 - CFP Status: open
@@ -2340,7 +2348,7 @@
 - CFP Scope: ABHAY 2027 focuses on recent advances in cybersecurity, trustworthy AI, blockchain technologies, privacy, digital trust, and human-centric computing for building secure and resilient digital ecosystems. The conference provides a platform for discussing secure, intelligent, and people-centric technologies that address emerging challenges in the digital world. It aims to foster collaboration between academia, industry, and policymakers to shape a safer and more trustworthy digital future.
 - API Details: https://conference-api.ieee.org/public/details?id=73252
 
-## 293. 2027 IEEE International Conference on Intelligent Systems, Smart and Green Technologies (ICISSGT)
+## 294. 2027 IEEE International Conference on Intelligent Systems, Smart and Green Technologies (ICISSGT)
 - Event ID: 73587
 - CFP Deadline: 2027-09-01
 - CFP Status: open
@@ -2348,7 +2356,7 @@
 - CFP Scope: The conference aims to bring together researchers, academicians, industry professionals, practitioners, students, and policymakers from academia, government, industry, and research organizations to exchange innovative ideas and recent advancements in Electrical Engineering, Electronics, Computer Engineering, Artificial Intelligence, Machine Learning, Information Technology, and related disciplines. With a focus on the United Nations Sustainable Development Goals (SDGs), the conference provides a platform for presenting high-quality research, fostering interdisciplinary collaboration, and promoting sustainable technological innovations. The technical program will include keynote and invited talks by eminent experts, along with technical paper presentations covering emerging areas such as Generative AI, Neural Networks, IoT, Data Analytics, Autonomous Systems, Smart Grid Technologies, Energy-Efficient Systems, AI-driven Healthcare, Smart Computing, and Educational Technologies.
 - API Details: https://conference-api.ieee.org/public/details?id=73587
 
-## 294. 2028 International Conference on Artificial Intelligence in Photonic Systems (Photonics AI)
+## 295. 2028 International Conference on Artificial Intelligence in Photonic Systems (Photonics AI)
 - Event ID: 74212
 - CFP Deadline: 2027-05-14
 - CFP Status: open
@@ -2356,7 +2364,7 @@
 - CFP Scope: Photonics AI 2028 – International Conference on Artificial Intelligence in Photonic Systems is an interdisciplinary global forum that brings together researchers, academicians, and industry experts to explore the convergence of artificial intelligence and photonic technologies. The conference focuses on advancing intelligent photonic systems for next-generation computing, communications, sensing, and imaging, including areas such as optical neural networks, silicon photonics, AI-driven optical communications, and quantum photonics. It aims to foster innovation in energy-efficient, high-speed, and intelligent light-based technologies that will shape future AI-enabled infrastructures and smart systems worldwide.
 - API Details: https://conference-api.ieee.org/public/details?id=74212
 
-## 295. 2028 IEEE Wireless Communications and Networking Conference (WCNC)
+## 296. 2028 IEEE Wireless Communications and Networking Conference (WCNC)
 - Event ID: 73304
 - CFP Deadline: 2027-09-14
 - CFP Status: open
@@ -2364,7 +2372,7 @@
 - CFP Scope: IEEE WCNC is the world premier wireless event that brings together industry professionals, academics, and individuals from government agencies and other institutions to exchange information and ideas on the advancement of wireless communications and networking technology. The conference will feature a comprehensive technical program offering numerous technical sessions with papers showcasing the latest technologies, applications and services. In addition, the conference program includes workshops, tutorials, keynote talks from industrial leaders and renowned academics, panel discussions, a large exhibition, business and industrial forums.
 - API Details: https://conference-api.ieee.org/public/details?id=73304
 
-## 296. 2028 IEEE International Conference on Power Electronic Converters for Transportation and Energy Applications (PECTEA)
+## 297. 2028 IEEE International Conference on Power Electronic Converters for Transportation and Energy Applications (PECTEA)
 - Event ID: 69240
 - CFP Deadline: 2028-01-01
 - CFP Status: open
@@ -2372,7 +2380,7 @@
 - CFP Scope: Power Converter Topologies, Components and Devices, Power Electronics for Renewable Energy Systems and Energy Storage, Electric Mobility and Transportation, Power Flow Control and Power Quality, Electric Drives and Control, Power System Protection, High Voltage Applications
 - API Details: https://conference-api.ieee.org/public/details?id=69240
 
-## 297. 2028 IEEE World Congress on Computational Intelligence (WCCI)
+## 298. 2028 IEEE World Congress on Computational Intelligence (WCCI)
 - Event ID: 70776
 - CFP Deadline: 
 - CFP Status: missing
