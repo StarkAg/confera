@@ -1,7 +1,7 @@
 # CFP Deadline Missing Report
 
 - CFP Deadline missing: 17 of 298
-- Generated on: 2026-11-07
+- Generated on: 2026-11-08
 
 ## Conferences with Missing CFP Deadline
 

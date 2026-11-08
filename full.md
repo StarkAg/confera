@@ -3,7 +3,7 @@
 - Source: IEEE conference search via `https://conference-api.ieee.org/public/searchfacet`
 - Enrichment source: IEEE detail endpoint via `https://conference-api.ieee.org/public/details?id=...`
 - Country filter: `India`
-- Generated on: 2026-11-07
+- Generated on: 2026-11-08
 - Total conferences returned by API: 298
 - Unique conferences written below: 298
 - Detail fetch failures: 0

@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-07
+- Generated on: 2026-11-08
 
 ## 1. 2026 IEEE International Conference of Electron Devices Society Kolkata Chapter (EDKCON)
 - Event ID: 70011
