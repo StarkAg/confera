@@ -1,23 +1,9 @@
 {
-  "updated": "2026-11-09",
-  "total": 299,
-  "open": 91,
+  "updated": "2026-11-10",
+  "total": 304,
+  "open": 93,
   "hybridOpen": 53,
   "next": [
-    {
-      "acronym": "AVARTA",
-      "title": "2026 International Conference on Advanced VLSI Design, AI Solutions, and Reconfigurable Technology Applications (AVARTA)",
-      "city": "Thanjavur, Tamil Nadu",
-      "cfp": "2026-11-09",
-      "format": "hybrid"
-    },
-    {
-      "acronym": "ICAAIC",
-      "title": "2027 5th International Conference on Applied Artificial Intelligence and Computing (ICAAIC)",
-      "city": "Salem",
-      "cfp": "2026-11-09",
-      "format": "hybrid"
-    },
     {
       "acronym": "IVEC",
       "title": "2027 28th International Vacuum Electronics Conference (IVEC)",
@@ -85,6 +71,20 @@
       "acronym": "ICRCICN",
       "title": "2027 Eighth International Conference on Research in Computational Intelligence and Communication Networks (ICRCICN)",
       "city": "Kalyani",
+      "cfp": "2026-11-30",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "IC3ECSBHI",
+      "title": "2027 3rd International Conference on Cognitive Computing in Engineering, Communications, Sciences and Biomedical Health Informatics (IC3ECSBHI)",
+      "city": "Greater Noida -NCR Delhi",
+      "cfp": "2026-11-30",
+      "format": "inperson"
+    },
+    {
+      "acronym": "SANKALP",
+      "title": "2027 IEEE International Conference on Sustainable AI, Networks, Knowledge and Learning Paradigms (SANKALP)",
+      "city": "Gwalior",
       "cfp": "2026-11-30",
       "format": "hybrid"
     }
