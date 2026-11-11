@@ -1,16 +1,9 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "total": 304,
-  "open": 93,
+  "open": 92,
   "hybridOpen": 53,
   "next": [
-    {
-      "acronym": "IVEC",
-      "title": "2027 28th International Vacuum Electronics Conference (IVEC)",
-      "city": "Bangalore",
-      "cfp": "2026-11-10",
-      "format": "inperson"
-    },
     {
       "acronym": "ICRFCS",
       "title": "2027 International Conference on Reasoning AI in Future Communication Systems (ICRFCS)",
@@ -87,6 +80,13 @@
       "city": "Gwalior",
       "cfp": "2026-11-30",
       "format": "hybrid"
+    },
+    {
+      "acronym": "ICCCA",
+      "title": "2027 IEEE 8th International Conference on Computing, Communication, and Automation (ICCCA)",
+      "city": "Greater Noida",
+      "cfp": "2026-11-30",
+      "format": "inperson"
     }
   ]
 }

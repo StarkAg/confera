@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-10
+- Generated on: 2026-11-11
 
 ## 1. 2026 IEEE International Conference of Electron Devices Society Kolkata Chapter (EDKCON)
 - Event ID: 70011
@@ -1583,7 +1583,7 @@
 ## 198. 2027 28th International Vacuum Electronics Conference (IVEC)
 - Event ID: 72825
 - CFP Deadline: 2026-11-10
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Aerospace; Communication, Networking and Broadcast Technologies; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; Nuclear Engineering; Photonics and Electrooptics; Power, Energy and Industry Applications
 - CFP Scope: Field of interest aligned to Electron Devices Society (EDS) and Vacuum Electronics Technical Committe (VETC) of the IEEE-EDS and associated emergeing technologies in the area of Vacuum Electronic Devices and Systems.
 - API Details: https://conference-api.ieee.org/public/details?id=72825
