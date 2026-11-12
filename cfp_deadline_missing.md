@@ -1,7 +1,7 @@
 # CFP Deadline Missing Report
 
-- CFP Deadline missing: 17 of 304
-- Generated on: 2026-11-11
+- CFP Deadline missing: 17 of 305
+- Generated on: 2026-11-12
 
 ## Conferences with Missing CFP Deadline
 
@@ -19,8 +19,8 @@
 | 189 | 2027 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops) | Communication, Networking and Broadcast Technologies; Computing and Processing; General Topics for Engineers; Robotics and Control Systems; Signal Processing and Analysis |
 | 199 | 2027 IEEE Applied Sensing Conference (APSCON) | Aerospace; Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Engineering Profession; Fields, Waves and Electromagnetics; General Topics for Engineers; Geoscience; Nuclear Engineering; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
 | 204 | 2027 International Conference on Intelligent Power, Energy and Sustainable Systems (IIPESS) | Components, Circuits, Devices and Systems; Engineering Profession; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
-| 224 | 2027 1st Dronacharya International Conference on Intelligent Computing and Emerging Technologies (DICON) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; General Topics for Engineers |
-| 260 | 2027 Third International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies (CE2CT) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Engineering Profession; Fields, Waves and Electromagnetics; General Topics for Engineers; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
-| 290 | 2027 1st C. V. Raman Global University International Conference on Emerging Computing and Engineering Technologies (CGUODISHACON) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; General Topics for Engineers; Robotics and Control Systems; Signal Processing and Analysis |
-| 291 | 2027 1st International Conference on Emerging Research in Novel Technologies & Utilities (ICERNTU) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers; Power, Energy and Industry Applications |
-| 304 | 2028 IEEE World Congress on Computational Intelligence (WCCI) | Computing and Processing; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
+| 225 | 2027 1st Dronacharya International Conference on Intelligent Computing and Emerging Technologies (DICON) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; General Topics for Engineers |
+| 261 | 2027 Third International Conference on Advances in Computer Science, Electrical, Electronics, and Communication Technologies (CE2CT) | Bioengineering; Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Engineering Profession; Fields, Waves and Electromagnetics; General Topics for Engineers; Photonics and Electrooptics; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation |
+| 291 | 2027 1st C. V. Raman Global University International Conference on Emerging Computing and Engineering Technologies (CGUODISHACON) | Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; General Topics for Engineers; Robotics and Control Systems; Signal Processing and Analysis |
+| 292 | 2027 1st International Conference on Emerging Research in Novel Technologies & Utilities (ICERNTU) | Communication, Networking and Broadcast Technologies; Engineering Profession; General Topics for Engineers; Power, Energy and Industry Applications |
+| 305 | 2028 IEEE World Congress on Computational Intelligence (WCCI) | Computing and Processing; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis |
