@@ -1,16 +1,9 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "total": 305,
-  "open": 92,
-  "hybridOpen": 53,
+  "open": 91,
+  "hybridOpen": 52,
   "next": [
-    {
-      "acronym": "ICRFCS",
-      "title": "2027 International Conference on Reasoning AI in Future Communication Systems (ICRFCS)",
-      "city": "Bengaluru",
-      "cfp": "2026-11-12",
-      "format": "hybrid"
-    },
     {
       "acronym": "ICRITO",
       "title": "2027 13th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)",
@@ -87,6 +80,13 @@
       "city": "Greater Noida",
       "cfp": "2026-11-30",
       "format": "inperson"
+    },
+    {
+      "acronym": "IDCCSF",
+      "title": "2027 International Conference on Intelligent Devices, Computing and Communication for a Sustainable Future (IDCCSF)",
+      "city": "Chennai",
+      "cfp": "2026-12-01",
+      "format": "hybrid"
     }
   ]
 }
