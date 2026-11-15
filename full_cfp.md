@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-14
+- Generated on: 2026-11-15
 
 ## 1. 2026 7th URSI Regional Conference on Radio Science (URSI-RCRS)
 - Event ID: 72838
