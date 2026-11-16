@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-15
+- Generated on: 2026-11-16
 
 ## 1. 2026 7th URSI Regional Conference on Radio Science (URSI-RCRS)
 - Event ID: 72838
@@ -1247,7 +1247,7 @@
 ## 156. 2027 13th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)
 - Event ID: 72560
 - CFP Deadline: 2026-11-15
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; General Topics for Engineers; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis; Transportation
 - CFP Scope: Scope of conference is included but not limited to Quality and Reliability, Infocom Technologies (IT), Mathematical Modelling and Optimization, Artificial Intelligence, Networks, Communications and Cyber Security, Safety and Risk Analysis and Humanitarian Technologies. This theme is most appropriate in the current context as well as in the future. Besides, it will help in sharing of experience and exchange of ideas, which will foster international collaborations.
 - API Details: https://conference-api.ieee.org/public/details?id=72560
@@ -1543,7 +1543,7 @@
 ## 193. 2027 IEEE 9th Students Conference on Engineering and Systems (SCES)
 - Event ID: 72612
 - CFP Deadline: 2026-11-15
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Components, Circuits, Devices and Systems; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Fields, Waves and Electromagnetics; General Topics for Engineers; Power, Energy and Industry Applications; Robotics and Control Systems; Signal Processing and Analysis
 - CFP Scope: The conference will provide a platform for researchers to get recognition for their research innovations and provide wider publicity to the Institute. It serves as a multidisciplinary platform for researchers with diverse backgrounds and research interests. Specifically, the conference will spotlight emerging trends in Power, Energy & Control; Electronics, Communication & Signal Processing; Computer Networks & Machine Learning; Mechanical Systems and Mechatronics; and Applied Sciences, fostering collaboration and knowledge exchange among participants.
 - API Details: https://conference-api.ieee.org/public/details?id=72612
@@ -1791,7 +1791,7 @@
 ## 224. 2027 2nd International Conference on Sustainable and Futuristic Technologies (ICSFT)
 - Event ID: 73315
 - CFP Deadline: 2026-11-15
-- CFP Status: open
+- CFP Status: closed
 - Field of Interest: Communication, Networking and Broadcast Technologies; Computing and Processing; Engineered Materials, Dielectrics and Plasmas; Engineering Profession; General Topics for Engineers; Power, Energy and Industry Applications; Robotics and Control Systems; Transportation
 - CFP Scope: This conference offers a multidisciplinary platform for students, researchers, academicians, industry professionals, and innovators to exchange cutting-edge ideas, present original research, and foster collaborations across diverse engineering disciplines, including Mechanical, Electrical, Electronics, Computer Engineering, Information Technology, Artificial Intelligence & Data Science, and Engineering Sciences.
 - API Details: https://conference-api.ieee.org/public/details?id=73315

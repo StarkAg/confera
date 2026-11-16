@@ -1,30 +1,9 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "total": 305,
-  "open": 93,
-  "hybridOpen": 53,
+  "open": 90,
+  "hybridOpen": 52,
   "next": [
-    {
-      "acronym": "ICRITO",
-      "title": "2027 13th International Conference on Reliability, Infocom Technologies and Optimization (Trends and Future Directions) (ICRITO)",
-      "city": "Noida NCR",
-      "cfp": "2026-11-15",
-      "format": "inperson"
-    },
-    {
-      "acronym": "SCES",
-      "title": "2027 IEEE 9th Students Conference on Engineering and Systems (SCES)",
-      "city": "Prayagraj",
-      "cfp": "2026-11-15",
-      "format": "inperson"
-    },
-    {
-      "acronym": "ICSFT",
-      "title": "2027 2nd International Conference on Sustainable and Futuristic Technologies (ICSFT)",
-      "city": "Pune",
-      "cfp": "2026-11-15",
-      "format": "hybrid"
-    },
     {
       "acronym": "SIETCON",
       "title": "2027 International Conference on Scalable Intelligent Emerging Technologies and Networking (SIETCON)",
@@ -86,6 +65,27 @@
       "title": "2027 International Conference on Intelligent Devices, Computing and Communication for a Sustainable Future (IDCCSF)",
       "city": "Chennai",
       "cfp": "2026-12-01",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "WIE-RISE",
+      "title": "2027 1st Conference on WIE-RISE: Revolutionizing Innovation in Smart Engineering (WIE-RISE)",
+      "city": "Jamshedpur",
+      "cfp": "2026-12-01",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICATI",
+      "title": "2027 IEEE Nexo-Tech - International Conference on Advanced Technologies and Innovations (ICATI)",
+      "city": "PALAKKAD",
+      "cfp": "2026-12-01",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICAECA",
+      "title": "2027 4th International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation (ICAECA)",
+      "city": "Coimbatore",
+      "cfp": "2026-12-02",
       "format": "hybrid"
     }
   ]
