@@ -1,16 +1,9 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "total": 306,
-  "open": 92,
-  "hybridOpen": 53,
+  "open": 93,
+  "hybridOpen": 54,
   "next": [
-    {
-      "acronym": "SIETCON",
-      "title": "2027 International Conference on Scalable Intelligent Emerging Technologies and Networking (SIETCON)",
-      "city": "Tumkur",
-      "cfp": "2026-11-18",
-      "format": "inperson"
-    },
     {
       "acronym": "ICETET-SIP",
       "title": "2027 13th International Conference on Emerging Trends in Engineering & Technology - Signal and Information Processing (ICETET-SIP)",
@@ -86,6 +79,13 @@
       "title": "2027 IEEE Nexo-Tech - International Conference on Advanced Technologies and Innovations (ICATI)",
       "city": "PALAKKAD",
       "cfp": "2026-12-01",
+      "format": "hybrid"
+    },
+    {
+      "acronym": "ICAECA",
+      "title": "2027 4th International Conference on Advancements in Electrical, Electronics, Communication, Computing and Automation (ICAECA)",
+      "city": "Coimbatore",
+      "cfp": "2026-12-02",
       "format": "hybrid"
     }
   ]
