@@ -1,16 +1,9 @@
 {
-  "updated": "2026-11-21",
-  "total": 282,
-  "open": 94,
-  "hybridOpen": 54,
+  "updated": "2026-11-22",
+  "total": 280,
+  "open": 93,
+  "hybridOpen": 53,
   "next": [
-    {
-      "acronym": "ICETET-SIP",
-      "title": "2027 13th International Conference on Emerging Trends in Engineering & Technology - Signal and Information Processing (ICETET-SIP)",
-      "city": "Nagpur",
-      "cfp": "2026-11-21",
-      "format": "hybrid"
-    },
     {
       "acronym": "ICIACS",
       "title": "2027 International Conference on Innovations and Advances in Cognitive Systems (ICIACS)",
@@ -87,6 +80,13 @@
       "city": "Coimbatore",
       "cfp": "2026-12-02",
       "format": "hybrid"
+    },
+    {
+      "acronym": "Confluence",
+      "title": "2027 17th International Conference on Cloud Computing, Data Science & Engineering (Confluence)",
+      "city": "Noida",
+      "cfp": "2026-12-04",
+      "format": "inperson"
     }
   ]
 }
