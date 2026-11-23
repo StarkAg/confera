@@ -2,7 +2,7 @@
 
 - Country: India
 - Source: https://conference-api.ieee.org/public/searchfacet + https://conference-api.ieee.org/public/details
-- Generated on: 2026-11-22
+- Generated on: 2026-11-23
 
 ## 1. 2026 7th International Conference on IoT Based Control Networks and Intelligent Systems (ICICNIS)
 - Event ID: 70805
